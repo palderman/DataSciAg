@@ -1,18 +1,15 @@
 ---
 layout: page
 title: Syllabus
-catalog: WIS 6934
+catalog: PLNT 5110
 credits: 3
-semester: Fall 2015
-professor: Dr. Ethan White
-office: Room 1 in Building 150 (just north of Newins-Zeigler)
-email: ethanwhite@ufl.edu
-phone: 352-294-2081
-schedule: ['Tuesdays, 11:45-12:35, 1142 McCarty A',
-           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
-office_hours: Thursdays 1-2 pm, or by appointment
-TA: Andrew Marx
-TA_email: andrewjmarx@ufl.edu
+semester: Fall 2016
+professor: Phillip D. Alderman
+office: 274 Agricultural Hall
+email: phillip.alderman@okstate.edu
+phone: 405-744-9604
+schedule: ['MWF, 10:30-11:20, 374 Agricultural Hall']
+office_hours: Wednesday 11:30 am - 12:30 pm, or by appointment
 ---
 
 ## {{ site.title }} 
@@ -33,8 +30,6 @@ Phone: {{ page.phone }}
 
 ### Times & Location
 
-**Note: class is in different locations depending on the day of the week**
-
 {% for class in page.schedule %}
   {{ class }}
 {% endfor %}
@@ -47,16 +42,8 @@ Times: {{ page.office_hours }}
 
 Location: {{ page.office }}
 
-*Note: my schedule gets very busy during the semester so please try to schedule
-appointments as far in advance as possible. In general it will be very difficult
-to set up appointments less than 24 hours in advance.*
-
-
-### Course TA
-
-{{ page.TA }}
-
-Email: {{ page.TA_email }}
+**Note: Please try to schedule appointments as far in advance as possible.
+In general it will be difficult to set up appointments less than 24 hours in advance.**
 
 
 ### Website
@@ -71,6 +58,8 @@ periodically for updates.
 
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
+You can expect to receive a response within two business days.  To ensure a prompt response, please preface your subject line with *ISC:*.
+
 
 ### Required Texts
 
@@ -78,24 +67,19 @@ There is no required text book for this class.
 
 
 ### Course Description
- 
-Computers are increasingly essential to the study of all aspects of
-biology. Data management skills are needed for entering data without errors,
-storing it in a usable way, and extracting key aspects of the data for
-analysis. Basic programming is required for everything from accessing and
-managing data, to statistical analysis, to modeling. This course will provide an
-introduction to data management, manipulation, and analysis, with an emphasis on
-biological problems. Class will typically consist of short introductions or
-question & answer sessions, followed by hands on computing exercises. The course
-will be taught using R and SQLite, but the concepts learned will easily apply to
-all programming languages and database management systems. No background in
-programming of databases is required.
 
-
-### Prerequisite Knowledge and Skills
-
-Knowledge of basic biology.
-
+Computers are incredibly powerful tools for doing scientific research.
+Yet despite this great potential, many scientists lack the skills needed to use
+computers to their full potential.  This course provides an introduction to
+some of the basic skills needed for effective scientific computing.  The course
+will provide an overview of:
+- Basic programming
+- Workflow design
+- Data management, manipulation, and analysis
+Although the course will be taught primarily using R, the concepts learned
+through the course should be easily transferable to other programming languages
+and database management systems.  No background in programming or database
+management is required.
 
 ### Purpose of Course
 
@@ -115,19 +99,9 @@ Students completing this course will be able to:
 * Extract information from databases
 * Write simple computer programs in R
 * Automate data analysis
-* Apply these tools to address biological questions
+* Apply these tools to address research questions
 * Apply general data management and analysis concepts to other programming
   languages and database management systems
-
-
-### How this course relates to the Student Learning Outcomes in Wildlife Ecology and Conservation
-
-This course contributes to the 'Quantitative Skills' and 'Conducting and
-Analyzing Independent/Original Research' Student Learning Outcomes specified in
-the
-[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
-by providing students the skills and they knowledge they need to manage and
-analyze the data used in research.
 
 
 ### Teaching Philosophy
@@ -162,7 +136,7 @@ concepts followed by time to work on exercises.
 ### Attendance Policy
 
 Attendance will not be taken or factor into the grades for this class. However,
-experience suggests that students who regularly miss class perform poorly.
+students who regularly miss class will likely perform poorly.
 
 
 ### Quiz/Exam Policy
@@ -188,11 +162,11 @@ quickly, which is crucial to learning.
 
 ### Assignment policy
 
-Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
+Assignments are due Monday night by 11:59 pm Central Time. Assignments should be
 submitted via email to [{{ page.email }}](mailto:{{ page.email }}) with the
 subject line:
  
-```Data Carpentry Assignment X```, where `X` is the number of the assignment.
+```ISC: Assignment X```, where `X` is the number of the assignment.
 
 
 ### Course Technology
@@ -201,69 +175,12 @@ Students are required to provide their laptops and to install free and open
 source software on those laptops. Support will be provided by the instructor in
 the installation of required software.
 
-
-## UF Policies
-
-
-### University Policy on Accommodating Students with Disabilities
-
-Students requesting accommodation for disabilities must first register with the
-Dean of Students Office (http://www.dso.ufl.edu/drc/). The Dean of Students
-Office will provide documentation to the student who must then provide this
-documentation to the instructor when requesting accommodation. You must submit
-this documentation prior to submitting assignments or taking the quizzes or
-exams. Accommodations are not retroactive, therefore, students should contact
-the office as soon as possible in the term for which they are seeking
-accommodations.
-
-
-### University Policy on Academic Misconduct
-
-Academic honesty and integrity are fundamental values of the University
-community. Students should be sure that they understand the UF Student Honor
-Code at http://www.dso.ufl.edu/students.php.
-
-
-### Netiquette and Communication Courtesy
-
-All members of the class are expected to follow rules of common
-courtesy in all email messages, threaded discussions and chats.
-
-
-## Getting Help
-
-For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
-
-* Learning-support@ufl.edu 
-* (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml 
-
-Any requests for make-ups due to technical issues MUST be accompanied by the
-ticket number received from LSS when the problem was reported to them. The
-ticket number will document the time and date of the problem. You MUST e-mail
-your instructor within 24 hours of the technical difficulty if you wish to
-request a make-up.
-
-Other resources are available at http://www.distance.ufl.edu/getting-help for:
-
-* Counseling and Wellness resources
-* Disability resources
-* Resources for handling student concerns and complaints
-* Library Help Desk support
-
-Should you have any complaints with your experience in this course please visit
-http://www.distance.ufl.edu/student-complaints to submit a complaint.
-
-Most importantly, if you are struggling for any reason please come talk to me
-and I will do my best to help.
-
-
 ## Grading Policies
 
-Grading for this course will revolve around a combination of assignments (75%)
-and an independent project (25%).
+Grading for this course will revolve around a combination of assignments (60%)
+and an independent project (40%).
 
-There will be 11 equally weighted assignments. One problem from each assignment
+There will be 12 equally weighted assignments. One problem from each assignment
 (selected at the instructors discretion after the assignments have been
 submitted) will receive a thorough code review and a detailed grade. Other
 problems will be graded as follows:
@@ -280,25 +197,18 @@ the two.
 
 ### Grading scale
 
-- **A 93-100**
-- **A- 90-92**
-- **B+ 87-89**
-- **B 83-86**
-- **B- 80-82**
-- **C+ 77-79**
-- **C 73-76**
-- **C- 70-72**
-- **D+ 67-69**
-- **D 60-66**
-- **E <60**
-
+- **A 90-100**
+- **B 80-89.99**
+- **C 70-79.99**
+- **D 60-69.99**
+- **F <60**
 
 ## Course Schedule
 
 The details course schedule is available on the course website at:
 [{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
 
-**Disclaimer:** This syllabus represents my current plans and objectives. As we
-go through the semester, those plans may need to change to enhance the class
-learning opportunity. Such changes, communicated clearly, are not unusual and
-should be expected.
+**Disclaimer:** This syllabus represents the general plans and objectives for
+the course. Throughout the semester, the syllabus may change to
+enhance the learning experience in response to student needs. Such
+changes will be communicated clearly and promptly to all students.
