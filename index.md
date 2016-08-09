@@ -8,7 +8,6 @@ programming for data manipulation, analysis, and visualization. It is designed
 to be used as a flipped university course and also to be useful for self-guided
 students.
 
-For Students
 : <a href="{{ site.baseurl}}/syllabus">
   <i class="fa fa-file-text-o fa-fw"></i> Syllabus</a>
 : <a href="{{ site.baseurl}}/schedule">
