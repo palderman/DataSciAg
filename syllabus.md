@@ -73,9 +73,11 @@ Yet despite this great potential, many scientists lack the skills needed to use
 computers to their full potential.  This course provides an introduction to
 some of the basic skills needed for effective scientific computing.  The course
 will provide an overview of:
+
 - Basic programming
 - Workflow design
 - Data management, manipulation, and analysis
+
 Although the course will be taught primarily using R, the concepts learned
 through the course should be easily transferable to other programming languages
 and database management systems.  No background in programming or database
