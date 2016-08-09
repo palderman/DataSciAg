@@ -9,16 +9,16 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Carpentry -for- Biologists
+title:            Introduction to Scientific Computing
 description:      'Teaching the tools to get computers to do cool science'
-url:              http://www.datacarpentry.org/semester-biology
-baseurl:          /semester-biology
-email:            datacarpentrysemester@weecology.org
+url:              http://palderman.github.io/IntroSciComp
+baseurl:          /IntroSciComp
+email:            phillip.alderman@okstate.edu
 
 author:
-  name:           'Ethan White'
-  url:            https://twitter.com/ethanwhite
+  name:           'Phillip Alderman'
+  url:            http://pss.okstate.edu/People/faculty-1/faculty-info/alderman-phillip/phillip-alderman
 
 github:
-  repo:           https://github.com/datacarpentry/semester-biology
+  repo:           https://github.com/palderman/IntroSciComp
   #               Be sure the 'Issues' feature is activated in 'Settings'
