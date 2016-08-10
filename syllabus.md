@@ -58,7 +58,7 @@ periodically for updates.
 
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
-You can expect to receive a response within two business days.  To ensure a prompt response, please preface your subject line with *ISC:*.
+You can expect to receive a response within two business days.  To ensure a prompt response, please preface your subject line with `ISC:`.
 
 
 ### Required Texts
@@ -108,29 +108,20 @@ Students completing this course will be able to:
 
 ### Teaching Philosophy
 
-This class is taught using a flipped, learner-centered, approach, because
-learning to program and work with data has very little to do with listening to
-someone talk about programming and a lot to do with students working on
-computers. Flipped classes work well for all kinds of content, but I think they
-work particularly well for computer oriented classes. If you're interested in
-knowing more take a look at this great
-[info-graphic](http://www.knewton.com/flipped-classroom-2/).
-
+Students learn more when they are actively engaged in the learning process.
+This is especially true when the learning objectives involve mastering skills
+that students must be able to do. Thus, this course will be taught using a
+[flipped clasroom](http://www.knewton.com/flipped-classroom-2/) approach.
+This means that students will spend most class time actually practicing the
+scientific computing skills they are meant to learn.
 
 ### Instructional Methods
 
-As a flipped classroom, students are provided with either reading or video
-material that they are expected to view/read prior to class. Many classes will
-typically start with 5-10 minutes of either reviewing parts of this material or
-answering student questions about it. The rest of the class period will be used
-to work on exercises. During this time the instructor will actively engage with
-students to help them understand material they find confusing, explain
-misunderstandings and help identify mistakes that are preventing students from
-from accomplishing the exercises, and discuss novel applications and alternative
-approaches to the data analysis challenges students are attempting to solve. For
-more challenging topics class may start with 20-30 minute demonstrations on the
-concepts followed by time to work on exercises.
-
+As a flipped classroom, students will be provided with either reading or video
+material that they are expected to view/read prior to class. The first few
+minutes of class will review this material and answer any questions from
+students.  After this, the instructor will lead students through interactive
+exercises related to the theme of the class period.
 
 ## Course Policies
 
