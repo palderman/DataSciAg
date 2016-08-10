@@ -154,10 +154,7 @@ quickly, which is crucial to learning.
 ### Assignment policy
 
 Assignments are due Monday night by 11:59 pm Central Time. Assignments should be
-submitted via email to [{{ page.email }}](mailto:{{ page.email }}) with the
-subject line:
- 
-```ISC: Assignment X```, where `X` is the number of the assignment.
+submitted via the appropriate D2L Dropbox.
 
 
 ### Course Technology
@@ -169,7 +166,7 @@ the installation of required software.
 ## Grading Policies
 
 Grading for this course will revolve around a combination of assignments (60%)
-and an independent project (40%).
+and an semester project (40%).
 
 There will be 12 equally weighted assignments. One problem from each assignment
 (selected at the instructors discretion after the assignments have been
@@ -183,9 +180,6 @@ problems will be graded as follows:
     50%
 * Answer demonstrates a lack of understanding of the core concept: 0%
 
-Independent projects may focus on databases, programming, or a combination or
-the two.
-
 ### Grading scale
 
 - **A 90-100**
@@ -193,6 +187,17 @@ the two.
 - **C 70-79.99**
 - **D 60-69.99**
 - **F <60**
+
+## Semester project
+
+Semester projects may be one of two types:
+
+* Individual project applying scientific computing tools to conduct data
+analysis within the scope of the student's research domain
+* Group project (3-5 contributors) applying scientific computing tools to
+conduct publishable research and culminating in a manuscript which can be
+submitted to a journal
+
 
 ## Course Schedule
 
