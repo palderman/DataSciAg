@@ -36,3 +36,6 @@ title: Assignments
 
 * [Introduction to Databases](sql-intro)
 * [Database Structure and Joins](sql-joins)
+
+### Unix Shell
+* [The Unix Shell](shell-intro)
