@@ -86,24 +86,22 @@ management is required.
 ### Purpose of Course
 
 In this course you will learn all of the fundamental aspects of computer
-programming that are necessary for conducting biological research. By the end of
-the course you will be able to use these tools to import data into R,
+programming that are necessary for conducting scientific research. By the end of
+the course you will be able to use these tools to  import data into R,
 perform analysis on that data, and export the results as graphs, text files, or
 whatever else you might need. By learning how to get the computer to do your
 work for you, you will be able to do more science faster.
-
 
 ### Course Goals and Objectives
 
 Students completing this course will be able to:
 
-* Create well structured databases
-* Extract information from databases
+* Use basic shell commands to navigate a file system and manipulate files
+* Systematically track changes in project files
+* Manipulate data and conduct data analysis in R
 * Write simple computer programs in R
-* Automate data analysis
+* Create a workflow for automating data processing and analysis
 * Apply these tools to address research questions
-* Apply general data management and analysis concepts to other programming
-  languages and database management systems
 
 
 ### Teaching Philosophy
