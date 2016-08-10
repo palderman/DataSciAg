@@ -58,7 +58,7 @@ periodically for updates.
 
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
-You can expect to receive a response within two business days.  To ensure a prompt response, please preface your subject line with `ISC:`.
+You can expect to receive a response within two business days.  To ensure a prompt response, please use the format `ISC: X` for your subject line, where `X` is the subject of your email.
 
 
 ### Required Texts
