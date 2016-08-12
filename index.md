@@ -2,11 +2,7 @@
 layout: default
 ---
 
-This website hosts introductory material for teaching students how to interact
-with data including: data structure, database management systems, and
-programming for data manipulation, analysis, and visualization. It is designed
-to be used as a flipped university course and also to be useful for self-guided
-students.
+This website hosts introductory material for teaching students how to interact with data including: data structure, database management systems, and programming for data manipulation, analysis, and visualization. It is designed to be used as a flipped university course and also to be useful for self-guided students.
 
 : <a href="{{ site.baseurl}}/syllabus">
   <i class="fa fa-file-text-o fa-fw"></i> Syllabus</a>
