@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['The Unix Shell']
+assignments: ['Introduction to Databases', 'Database Structure and Joins',
+'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
+'Programming Fundamentals 1', 'Programming Fundamentals 2','Version Control Basics', 'Integrating R and SQL', 'Putting It All Together']
 ---
 
 {% include assignments.html %}
