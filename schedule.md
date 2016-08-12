@@ -3,7 +3,10 @@ layout: page
 title: Assignment Schedule
 assignments: ['Introduction to Databases', 'Database Structure and Joins',
 'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
-'Programming Fundamentals 1', 'Programming Fundamentals 2','Version Control Basics', 'Integrating R and SQL', 'Putting It All Together']
+'Programming Fundamentals 1', 'Programming Fundamentals 2',
+'Version Control Basics', 'Integrating R and SQL', 'Putting It All Together',
+'The Unix Shell']
+<!--'Creating and Automating Worflows','Producing Documents with R',-->
 ---
 
 {% include assignments.html %}
