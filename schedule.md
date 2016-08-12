@@ -4,8 +4,8 @@ title: Assignment Schedule
 assignments: ['Introduction to Databases', 'Database Structure and Joins',
 'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
 'Programming Fundamentals 1', 'Programming Fundamentals 2',
-'Version Control Basics', 'Integrating R and SQL', 'Putting It All Together',
-'The Unix Shell']
+'Version Control Basics', 'Integrating R and SQL', 'Producing Documents with R',
+'The Unix Shell','Automating Workflows']
 ---
 
 {% include assignments.html %}
@@ -19,5 +19,6 @@ outside of an organized course.
 - Update the `assignments:` list with `title:` from `assignments/` files. 
 - Add 'Template' to `assignments:` to view the course template from `docs/`. 
 - The remaining content should be left AS IS.
-'Creating and Automating Worflows','Producing Documents with R',
+'Putting It All Together',
+
 -->
