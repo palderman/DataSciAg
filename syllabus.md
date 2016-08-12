@@ -165,8 +165,8 @@ the installation of required software.
 
 ## Grading Policies
 
-Grading for this course will revolve around a combination of assignments (60%)
-and a semester project (40%).
+Grading for this course will revolve around a combination of assignments (75%)
+and a semester project (25%).
 
 There will be 12 equally weighted assignments. One problem from each assignment
 (selected at the instructors discretion after the assignments have been
