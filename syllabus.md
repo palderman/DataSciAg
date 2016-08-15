@@ -208,3 +208,7 @@ The details course schedule is available on the course website at:
 the course. Throughout the semester, the syllabus may change to
 enhance the learning experience in response to student needs. Such
 changes will be communicated clearly and promptly to all students.
+
+## Oklahoma State University Policies
+
+Please review the [https://academicaffairs.okstate.edu/sites/default/files/Fall%202016%20Syllabus%20Attachment.pdf](Fall 2016 Syllabus Attachement) for an overview of university-wide policies and academic resources.
