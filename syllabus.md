@@ -180,6 +180,13 @@ problems will be graded as follows:
     50%
 * Answer demonstrates a lack of understanding of the core concept: 0%
 
+In the event you believe the grading of an assignment to be unfair or incorrect,
+you may submit an appeal in writing stating why you believe the answer you
+provided was correct.  Your appeal should include a clear, well-reasoned
+argument including references to materials that support your claim.  Appeals
+must be submitted within 48 hours of the time that the assignment is returned
+to you.
+
 ### Grading scale
 
 - **A 90-100**
