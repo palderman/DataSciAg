@@ -211,4 +211,4 @@ changes will be communicated clearly and promptly to all students.
 
 ## Oklahoma State University Policies
 
-Please review the [https://academicaffairs.okstate.edu/sites/default/files/Fall%202016%20Syllabus%20Attachment.pdf](Fall 2016 Syllabus Attachement) for an overview of university-wide policies and academic resources.
+Please review the [Fall 2016 Syllabus Attachement](https://academicaffairs.okstate.edu/sites/default/files/Fall%202016%20Syllabus%20Attachment.pdf) for an overview of university-wide policies and academic resources.
