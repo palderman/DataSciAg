@@ -190,13 +190,14 @@ problems will be graded as follows:
 
 ## Semester project
 
-Semester projects may be one of two types:
+Semester projects may be one of three types:
 
 * Individual project applying scientific computing tools to conduct data
 analysis within the scope of the student's research domain
 * Group project (3-5 contributors) applying scientific computing tools to
 conduct publishable research and culminating in a manuscript which can be
 submitted to a journal
+* Rewriting 4 of the course assignments using examples and data from agriculture
 
 
 ## Course Schedule
