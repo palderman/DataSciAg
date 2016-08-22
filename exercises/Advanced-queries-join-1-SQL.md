@@ -17,4 +17,6 @@ of every individual captured on the `Control` plots. Choose only
 rodent species (i.e., species for which the `taxa` field in the
 species table is `Rodent`) and exclude all individuals that have not been
 identified to genus (i.e., species for which the `species_id` field in the
-species table is `UR`). Save this query as `data_from_controls`.
+species table is `UR`). For easier viewing, sort the results alphabetically by
+genus and species and then chronologically.
+Save this query as `data_from_controls`.
