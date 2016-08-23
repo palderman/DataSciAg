@@ -12,6 +12,6 @@ a plot type that has 5 plots, then the result should be 100 individuals.
 
 To do this you will need to combine multiple queries. It will be easiest for
 first figure out which queries you will need, then write the first query and
-make sure it is work, and then add the second query.
+make sure it is working, and then add the second query.
 
 Save this query as `per_plot_individuals_per_plot_type`.
