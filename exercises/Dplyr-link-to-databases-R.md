@@ -14,7 +14,7 @@ should now be able to link to the surveys table in the database using:
 
 ```
 portaldb <- src_sqlite("portal_mammals.sqlite")
-surveys <- tbl(portaldb, "surveys")
+surveys <- tbl(portaldb, "surveys") %>% tbl_df
 ```
 
 `surveys` will be a `tbl_df`, which means that we won't need to worry about it
