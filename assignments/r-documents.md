@@ -3,7 +3,8 @@ layout: page
 element: assignment
 title: Producing Documents with R
 language: R
-exercises: ['R Markdown Basics']
+exercises: ['R Markdown Basics','R Markdown Data Analysis','R Markdown Figures',
+'R Markdown Tables','R Markdown References']
 ---
 
 #### Learning Objectives
