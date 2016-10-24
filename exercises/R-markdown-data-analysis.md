@@ -7,7 +7,7 @@ language: R
 
 This is a follow-up to [R Markdown Basics]({{ site.baseurl }}/exercises/R-markdown-basics).
 
-You now have all the data read into and you are read to begin your analysis. You
+You now have all the data read into R and you are ready to begin your analysis. You
 consult with a colleague who has done this kind of work for Dr. Raun before and
 are delighted to discover that she uses R, too.  She shares a function with you
 that she wrote to automate parts of the analysis:
@@ -41,5 +41,5 @@ these to a separate object.  Set the code chunk options so that neither R code
 nor any output are displayed for this code chunk.
 
 3. Use in-line R code chunks to write a sentence for each variable that states
-the minimum and maximum mean values for NDVI decline (rounded to the 2^nd^
-decimal place) and for harvested yield (rounded to the nearest bushel).
+the minimum and maximum mean values for NDVI decline, rounded to the 2^nd^
+decimal place, and for harvested yield, rounded to the nearest bushel.
