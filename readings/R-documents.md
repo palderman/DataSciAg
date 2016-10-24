@@ -15,3 +15,4 @@ language: R
   * [Writing Plots and Data](http://swcarpentry.github.io/r-novice-gapminder/11-writing-data/)
   * [Producing Reports with knitr](http://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/)
   * [Bibliographies and Citations](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+  * [R Markdown](http://rmarkdown.rstudio.com/)
