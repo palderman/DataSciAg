@@ -10,9 +10,9 @@ conducted to investigate the interactions between foliar N application and
 frost.  You decide to put some of your new R skills to use and produce the
 report using R Markdown.
 
-To do so, open a new R Markdown file within R Studio.  Use "Efaw Foliar N and
-Frost Report" for the title and your name for the author.  The new file will
-contain an example template for an R Markdown document. Click on the
+To do so, open a new R Markdown file within R Studio.  Use "Efaw Foliar N Freeze
+Mitigation Report" for the title and your name for the author.  The new file
+will contain an example template for an R Markdown document. Click on the
 **Knit HTML** button to compile your R Markdown document.  Compare the
 resulting output with the R Markdown script.  Create a subdirectory named data
 and download the data you will use
@@ -32,15 +32,11 @@ the treatment column from a numeric column to a factor column.
 
 4. Add a line that summarizes your data frame using the summary() function.
 
-Click on the **Knit HTML** button and look at the output.  You notice that
+5. Click on the **Knit HTML** button and look at the output.  You notice that
 the library() function is generating messages in your document that you do not
-want included.
+want included. Use the quietly=TRUE option to library() to silence these messages.
 
-5. Use the quietly=TRUE option to library() to silence these messages.
-
-The displayed  R code and summary output are useful as you were checking that
+6. The displayed  R code and summary output are useful as you were checking that
 the data were read in properly, but you probably don't want them in your final
-report.
-
-6. Use the **echo=FALSE** and **include=FALSE** options to the code chunk to
+report.  Use the **echo=FALSE** and **include=FALSE** options to the code chunk to
 keep these from being displayed in your document.

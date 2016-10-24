@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Producing Documents with R
 language: R
-exercises: ['R Markdown Basisc']
+exercises: ['R Markdown Basics']
 ---
 
 #### Learning Objectives
