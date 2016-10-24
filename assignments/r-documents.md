@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Producing Documents with R
 language: R
-exercises: ['Creating Publication-Quality Figures','Saving Figures and Data']
+exercises: ['R Markdown Basisc']
 ---
 
 #### Learning Objectives
