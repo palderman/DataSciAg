@@ -1,0 +1,14 @@
+  Identifier            Number           Name               Town              County             Latitude    
+ Length:121         Min.   :  1.00   Length:121         Length:121         Length:121         Min.   :33.83  
+ Class :character   1st Qu.: 37.00   Class :character   Class :character   Class :character   1st Qu.:34.81  
+ Mode  :character   Median : 71.00   Mode  :character   Mode  :character   Mode  :character   Median :35.55  
+                    Mean   : 71.32                                                            Mean   :35.53  
+                    3rd Qu.:105.00                                                            3rd Qu.:36.36  
+                    Max.   :141.00                                                            Max.   :36.99  
+   Longitude         Elevation       Commissioned                 Decommissioned      
+ Min.   :-102.88   Min.   : 110.0   Min.   :1994-01-01 00:00:00   Min.   :2099-12-31  
+ 1st Qu.: -98.50   1st Qu.: 239.0   1st Qu.:1994-01-01 00:00:00   1st Qu.:2099-12-31  
+ Median : -97.20   Median : 311.0   Median :1994-01-01 00:00:00   Median :2099-12-31  
+ Mean   : -97.34   Mean   : 367.8   Mean   :1996-07-27 15:21:19   Mean   :2099-12-31  
+ 3rd Qu.: -95.91   3rd Qu.: 422.0   3rd Qu.:1994-01-01 00:00:00   3rd Qu.:2099-12-31  
+ Max.   : -94.62   Max.   :1322.0   Max.   :2016-05-17 00:00:00   Max.   :2099-12-31  

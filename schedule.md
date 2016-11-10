@@ -5,7 +5,7 @@ assignments: ['Introduction to Databases', 'Database Structure and Joins',
 'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
 'Programming Fundamentals 1', 'Programming Fundamentals 2',
 'Version Control Basics', 'Integrating R and SQL', 'Producing Documents with R',
-'The Unix Shell','Automating Workflows']
+'Spatial Data Analysis in R']
 ---
 
 {% include assignments.html %}
