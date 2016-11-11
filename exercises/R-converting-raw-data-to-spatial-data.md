@@ -5,7 +5,7 @@ title: Converting Raw Data to Spatial Data
 language: R
 ---
 
-You next task is to create a spatial data layer that contains the coordinates
+Your next task is to create a spatial data layer that contains the coordinates
 for Oklahoma Mesonet sites.  You talk to your friend who has worked with
 Mesonet data before and she tells you about a handy R package called `okmesonet`
 for accessing Mesonet data.  She suggests you use the `updatestn` function to

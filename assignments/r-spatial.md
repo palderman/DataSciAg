@@ -3,7 +3,8 @@ layout: page
 element: assignment
 title: Spatial Data Analysis in R
 language: R
-exercises: ['Importing Spatial Data','Converting Raw Data to Spatial Data']
+exercises: ['Importing Spatial Data','Converting Raw Data to Spatial Data',
+'Manipulating and Transforming Spatial Data','Producing a Custom Map']
 ---
 
 #### Learning Objectives

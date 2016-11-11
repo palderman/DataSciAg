@@ -1,0 +1,27 @@
+# Oklahoma county boundaries
+class       : Extent 
+xmin        : -103.0026 
+xmax        : -94.43122 
+ymin        : 33.61576 
+ymax        : 37.00233 
+
+# NOAA US climate divisions
+class       : Extent 
+xmin        : -124.7332 
+xmax        : -66.95 
+ymin        : 24.54394 
+ymax        : 49.38436 
+
+# Oklahoma Elevation
+class       : Extent 
+xmin        : -103.0028 
+xmax        : -94.41944 
+ymin        : 33.6025 
+ymax        : 37.0025 
+
+# Oklahoma Mesonet station locations
+class       : Extent 
+xmin        : -102.8782 
+xmax        : -94.6244 
+ymin        : 33.83013 
+ymax        : 36.98707 
