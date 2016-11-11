@@ -37,3 +37,13 @@ areas of the Oklahoma elevation data layer that are beyond the state boundary.
 Use the `mask` function to create a new data layer that contains only values
 that are within the state boundary.  Plot all data layers starting with your
 new elevation data layer.
+
+7. You're feeling pretty proud of your map so you show it off to your
+office-mate. He suggests that a hillshade plot for your elevation data might
+highlight the topography better.  After some searching, you find that you can
+create a hillshade plot using the `hillShade` function.  To do that, you'll
+need to use the `terrain` function to calculate the slope and aspect and assign
+them to objects that you can provide as arguments to `hillShade`.  Create a
+hillshade data layer using the slope and aspect calculated from the elevation
+data and plot the result. (*Hint: use 45 for the `angle` and 270 for the
+`direction` arguments to `hillShade`*)
