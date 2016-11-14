@@ -35,7 +35,7 @@ package appropriately.
 start a new section entitled **Discussion**.  You recall that Dr. Raun mentioned
 a paper he published on late-season foliar N application for wheat in 2002 so
 you decide to compare those results to your current results. Go to
-(Google Scholar)[https://scholar.google.com] and search for the paper using the
+[Google Scholar](https://scholar.google.com) and search for the paper using the
 query `author:Raun late-season foliar nitrogen wheat`.  You are confident you
 will cite this paper, so click the `Cite` link under the appropriate entry in
 the search results.  Then click the `BibTeX` link at the bottom of the pop-out
