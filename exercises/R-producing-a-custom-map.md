@@ -30,3 +30,12 @@ transparency of the colors for the climate divisions layer.  Use the `alpha`
 argument to the `rainbow` function to make the colors more transparent and
 replot the elevation and climate division layers. (*Hint: an `alpha` value of
 about 0.15 should be about right.*)
+
+6. Now you are ready to add the Oklahoma county boundaries layer.  Use `plot` to
+add this layer to the plot.  The county boundaries are really more background
+context for the map, so use the `border` argument to set the color for the
+boundary lines to "gray".
+
+7. You are now ready to add your Oklahoma Mesonet station locations to your map.
+Add the Oklahoma Mesonet station layer to your map.  Use the `pch` argument to
+set the point character to a filled triangle.
