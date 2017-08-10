@@ -3,13 +3,13 @@ layout: page
 title: Syllabus
 catalog: PLNT 5110
 credits: 3
-semester: Fall 2016
+semester: Fall 2017
 professor: Phillip D. Alderman
 office: 274 Agricultural Hall
 email: phillip.alderman@okstate.edu
 phone: 405-744-9604
-schedule: ['MWF, 10:30-11:20, 374 Agricultural Hall']
-office_hours: Wednesday 11:30 am - 12:30 pm, or by appointment
+schedule: ['TR, 9-10:15, 401 Agricultural Hall']
+office_hours: Tuesday 10:30 am - 12 pm, Wednesday 9:30 - 11 am, , or by appointment
 ---
 
 ## {{ site.title }} 
@@ -58,7 +58,7 @@ periodically for updates.
 
 Email: [{{ page.email }}](mailto:{{ page.email }})
 
-You can expect to receive a response within two business days.  To ensure a prompt response, please use the format `ISC: X` for your subject line, where `X` is the subject of your email.
+You can expect to receive a response within two business days.  To ensure a prompt response, please use the format `DSA: X` for your subject line, where `X` is the subject of your email.
 
 
 ### Required Texts
@@ -68,7 +68,7 @@ There is no required text book for this class.
 
 ### Course Description
 
-Computers are incredibly powerful tools for doing scientific research.
+Computers are incredibly powerful tools for managing data and doing scientific research.
 Yet despite this great potential, many scientists lack the skills needed to use
 computers to their full potential.  This course provides an introduction to
 some of the basic skills needed for effective scientific computing.  The course
@@ -79,24 +79,23 @@ will provide an overview of:
 - Workflow design
 
 Although the course will be taught primarily using R, the concepts learned
-through the course should be easily transferable to other programming languages
+through the course should be transferable to other programming languages
 and database management systems.  No background in programming or database
 management is required.
 
 ### Purpose of Course
 
-In this course you will learn all of the fundamental aspects of computer
-programming that are necessary for conducting scientific research. By the end of
+In this course you will learn some fundamental aspects of computer
+programming needed for conducting scientific research. By the end of
 the course you will be able to use these tools to  import data into R,
 perform analysis on those data, and export the results as graphs, text files, or
 whatever else you might need. By learning how to get the computer to do your
-work for you, you will be able to do more science faster.
+work for you, you will be able to do more faster.
 
 ### Course Goals and Objectives
 
 Students completing this course will be able to:
 
-* Use basic shell commands to navigate a file system and manipulate files
 * Systematically track changes in project files
 * Manipulate data and conduct data analysis in R
 * Write simple computer programs in R
@@ -132,8 +131,7 @@ students who regularly miss class will likely perform poorly.
 
 ### Quiz/Exam Policy
 
-There are no quizzes or exams in this course.
-
+There will be pratical quizzes at the conclusion of each lesson, wherein 
 
 ### Make-up policy
 
@@ -165,13 +163,10 @@ the installation of required software.
 
 ## Grading Policies
 
-Grading for this course will revolve around a combination of assignments (75%)
-and a semester project (25%).
+Grading for this course will revolve around a combination of assignments (60%)
+and practical quizzes (40%).
 
-There will be 12 equally weighted assignments. One problem from each assignment
-(selected at the instructors discretion after the assignments have been
-submitted) will receive a thorough code review and a detailed grade. Other
-problems will be graded as follows:
+There will be 12 equally weighted assignments. Problems will be graded as follows:
 
 * Produces the correct answer using the requested approach: 100%
 * Generally uses the right approach, but a minor mistake results in an incorrect
@@ -195,18 +190,6 @@ to you.
 - **D 60-69.99**
 - **F <60**
 
-## Semester project
-
-Semester projects may be one of three types:
-
-* Individual project applying scientific computing tools to conduct data
-analysis within the scope of the student's research domain
-* Group project (3-5 contributors) applying scientific computing tools to
-conduct publishable research and culminating in a manuscript which can be
-submitted to a journal
-* Rewriting 4 of the course assignments using examples and data from agriculture
-
-
 ## Course Schedule
 
 The details course schedule is available on the course website at:
@@ -219,4 +202,4 @@ changes will be communicated clearly and promptly to all students.
 
 ## Oklahoma State University Policies
 
-Please review the [Fall 2016 Syllabus Attachement](https://academicaffairs.okstate.edu/sites/default/files/Fall%202016%20Syllabus%20Attachment.pdf) for an overview of university-wide policies and academic resources.
+Please review the [Fall 2017 Syllabus Attachement](http://academicaffairs.okstate.edu/sites/default/files/Fall%202017%20Syllabus%20Attachment.pdf) for an overview of university-wide policies and academic resources.
