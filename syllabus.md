@@ -96,9 +96,9 @@ work for you, you will be able to do more faster.
 
 Students completing this course will be able to:
 
-* Systematically track changes in project files
 * Manipulate data and conduct data analysis in R
 * Write simple computer programs in R
+* Systematically track changes in project files
 * Create a workflow for automating data processing and analysis
 * Apply these tools to address research questions
 
@@ -128,10 +128,6 @@ exercises related to the theme of the class period.
 Attendance will not be taken or factor into the grades for this class. However,
 students who regularly miss class will likely perform poorly.
 
-
-### Quiz/Exam Policy
-
-There will be pratical quizzes at the conclusion of each lesson, wherein 
 
 ### Make-up policy
 
@@ -163,10 +159,10 @@ the installation of required software.
 
 ## Grading Policies
 
-Grading for this course will revolve around a combination of assignments (60%)
-and practical quizzes (40%).
+Grading for this course will revolve around a combination of assignments (72%),
+practical quizzes (24%), and a cumulative final exam (4%)
 
-There will be 12 equally weighted assignments. Problems will be graded as follows:
+There will be 12 equally-weighted assignments. Problems will be graded as follows:
 
 * Produces the correct answer using the requested approach: 100%
 * Generally uses the right approach, but a minor mistake results in an incorrect
@@ -176,11 +172,20 @@ There will be 12 equally weighted assignments. Problems will be graded as follow
 * Answer demonstrates a lack of understanding of the core concept: 0%
 
 In the event you believe the grading of an assignment to be unfair or incorrect,
-you may submit an appeal in writing stating why you believe the answer you
+you may submit an appeal by email stating why you believe the answer you
 provided was correct.  Your appeal should include a clear, well-reasoned
 argument including references to materials that support your claim.  Appeals
 must be submitted within 48 hours of the time that the assignment is returned
 to you.
+
+Pratical quizzes will be given at the conclusion of each of the 12 lessons. 
+Students will be required to perform a set of pertinent tasks within a limited
+ amount of time without the aid of notes. Points assigned to a task will be in
+ accordance with the complexity of the task and will be graded as pass/fail.
+
+The cumulative final exam will follow the same format as the practical quizzes
+except that the set of required tasks may include content from any part of the
+ course.
 
 ### Grading scale
 
