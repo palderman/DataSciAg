@@ -9,10 +9,10 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Introduction to Scientific Computing
-description:      'How to teach your computer to do research'
-url:              http://palderman.github.io/IntroSciComp
-baseurl:          /IntroSciComp
+title:            Data Science for Agriculture
+description:      'How to manage and manipulate data for agricultural research'
+url:              http://palderman.github.io/DataSciAg
+baseurl:          /DataSciAg
 email:            phillip.alderman@okstate.edu
 
 author:
@@ -20,5 +20,5 @@ author:
   url:            http://pss.okstate.edu/People/faculty-1/faculty-info/alderman-phillip/phillip-alderman
 
 github:
-  repo:           https://github.com/palderman/IntroSciComp
+  repo:           https://github.com/palderman/DataSciAg
   #               Be sure the 'Issues' feature is activated in 'Settings'
