@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Keeping Data Tidy
 language: R
-exercises: ['Data entry validation in Excel', 'Real Portal Data', 'Tree Biomass']
+exercises: ['Data entry validation in spreadsheets', 'Messy Portal Data', 'Tree Biomass']
 ---
 
 #### Learning Objectives
