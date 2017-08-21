@@ -5,3 +5,5 @@ Gemfile.lock
 #*
 *.Rhistory
 grading_scripts/
+.Rproj.user
+DataSciAg.Rproj

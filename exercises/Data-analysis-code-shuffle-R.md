@@ -6,13 +6,13 @@ language: R
 ---
 
 We are interested in understanding the monthly variation in precipitation in
-Gainesville, FL. We'll use some data from the
-[NOAA National Climatic Data Center](http://www.ncdc.noaa.gov/).
+Stillwater, OK. We'll use some data downloaded from the 
+[Oklahoma Mesonet](https://www.mesonet.org).
 
 Start by creating a `data` directory in the same directory as your homework
-scripts and then downloading [the data]({{ site.baseurl }}/data/gainesville_precip.csv) and saving it to this `data` directory.
+scripts and then downloading [the data]({{ site.baseurl }}/data/stillwater_precip.csv) and saving it to this `data` directory.
 
-Each row of this data file is a year (from 1961-2013) and each column is a month
+Each row of this data file is a year (from 1994 to 2016) and each column is a month
 (January - December).
 
 Rearrange the following program so that it:
@@ -27,7 +27,7 @@ character in R is `#`.
 ```
 plot(monthly_mean_ppt, type = "l", xlab = "Month", ylab = "Mean Precipitation")
 monthly_mean_ppt <- colMeans(ppt_data)
-ppt_data <- read.csv("./data/gainesville_precip.csv", header = FALSE)
+ppt_data <- read.csv("./data/stillwater_precip.csv", header = FALSE)
 ```
 
 It's OK if you don't know exactly how the details of the program work at this
