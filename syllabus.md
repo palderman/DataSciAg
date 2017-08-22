@@ -200,7 +200,7 @@ except that the set of required tasks may include content from any part of the
 
 ## Course Schedule
 
-The details course schedule is available on the course website at:
+A detailed course schedule is available on the course website at:
 [{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
 
 **Disclaimer:** This syllabus represents the general plans and objectives for
