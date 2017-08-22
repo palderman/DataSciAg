@@ -145,12 +145,6 @@ also allows rapid feedback to be provided to students by returning assignments
 quickly, which is crucial to learning.
 
 
-### Assignment policy
-
-Assignments are due Monday night by 11:59 pm Central Time. Assignments should be
-submitted via the appropriate D2L Dropbox.
-
-
 ### Course Technology
 
 Students are required to provide their laptops and to install free and open
@@ -161,6 +155,16 @@ the installation of required software.
 
 Grading for this course will revolve around a combination of assignments (72%),
 practical quizzes (24%), and a cumulative final exam (4%)
+
+### Grading scale
+
+- **A 90-100**
+- **B 80-89.99**
+- **C 70-79.99**
+- **D 60-69.99**
+- **F <60**
+
+### Assignments
 
 There will be 12 equally-weighted assignments. Problems will be graded as follows:
 
@@ -178,22 +182,21 @@ argument including references to materials that support your claim.  Appeals
 must be submitted within 48 hours of the time that the assignment is returned
 to you.
 
+Assignments are due by 11:59 pm Central Time on the due date. Assignments should
+be submitted via the appropriate D2L Dropbox. Generally we will spend two-three
+class periods on each lesson and the associated assignment will be due the day
+after the last class period for that lesson.
+
+### Practical Quizzes
 Pratical quizzes will be given at the conclusion of each of the 12 lessons. 
 Students will be required to perform a set of pertinent tasks within a limited
  amount of time without the aid of notes. Points assigned to a task will be in
- accordance with the complexity of the task and will be graded as pass/fail.
+ accordance with the complexity of the task.
 
+### Cumulative Final Exam
 The cumulative final exam will follow the same format as the practical quizzes
 except that the set of required tasks may include content from any part of the
  course.
-
-### Grading scale
-
-- **A 90-100**
-- **B 80-89.99**
-- **C 70-79.99**
-- **D 60-69.99**
-- **F <60**
 
 ## Course Schedule
 
