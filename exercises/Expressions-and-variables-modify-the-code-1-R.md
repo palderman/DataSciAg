@@ -8,6 +8,7 @@ language: R
 The following code calculates the total tonnes per hectare of 
 rice in Australia for the 1990 and 2011 years, converts them
 to bushels per acre, and prints them out.
+
 ```
 aus_rice_1990 <- 8.3
 aus_rice_2011 <- 8.9
