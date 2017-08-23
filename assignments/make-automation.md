@@ -1,8 +1,8 @@
 ---
 layout: page
 element: assignment
-title: Automating Workflows
-language: Make
+title: Workflows and Automation
+language: GNU Make
 exercises: ['Creating a Makefile']
 ---
 

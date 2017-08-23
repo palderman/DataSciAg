@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: The Unix Shell
 language: Unix Shell
-exercises: ['Getting Started','Pipes and Filters','Finding Things','Executable Programs','Bird Counts 1','Bird Counts 2']
+exercises: ['Getting Started']
 ---
 
 #### Learning Objectives

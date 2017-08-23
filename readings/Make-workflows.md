@@ -1,8 +1,8 @@
 ---
 layout: page
 element: reading
-title: Automating Workflows
-language: Make
+title: Workflows and Automation
+language: GNU Make
 ---
 
 * Topics
@@ -11,7 +11,10 @@ language: Make
 
 * Readings
 
-  * [Publication-Quality Graphics](http://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/)
-  * [Writing Plots and Data](http://swcarpentry.github.io/r-novice-gapminder/11-writing-data/)
-  * [Producing Reports with knitr](http://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/)
-  * [Bibliographies and Citations](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+  * [Introducing the Shell](http://swcarpentry.github.io/shell-novice/01-intro/)
+  * [Navigating Files and Directories](http://swcarpentry.github.io/shell-novice/02-filedir/)
+  * [Working with Files and Directories](http://swcarpentry.github.io/shell-novice/03-create/)
+  * [Pipes and Filters](http://swcarpentry.github.io/shell-novice/04-pipefilter/)
+  * [Loops](http://swcarpentry.github.io/shell-novice/05-loop/)
+  * [Shell Scripts](http://swcarpentry.github.io/shell-novice/06-script/)
+  * [Finding Things](http://swcarpentry.github.io/shell-novice/07-find/)

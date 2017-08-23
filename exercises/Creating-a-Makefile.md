@@ -1,6 +1,6 @@
 ---
 layout: exercise
-topic: Automation and Make
+topic: Workflows and Automation
 title: Creating a Makefile
-language: Make
+language: GNU Make
 ---

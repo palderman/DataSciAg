@@ -4,16 +4,10 @@ element: reading
 title: The Unix Shell
 language: Unix Shell
 ---
-   
+
 * Topics
 
-  * Introducing the Shell
-  * Navigating Files and Directories
-  * Working with Files and Directories
-  * Pipes and Filters
-  * Loops
-  * Shell Scripts
-  * Finding Things
+  * R Markdown
 
 * Readings
 
