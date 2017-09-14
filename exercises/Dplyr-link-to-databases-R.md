@@ -6,7 +6,7 @@ language: R
 ---
 
 Let's access an SQL database directly from R. Install the `RSQLite` package (and 
-the `dplyr` package if you haven't already).
+the `dbplyr` package if you haven't already).
 
 Either use an existing copy of the `portal_mammals.sqlite` database or [download
 a new copy](https://ndownloader.figshare.com/files/2292171). You
