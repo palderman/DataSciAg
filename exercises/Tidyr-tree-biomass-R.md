@@ -30,7 +30,6 @@ returns a vector of tree masses.
 4. Use the two functions you've written to estimate the total biomass (*i.e., 
 the sum of the masses*) of trees in this dataset and print the result to the
 screen.
-5. `separate()` the `SpCode` into `GenusCode` and `SpEpCode` and estimate the 
-total biomass per genus in a table. *Technically the four letter code doesn't 
+5. `separate()` the `SpCode` into `GenusCode` and `SpEpCode`. *Technically the four letter code doesn't 
 uniquely identify all of the genera in the dataset, but we'll assume it does for 
 the purpose of this exercise.* 
