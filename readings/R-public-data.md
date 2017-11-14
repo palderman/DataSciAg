@@ -13,5 +13,6 @@ language: R
 * Readings
 
   * [FedData](http://ropensci.github.io/FedData/)
+  * [Introduction to soilDB](http://ncss-tech.github.io/AQP/soilDB/soilDB-Intro.html)
   * [rnoaa](https://ropensci.org/tutorials/rnoaa_tutorial.html)
   * [rnassqs](https://github.com/potterzot/rnassqs)

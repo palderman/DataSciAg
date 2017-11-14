@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Using Public Data in R
 language: R
-exercises: ['Using FedData']
+exercises: ['Using FedData','SSURGO data with soilDB']
 ---
 
 #### Learning Objectives
