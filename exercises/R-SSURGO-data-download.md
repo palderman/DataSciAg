@@ -12,7 +12,7 @@ Your advisor is pleased with the results so far and asks you to compile some soi
 2. Your new SpatialPointsDataFrame, although interesting, does not give you all the information you need.  Your advisor wants you to find drainage class and surface sand percentage for each station.  Through reading the package documentation, you discover that in order get this information you will need to use an SQL query with the `SDA_query()` function. You find an example query that does part of what you want:
 ```
 mukeys <- c(381911,381889)
-qry <- paste0("SELECT mukey, cokey, comppct_r AS component_percentage, drainagecl
+qry <- paste0("SELECT mukey, cokey, comppct_r, drainagecl
                 FROM component
                 WHERE mukey IN (",
                 paste(mukeys,collapse=","),
