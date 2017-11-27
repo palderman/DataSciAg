@@ -1,0 +1,36 @@
+class       : SpatialPointsDataFrame 
+features    : 15 
+extent      : -98.7087, -98.4371, 35.2294, 35.4551  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=longlat +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0 
+variables   : 16
+names       : STID, STNM,           NAME,    CITY, RANG, CDIR,    CNTY, ELEV, CDIV, CLAS, SUBC,       DATC,       DATD, micronet_ned_NED_1,  mukey, ... 
+min values  : F101,  701, FCARS Site 101,  Albert, 10.7,    E,   Caddo,  430,    4,    5,    0, 2005-05-25, 2099-12-31,           430.3392, 381872, ... 
+max values  : F115,  715, FCARS Site 115, Lookeba,  8.7,  WSW, Washita,  524,    7,    5,    0, 2005-07-13, 2099-12-31,           524.7853, 385046, ... 
+
+---
+
+   STID STNM           NAME    CITY RANG CDIR    CNTY ELEV CDIV CLAS SUBC       DATC       DATD micronet_ned_NED_1
+15 F115  701 FCARS Site 115 Alfalfa  1.1    N   Caddo  449    7    5    0 2005-05-25 2099-12-31           448.5861
+8  F108  702 FCARS Site 108   Eakly  6.4  NNW   Caddo  492    7    5    0 2005-05-25 2099-12-31           493.4644
+5  F105  703 FCARS Site 105  Colony 12.0   NE   Caddo  493    7    5    0 2005-05-25 2099-12-31           493.5020
+2  F102  704 FCARS Site 102   Hydro 11.8  SSE   Caddo  524    7    5    0 2005-05-26 2099-12-31           524.7853
+13 F113  705 FCARS Site 113  Colony  7.6   SE Washita  465    4    5    0 2005-05-26 2099-12-31           462.7182
+...
+6  F106  711 FCARS Site 106   Eakly 10.7  NNE   Caddo  472    7    5    0 2005-07-01 2099-12-31           472.4136
+9  F109  712 FCARS Site 109   Eakly  1.2   NW   Caddo  466    7    5    0 2005-07-09 2099-12-31           464.8470
+10 F110  713 FCARS Site 110   Eakly  4.5   NE   Caddo  430    7    5    0 2005-07-09 2099-12-31           430.3392
+12 F112  714 FCARS Site 112   Eakly  6.2    E   Caddo  470    7    5    0 2005-07-13 2099-12-31           471.1977
+3  F103  715 FCARS Site 103    Corn  8.7   NE Washita  484    4    5    0 2005-07-13 2099-12-31           482.9453
+
+    mukey                                                               muname
+15 381911                          Pond Creek silt loam, 1 to 3 percent slopes
+8  381889                                    Grant loam, 3 to 5 percent slopes
+5  381888                                    Grant loam, 1 to 3 percent slopes
+2  381897                       Ironmound-Dill complex, 3 to 12 percent slopes
+13 385046                               Carey silt loam, 3 to 5 percent slopes
+...
+6  381897                       Ironmound-Dill complex, 3 to 12 percent slopes
+9  381916                       Ironmound-Nash complex, 5 to 12 percent slopes
+10 381915 Pulaski fine sandy loam, 0 to 1 percent slopes, occasionally flooded
+12 381904                         Noble fine sandy loam, 1 to 3 percent slopes
+3  385046                               Carey silt loam, 3 to 5 percent slopes

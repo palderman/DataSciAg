@@ -22,7 +22,7 @@ Your advisor is pleased with the results so far and asks you to compile some soi
 
     Modify the code so that the query returns information for only the mapping unit keys (`mukey`) for each of the Micronet stations.
 
-3. You notice that the above code returns multiple values for each mukey. That is, there are multiple soil types (`component`s) for each mapping unit.  Use `filter()` to keep only the soil components (`cokey`s) within each `mukey` that have the largest coverage within the mapping unit (i.e. where comppct_r is greatest). Merge this data frame with your Micronet SpatialPointsDataFrame.
+3. You notice that the above code returns multiple values for each mukey. That is, there are multiple soil types (`component`s) for each mapping unit.  Use `filter()` to keep only the soil components (`cokey`s) within each `mukey` that have the largest coverage within the mapping unit (i.e. where `comppct_r` is greatest). Merge this data frame with your Micronet SpatialPointsDataFrame.
 
 4. These results are good, but they do not yet contain the surface sand percentage.  After some reading you determine that the sand percentage is contained in the variable `sandtotal_r` in the `chorizon`. Copy and modify the code for your previous query so that you select the `cokey`, `hzdept_r` and `sandtotal_r` from the `chorizon` table where the cokey is in the filtered list of cokeys from the prevous problem.
 

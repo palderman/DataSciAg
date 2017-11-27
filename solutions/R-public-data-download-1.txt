@@ -1,0 +1,7 @@
+class       : RasterLayer 
+dimensions  : 814, 979, 796906  (nrow, ncol, ncell)
+resolution  : 0.0002777778, 0.0002777778  (x, y)
+extent      : -98.70889, -98.43694, 35.22917, 35.45528  (xmin, xmax, ymin, ymax)
+coord. ref. : +proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs 
+data source : /home/palderman/courses/DataSciAg/EXTRACTIONS/micronet_ned/NED/micronet_ned_NED_1.tif 
+names       : micronet_ned_NED_1 
