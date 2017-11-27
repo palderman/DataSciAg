@@ -10,18 +10,17 @@ Your advisor is pleased with the results so far and asks you to compile some soi
 1. Install the `soilDB` package. Use the Fort Cobb Micronet layer with the `SDA_query_features()` function from the `soilDB` package to download soil mapping unit information for each station. Merge the resulting data frame with your existing SpatialPointsDataFrame.
 
 2. Your new SpatialPointsDataFrame, although interesting, does not give you all the information you need.  Your advisor wants you to find drainage class and surface sand percentage for each station.  Through reading the package documentation, you discover that in order get this information you will need to use an SQL query with the `SDA_query()` function. You find an example query that does part of what you want:
+    ```
+    mukeys <- c(381911,381889);
+    qry <- paste0("SELECT mukey, cokey, comppct_r, drainagecl  
+            FROM component  
+            WHERE mukey IN (",  
+            paste(mukeys,collapse=","),  
+            ")");
+    soil.data <- SDA_query(qry)
+    ```
 
-```
-mukeys <- c(381911,381889)
-qry <- paste0("SELECT mukey, cokey, comppct_r, drainagecl
-                FROM component
-                WHERE mukey IN (",
-                paste(mukeys,collapse=","),
-                ")")
-soil.data <- SDA_query(qry)
-```
-
-Modify the code so that the query returns information for only the mapping unit keys (`mukey`) for each of the Micronet stations.
+    Modify the code so that the query returns information for only the mapping unit keys (`mukey`) for each of the Micronet stations.
 
 3. You notice that the above code returns multiple values for each mukey. That is, there are multiple soil types (`component`s) for each mapping unit.  Use `filter()` to keep only the soil components (`cokey`s) within each `mukey` that have the largest coverage within the mapping unit (i.e. where comppct_r is greatest). Merge this data frame with your Micronet SpatialPointsDataFrame.
 
