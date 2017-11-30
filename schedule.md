@@ -5,7 +5,8 @@ assignments: ['Introduction to R and RStudio', 'Keeping Data Tidy',
 'Working with Data', 'Data Visualization',
 'Programming Fundamentals 1', 'Programming Fundamentals 2',
 'Version Control Basics', 'Producing Documents with R',
-'Spatial Data Analysis in R','Using Public Data in R']
+'Spatial Data Analysis in R','Using Public Data in R',
+'Statistical Analysis in R']
 ---
 
 {% include assignments.html %}
