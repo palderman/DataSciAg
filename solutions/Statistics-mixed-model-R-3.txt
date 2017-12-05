@@ -1,0 +1,13 @@
+Data: efaw
+Models:
+intercept.only: BUAC ~ 1 + (1 | REP)
+UAN.only: BUAC ~ UAN + (1 | REP)
+method.only: BUAC ~ method + (1 | REP)
+full: BUAC ~ method + UAN + (1 | REP)
+               Df    AIC    BIC  logLik deviance  Chisq Chi Df Pr(>Chisq)  
+intercept.only  3 84.805 86.929 -39.403   78.805                           
+UAN.only        4 81.919 84.751 -36.960   73.919 4.8860      1    0.02708 *
+method.only     6 84.897 89.145 -36.448   72.897 1.0226      2    0.59973  
+full            7 85.599 90.556 -35.800   71.599 1.2972      1    0.25472  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
