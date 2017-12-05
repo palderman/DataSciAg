@@ -1,8 +1,8 @@
 Linear mixed model fit by REML ['lmerMod']
-Formula: BUAC ~ method + UAN + (1 | REP)
+Formula: BUAC ~ TRT + (1 | REP)
    Data: efaw
 
-REML criterion at convergence: 61.9
+REML criterion at convergence: 57.3
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
@@ -15,16 +15,16 @@ Random effects:
 Number of obs: 15, groups:  REP, 3
 
 Fixed effects:
-               Estimate Std. Error t value
-(Intercept)     36.9702     4.1614   8.884
-method+adj      -2.1054     2.6319  -0.800
-methodpost.app  -1.8729     2.6319  -0.712
-methodcheck      0.5768     4.5586   0.127
-UAN             -0.2501     0.2632  -0.950
+            Estimate Std. Error t value
+(Intercept)   37.547      1.861  20.175
+TRT2          -3.078      2.632  -1.170
+TRT3          -5.580      2.632  -2.120
+TRT4          -5.184      2.632  -1.970
+TRT5          -4.951      2.632  -1.881
 
 Correlation of Fixed Effects:
-            (Intr) mthd+d mthdp. mthdch
-method+adj  -0.632                     
-methdpst.pp -0.632  0.500              
-methodcheck -0.913  0.577  0.577       
-UAN         -0.949  0.500  0.500  0.866
+     (Intr) TRT2   TRT3   TRT4  
+TRT2 -0.707                     
+TRT3 -0.707  0.500              
+TRT4 -0.707  0.500  0.500       
+TRT5 -0.707  0.500  0.500  0.500
