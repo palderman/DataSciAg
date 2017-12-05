@@ -3,7 +3,7 @@ layout: page
 element: assignment
 title: Statistical Analysis in R
 language: R
-exercises: ['Adult vs Newborn Size 2','Shrub Volume 4']
+exercises: ['Adult vs Newborn Size 2','Shrub Volume 4','Mixed Model Analysis']
 ---
 
 #### Learning Objectives
