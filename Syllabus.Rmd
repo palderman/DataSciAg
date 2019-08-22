@@ -1,0 +1,123 @@
+---
+title: |
+    | \Large \textbf{Data Science for Agriculture and Natural Resources}
+    | \textbf{PLNT 5413 -- Fall 2019}
+fontsize: 12pt
+output: pdf_document
+link-citations: true
+urlcolor: blue
+margin: 1in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,message=FALSE)
+library(lubridate)
+library(dplyr)
+```
+
+## Description
+
+Data science principles and skills in the context of agricultural and natural resources research. Topics include data capture, quality control, data manipulation, visualization, reproducible analysis, and communication of results. Emphasis on workflows and analytical techniques tailored for agricultural and natural resource management research.
+
+## Wellness Statement
+
+You are important to me. You are a person of great worth and much potential. If feel that you need to talk or that there is something you are unable to handle about this class, please see me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time here at OSU.
+
+## Meeting Times & Location
+
+> Tuesday, Thursday 9-10:15; 401 Agricultural Hall
+
+## Instructor
+
+>  Phillip D. Alderman \
+>  Office: 274 Agricultural Hall \
+>  Email: [phillip.alderman@okstate.edu](mailto:phillip.alderman@okstate.edu) \
+>  Phone: (405)744-9604 \
+>  Office Hours:
+
+
+  | Tuesday      | Thursday     | Friday              |
+  | ------------ | ------------ | ------------------- |
+  | 10:30am-12pm | 10:30am-12pm | By appointment only |
+  |     2-3:30pm |     2-3:30pm |                     |
+
+## Textbook
+
+H. Wickham and G. Grolemund. _R for Data Science: Import,
+Tidy, Transform, Visualize, and Model Data_. O'Reilly Media, Inc.,
+2017. URL: http://r4ds.had.co.nz.
+
+\newpage
+
+## Schedule
+
+```{r schedule}
+schedule <- data.frame(
+    tuesdays = as.POSIXct('2019-08-20') + weeks(0:15),
+    thursdays = as.POSIXct('2019-08-22') + weeks(0:15)) %>%
+  as.matrix(.) %>%
+  t(.) %>%
+  c(.) %>%
+  {.<-.[!.%in%as.POSIXct(c('2019-09-02','2019-10-25',
+     '2019-11-27','2019-11-28','2019-11-29'))]
+   as.POSIXct(.)} %>%
+  format(.,format='%b %d') %>%
+  data.frame(Module=head(rep(1:ceiling(length(.)/4),each=4),length(.)),
+             dates=.) %>%
+  {.$Module[.$Module>6]=7
+  .} %>%
+  group_by(.,Module) %>%
+  summarize(.,Dates=paste(head(dates,1),'--',tail(dates,1)),Due=paste0(tail(dates,1),', 5pm')) %>%
+  {.$Module <- as.factor(.$Module)
+   levels(.$Module) <- c('*Managing Data*',
+                         '*Exploring*','*Wrangling*','*Programming*','*Modeling*',
+                         '*Communicating*',
+                         '*Semester Project*')
+   .$Due[nrow(.)] <- "Dec 12, 8am"
+    .}
+  
+knitr::kable(schedule,align=c('c','c','c'))
+  ```
+
+## Teaching Philosophy
+
+Students learn more when they are actively engaged in the learning process. This is especially true when the learning objectives involve mastering skills that students must be able to do. Thus, this course will be taught using a [flipped clasroom](https://en.wikipedia.org/wiki/Flipped_classroom) approach. This means that students will spend most class time actually practicing the data science skills they are meant to learn.
+
+As a flipped classroom, students will be provided with reading or video material that they are expected to view/read prior to class. The first few minutes of class will review this material and answer any questions from students. After this, students will work through interactive exercises related to the theme of the class period.
+
+## Communications
+
+Notifications and updates to course content will be communicated via Canvas or by email. For questions or concerns you have about the course, email is the best way to contact me. Under normal circumstances you can expect to receive a response from me within two business days. If for some reason you do not receive a response within this period, please email again.
+
+## Course Policies
+
+### Grading Policies
+
+Grading for this course will be split between six equally-weighted assignments (72%) and a semester project (28%).
+
+Due dates for the assignments and semester project are given in the [Schedule] section above.
+
+\newpage
+
+**Grading Scale**
+  
+- **A 90-100**
+- **B 80-90**
+- **C 70-80**
+- **D 60-70**
+- **F < 60**
+
+### Attendance Policy
+
+Attendance will not be taken or factor into the grades for this class. However, students who regularly miss class will likely perform poorly.
+
+### Late Submission Policy
+
+Assignments will be docked 1% for every hour past the time they are due (i.e. -1% up to 1 hour late, -2% for 1-2 hrs late, etc.) and will not be accepted more than 48 hours late. Exceptions to this general policy may be made in cases of genuine emergencies that can be documented by the student or in cases where this has been discussed and approved in advance.
+
+### Course Technology
+
+Students are required to provide their laptops and to install free and open source software on those laptops. Support will be provided by the instructor in the installation of required software.
+
+## Oklahoma State University Policies
+Please refer to the [_Fall 2019 Syllabus Attachment_](https://academicaffairs.okstate.edu/sites/default/files/Fall%202019%20Syllabus%20Attachment_0.pdf) for an overview of university-wide policies and academic resources.
