@@ -1,18 +1,20 @@
 ---
 title: |
     | \Large \textbf{Data Science for Agriculture and Natural Resources}
-    | \textbf{PLNT 5413 -- Fall 2019}
+    | \textbf{PLNT 5413 -- Fall 2021}
 fontsize: 12pt
 output: pdf_document
 link-citations: true
 urlcolor: blue
 margin: 1in
+header-includes:
+- \usepackage{pdfpages}
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,message=FALSE)
 library(lubridate)
-library(dplyr)
+library(tidyverse)
 ```
 
 ## Description
@@ -21,11 +23,13 @@ Data science principles and skills in the context of agricultural and natural re
 
 ## Wellness Statement
 
-You are important to me. You are a person of great worth and much potential. If feel that you need to talk or that there is something you are unable to handle about this class, please see me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time here at OSU.
+You are important to me. You are a person of great worth and much potential. If you feel that you need to talk or that there is something you are unable to handle about this class, please contact me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time at OSU.
 
-## Meeting Times & Location
+## Location and Meeting Times
 
-> Tuesday, Thursday 9-10:15; 401 Agricultural Hall
+Tuesday, Thursday 9:00-10:15am; 463 Agricultural Hall
+
+This course will be delivered remotely in synchronous format. That is, I will facilitate class sessions remotely, but students will be able to meet in the classroom at the regularly scheduled meeting times. At times, students may be permitted to participate remotely when unable meet in person for valid reasons (e.g. if sick or in quarantine). In such cases, the student should contact the instructor in advance to make appropriate arrangements.
 
 ## Instructor
 
@@ -33,13 +37,7 @@ You are important to me. You are a person of great worth and much potential. If 
 >  Office: 274 Agricultural Hall \
 >  Email: [phillip.alderman@okstate.edu](mailto:phillip.alderman@okstate.edu) \
 >  Phone: (405)744-9604 \
->  Office Hours:
-
-
-  | Tuesday      | Thursday     | Friday              |
-  | ------------ | ------------ | ------------------- |
-  | 10:30am-12pm | 10:30am-12pm | By appointment only |
-  |     2-3:30pm |     2-3:30pm |                     |
+>  Virtual Office Hours:  Tue 10:30am-12pm, Thu 3-4:30pm or by appointment
 
 ## Textbook
 
@@ -47,57 +45,64 @@ H. Wickham and G. Grolemund. _R for Data Science: Import,
 Tidy, Transform, Visualize, and Model Data_. O'Reilly Media, Inc.,
 2017. URL: http://r4ds.had.co.nz.
 
-\newpage
+J.B. Arnold. _R for Data Science: Exercise Solutions_. 2020. URL: https://jrnold.github.io/r4ds-exercise-solutions.
+
+<!-- \newpage -->
 
 ## Schedule
 
 ```{r schedule}
-schedule <- data.frame(
-    tuesdays = as.POSIXct('2019-08-20') + weeks(0:15),
-    thursdays = as.POSIXct('2019-08-22') + weeks(0:15)) %>%
-  as.matrix(.) %>%
-  t(.) %>%
-  c(.) %>%
-  {.<-.[!.%in%as.POSIXct(c('2019-09-02','2019-10-25',
-     '2019-11-27','2019-11-28','2019-11-29'))]
-   as.POSIXct(.)} %>%
-  format(.,format='%b %d') %>%
-  data.frame(Module=head(rep(1:ceiling(length(.)/4),each=4),length(.)),
-             dates=.) %>%
-  {.$Module[.$Module>6]=7
-  .} %>%
-  group_by(.,Module) %>%
-  summarize(.,Dates=paste(head(dates,1),'--',tail(dates,1)),Due=paste0(tail(dates,1),', 5pm')) %>%
-  {.$Module <- as.factor(.$Module)
-   levels(.$Module) <- c('*Managing Data*',
-                         '*Exploring*','*Wrangling*','*Programming*','*Modeling*',
-                         '*Communicating*',
-                         '*Semester Project*')
-   .$Due[nrow(.)] <- "Dec 12, 8am"
-    .}
-  
+modules <- tribble(         ~Module, ~mod_index,
+                   '*Introduction*',          1,
+                  '*Managing Data*',          2,
+                 '*Exploring Data*',          3,
+                 '*Wrangling Data*',          4,
+          '*Programming with Data*',          5,
+             '*Modeling with Data*',          6,
+        '*Communicating with Data*',          7,
+               '*Semester Project*',          8) %>% 
+  mutate(Module = factor(Module,levels=Module))
+
+schedule <- {as.POSIXct('2021-08-17') + weeks(0:15)} %>% 
+  tibble(tuesdays = .) %>% 
+  mutate(thursdays = tuesdays + days(2)) %>% 
+  pivot_longer(c(tuesdays, thursdays), values_to = "dates") %>% 
+  mutate(mod_index = c(rep(1,2),
+                       rep(2:7, each = 4),
+                       rep(8,6))) %>% 
+  full_join(modules) %>% 
+  group_by(Module) %>% 
+  summarize(begin = head(dates,1) %>% 
+              format(format='%b %d'),
+            end = tail(dates,1) %>% 
+              format(format='%b %d'),
+            Dates = str_c(begin,' -- ',end),
+            `Assignment Due` = tail(dates,1) %>% 
+              format(format='%b %d, 5pm')) %>% 
+  mutate(`Assignment Due` = ifelse(Module == "*Introduction*",
+                                   "",
+                                   `Assignment Due`)) %>% 
+  select(Module,Dates,`Assignment Due`) %>% 
+  rename(`Due Date` = `Assignment Due`)
+
 knitr::kable(schedule,align=c('c','c','c'))
   ```
 
 ## Teaching Philosophy
 
-Students learn more when they are actively engaged in the learning process. This is especially true when the learning objectives involve mastering skills that students must be able to do. Thus, this course will be taught using a [flipped clasroom](https://en.wikipedia.org/wiki/Flipped_classroom) approach. This means that students will spend most class time actually practicing the data science skills they are meant to learn.
-
-As a flipped classroom, students will be provided with reading or video material that they are expected to view/read prior to class. The first few minutes of class will review this material and answer any questions from students. After this, students will work through interactive exercises related to the theme of the class period.
+Students learn more when they are actively engaged in the learning process. This is especially true when the learning objectives involve mastering skills that students must be able to do. Thus, the emphasis of this course will be on students working through interactive exercises to learn the material. At the beginning of each module, I will post a brief overview video of the main topics that we will address in that module. Students will then be provided further reading or video material that they will be expected to view/read on their own to help them complete the assignments. Class time will focus on clarifying concepts and answering questions on any topics that remain unclear.
 
 ## Communications
 
-Notifications and updates to course content will be communicated via Canvas or by email. For questions or concerns you have about the course, email is the best way to contact me. Under normal circumstances you can expect to receive a response from me within two business days. If for some reason you do not receive a response within this period, please email again.
+Notifications and updates to course content will be communicated via Canvas or by email. For questions or concerns you have about the course, email is the best way to contact me. Under normal circumstances you can expect to receive a response from me within one business day (I typically do not respond to email after 5pm weekdays or on the weekend). If for some reason you do not receive a response within this period, please email again. 
 
 ## Course Policies
 
 ### Grading Policies
 
-Grading for this course will be split between six equally-weighted assignments (72%) and a semester project (28%).
+Grading for this course will be split between assignments (50%) and a semester project (50%).
 
 Due dates for the assignments and semester project are given in the [Schedule] section above.
-
-\newpage
 
 **Grading Scale**
   
@@ -107,17 +112,16 @@ Due dates for the assignments and semester project are given in the [Schedule] s
 - **D 60-70**
 - **F < 60**
 
-### Attendance Policy
-
-Attendance will not be taken or factor into the grades for this class. However, students who regularly miss class will likely perform poorly.
-
 ### Late Submission Policy
 
 Assignments will be docked 1% for every hour past the time they are due (i.e. -1% up to 1 hour late, -2% for 1-2 hrs late, etc.) and will not be accepted more than 48 hours late. Exceptions to this general policy may be made in cases of genuine emergencies that can be documented by the student or in cases where this has been discussed and approved in advance.
 
+### Peer Help on Assignments
+
+I encourage you to help each other and I have created a *Help Forum* discussion in Canvas to facilitate this. However, as you help each other, make sure to communicate the concept and then allow each person to write his/her own code. This is critical for each of you to develop the level of understanding needed to learn and retain the material. **Do not directly post or otherwise share your code for an assignment with anyone else. Code that is submitted with evidence of copying/pasting will be considered an academic integrity violation.** You are encouraged to post example code that illustrates a concept for others or direct someone to a particular section in the reading that addresses the point of confusion. 
+
 ### Course Technology
 
-Students are required to provide their laptops and to install free and open source software on those laptops. Support will be provided by the instructor in the installation of required software.
+Each students is required to gain access to their own computer and to install free and open source software on that computer. Support will be provided by the instructor in the installation of required software.
 
-## Oklahoma State University Policies
-Please refer to the [_Fall 2019 Syllabus Attachment_](https://academicaffairs.okstate.edu/sites/default/files/Fall%202019%20Syllabus%20Attachment_0.pdf) for an overview of university-wide policies and academic resources.
+\includepdf[pages=-]{Fall-2021-syllabus-attachment-7-21-21.pdf}
