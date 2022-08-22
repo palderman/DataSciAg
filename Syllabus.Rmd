@@ -1,7 +1,7 @@
 ---
 title: |
     | \Large \textbf{Data Science for Agriculture and Natural Resources}
-    | \textbf{PLNT 5413 -- Fall 2021}
+    | \textbf{PLNT 5413 -- Fall 2022}
 fontsize: 12pt
 output: pdf_document
 link-citations: true
@@ -23,13 +23,13 @@ Data science principles and skills in the context of agricultural and natural re
 
 ## Wellness Statement
 
-You are important to me. You are a person of great worth and much potential. If you feel that you need to talk or that there is something you are unable to handle about this class, please contact me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time at OSU.
+You are a person of great worth and much potential. If you feel that you need to talk or that there is something you are unable to handle about this class, please contact me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time at OSU.
 
 ## Location and Meeting Times
 
 Tuesday, Thursday 9:00-10:15am; 463 Agricultural Hall
 
-This course will be delivered remotely in synchronous format. That is, I will facilitate class sessions remotely, but students will be able to meet in the classroom at the regularly scheduled meeting times. At times, students may be permitted to participate remotely when unable meet in person for valid reasons (e.g. if sick or in quarantine). In such cases, the student should contact the instructor in advance to make appropriate arrangements.
+This course will be delivered in-person. At times, students may be permitted to participate remotely when unable meet in person for valid reasons (e.g. if sick or in quarantine). In such cases, the student should contact the instructor in advance (when possible) to make appropriate arrangements.
 
 ## Instructor
 
@@ -37,7 +37,7 @@ This course will be delivered remotely in synchronous format. That is, I will fa
 >  Office: 274 Agricultural Hall \
 >  Email: [phillip.alderman@okstate.edu](mailto:phillip.alderman@okstate.edu) \
 >  Phone: (405)744-9604 \
->  Virtual Office Hours:  Tue 10:30am-12pm, Thu 3-4:30pm or by appointment
+>  Office Hours:  Tue, Thu 10:30am-1:30pm or by appointment
 
 ## Textbook
 
@@ -53,23 +53,20 @@ J.B. Arnold. _R for Data Science: Exercise Solutions_. 2020. URL: https://jrnold
 
 ```{r schedule}
 modules <- tribble(         ~Module, ~mod_index,
-                   '*Introduction*',          1,
-                  '*Managing Data*',          2,
-                 '*Exploring Data*',          3,
-                 '*Wrangling Data*',          4,
-          '*Programming with Data*',          5,
-             '*Modeling with Data*',          6,
-        '*Communicating with Data*',          7,
-               '*Semester Project*',          8) %>% 
+  '*Introduction & Exploring Data*',          1,
+                 '*Wrangling Data*',          2,
+          '*Programming with Data*',          3,
+             '*Modeling with Data*',          4,
+        '*Communicating with Data*',          5,
+               '*Semester Project*',          6) %>% 
   mutate(Module = factor(Module,levels=Module))
 
-schedule <- {as.POSIXct('2021-08-17') + weeks(0:15)} %>% 
+schedule <- {as.POSIXct('2022-08-23') + weeks(0:15)} %>% 
   tibble(tuesdays = .) %>% 
   mutate(thursdays = tuesdays + days(2)) %>% 
   pivot_longer(c(tuesdays, thursdays), values_to = "dates") %>% 
-  mutate(mod_index = c(rep(1,2),
-                       rep(2:7, each = 4),
-                       rep(8,6))) %>% 
+  mutate(mod_index = c(rep(1:5, each = 5),
+                       rep(6,7))) %>% 
   full_join(modules) %>% 
   group_by(Module) %>% 
   summarize(begin = head(dates,1) %>% 
@@ -124,4 +121,4 @@ I encourage you to help each other and I have created a *Help Forum* discussion 
 
 Each students is required to gain access to their own computer and to install free and open source software on that computer. Support will be provided by the instructor in the installation of required software.
 
-\includepdf[pages=-]{Fall-2021-syllabus-attachment-7-21-21.pdf}
+\includepdf[pages=-]{syllabus_material/Fall-2022-Syllabus-Attachment-Final-8.1.22.pdf}
