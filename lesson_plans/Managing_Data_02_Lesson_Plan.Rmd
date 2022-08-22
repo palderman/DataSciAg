@@ -22,8 +22,8 @@ header-includes:
 
 By the end of this lesson students will be able to:
 
-1. Describe the core sections of a data management plan
-2. Justify the use of data standards within agricultural/natural resource management research
+1. Describe the main sections of a data management plan
+2. Justify the use of data standards within agricultural/natural resources research
 3. Write a data managment plan for their own project
 
 ## Lesson Outline

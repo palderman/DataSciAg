@@ -10,6 +10,7 @@ margin: 1in
 fontsize: 12pt
 geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
 header-includes:
+- \usepackage{titling}
 - \usepackage{lastpage}
 - \usepackage{fancyhdr}
 - \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
@@ -28,31 +29,31 @@ Estimating the total amount of biomass (the total mass of all individuals) in fo
 
 There are lots of equations for estimating the mass of a tree from its diameter, but one good option is the equation: $$ Mass = 0.124 * Diameter^{2.53}$$ where $Mass$ is measured in kg of dry above-ground biomass and $Diameter$ is in cm [DBH](https://en.wikipedia.org/wiki/Diameter_at_breast_height) ([Brown 1997](http://www.fao.org/docrep/W4095E/W4095E00.htm)).
 
-We’re going to estimate the total tree biomass for trees in a 96 hectare area of the Western Ghats in India. The [raw data](http://esapubs.org/archive/ecol/E091/216/Macroplot_data_Rev.txt) is available on [Ecological Archives](http://esapubs.org/Archive/). Unfortunately, the data is stored in a poor database structure and using all of the tree stems would be difficult without first tidying up the data. You will need to have a look at the [metadata](http://esapubs.org/archive/ecol/E091/216/metadata.htm) to get familiar with the structure of the dataset.
+We’re going to estimate the total tree biomass for trees in a 96 hectare area of the Western Ghats in India. The [raw data](https://canvas.okstate.edu/courses/109158/files/12019188) are available on [Ecological Archives](https://esapubs.org/Archive/). Unfortunately, the data are stored in a poor database structure and using all of the tree stems would be difficult without first tidying up the data. You will need to have a look at the [metadata](https://esapubs.org/archive/ecol/E091/216/metadata.htm) to get familiar with the structure of the dataset.
 
 1. After reading through the metadata, comment (2-3 sentences) on the completeness of the documentation. Compare this to your own documentation of metadata in your `README.txt` file fromt the `Managing Data` module.
 2. Describe at least 2 ways this dataset violates some of the best practices (e.g. [Format Data](https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html), [Common Mistakes](https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html)) we discussed in the `Managing Data` module.
 3. Import the raw data into R.
-4. Use `gather()` to convert the raw data into rows for each measured stem. (Note: In the metadata for TreeGirth2 to TreeGirth5 it states "value of 0 indicates that the stem doesn't exist" so you will need to filter out these rows once you have gathered the data.)
+4. Use `pivot_longer()` to convert the raw data into rows for each measured stem. (Note: In the metadata for TreeGirth2 to TreeGirth5 it states "value of 0 indicates that the stem doesn't exist" so you will need to filter out these rows once you have gathered the data.)
 5. Create a new column by converting girth (circumference) to stem diameter (circumference = pi * diameter).
 6. Create a new column that contains estimates of the tree mass by using the diameter and the equation above. Print the result to the screen.
 7. `separate()` the `SpCode` into `GenusCode` and `SpEpCode`. Technically the four letter code doesn’t uniquely identify all of the genera in the dataset, but we’ll assume it does for the purpose of this exercise.
 8. Calculate the mean biomass for each genus.
-9. We are also interested in the impact of location on tree girth. Import the [Site Variables table](http://esapubs.org/archive/ecol/E091/216/Site_variables.txt) and join it with the output from problem 5.
+9. We are also interested in the impact of location on tree girth. Import the [Site Variables table](https://canvas.okstate.edu/courses/109158/files/12019189) and join it with the output from problem 7.
 10. Generate a boxplot of girth vs forest division. The number of extreme points makes it difficult to see the shape of the boxes so limit the y-axis from 0 to 200.
-11. Regenerate the boxplot from problem 8 with the forest divisions ordered by latitude. This will involve converting the forest division to a factor and reordering the factor levels based on the average latitude for each division.
+11. Regenerate the boxplot from problem 10 with the forest divisions ordered by latitude. This will involve converting the forest division to a factor and reordering the factor levels based on the average latitude for each division.
 
 ```{r answers}
 library(tidyverse)
 
 # Problem 3
 cat('\n# Problem 3 Output:\n\n')
-tree_raw <- read_tsv('Macroplot_data_Rev.txt')
+tree_raw <- read_tsv('data/Macroplot_data_Rev.txt')
 tree_raw
 
 # Problem 4
 cat('\n# Problem 4 Output:\n\n')
-tree_gathered <- gather(tree_raw,key='stem',value='girth',TreeGirth1:TreeGirth5) %>%
+tree_gathered <- tree_raw %>%  pivot_longer(TreeGirth1:TreeGirth5,names_to='stem',values_to='girth') %>%
   filter(girth>0)
 tree_gathered
 
@@ -77,7 +78,7 @@ tree_genus %>% group_by(GenusCode) %>% summarize(avg_mass=mean(tree_mass,na.rm=T
 
 # Problem 9
 cat('\n# Problem 9 Output:\n\n')
-joined <- read_tsv('Site_variables.txt') %>% right_join(tree_genus,by='PlotID')
+joined <- read_tsv('data/Site_variables.txt') %>% right_join(tree_genus,by='PlotID')
 joined
 
 # Problem 10

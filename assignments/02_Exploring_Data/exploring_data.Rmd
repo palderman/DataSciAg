@@ -9,6 +9,7 @@ margin: 1in
 fontsize: 12pt
 geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
 header-includes:
+- \usepackage{titling}
 - \usepackage{lastpage}
 - \usepackage{fancyhdr}
 - \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
@@ -39,23 +40,36 @@ library(agridat)
 
 # Problem 1
 
-engelstad.nitro %>% filter(nitro==0) %>% select(loc,year,yield)
+engelstad.nitro %>%
+  filter(nitro==0) %>%
+  select(loc,year,yield)
 
 # Problem 2
 
-engelstad.nitro %>% filter(nitro==335) %>% select(loc,year,yield) %>% arrange(yield)
+engelstad.nitro %>%
+  filter(nitro==335) %>%
+  select(loc,year,yield) %>%
+  arrange(yield)
 
 # Problem 3
 
-engelstad.nitro %>% group_by(loc,year) %>% summarize(yield=mean(yield))
+engelstad.nitro %>%
+  group_by(loc,year) %>%
+  summarize(yield=mean(yield))
 
 # Problem 4
 
-engelstad.nitro %>% group_by(nitro) %>% summarize(yield=mean(yield))
+engelstad.nitro %>%
+  group_by(nitro) %>%
+  summarize(yield=mean(yield))
 
 # Problem 5
 
-engelstad.nitro %>% filter(nitro>0) %>% mutate(PFP=yield/nitro) %>% group_by(nitro) %>% summarize(PFP=mean(PFP))
+engelstad.nitro %>%
+  filter(nitro>0) %>%
+  mutate(PFP=yield/nitro) %>%
+  group_by(nitro) %>%
+  summarize(PFP=mean(PFP))
 ```
 
 
@@ -77,21 +91,26 @@ Load the `agridat` package and use the `diggle.cow` dataset with `ggplot()` to g
 library(agridat)
 
 # Problem 1
-
-ggplot(diggle.cow,aes(x=day,y=weight))+geom_point()
+diggle.cow %>% 
+  ggplot(aes(x = day, y = weight)) +
+  geom_point()
 
 # Problem 2
-
-ggplot(diggle.cow,aes(x=day,y=weight,group=day))+geom_boxplot()
+diggle.cow %>% 
+  ggplot(aes(x = day, y = weight, group = day)) +
+  geom_boxplot()
 
 # Problem 3
-
-filter(diggle.cow,day==781) %>%
-ggplot(aes(x=interaction(iron,infect),y=weight,group=interaction(iron,infect))) +
+diggle.cow %>% 
+filter(day==781) %>%
+ggplot(aes(x = interaction(iron,infect),
+           y = weight,
+           group = interaction(iron,infect))) +
   geom_boxplot()
 
 # Problem 4
-ggplot(diggle.cow,aes(x=day,y=weight,group=animal)) +
+diggle.cow %>% 
+ggplot(aes(x = day, y = weight, group = animal)) +
   geom_line() +
   facet_grid(iron~infect)
 
@@ -124,20 +143,28 @@ that shows the distribution of the model residuals within each genotype and orde
 library(agridat)
 
 # Problem 1
-
-ggplot(steptoe.morex.pheno,aes(x=hddate))+geom_histogram(binwidth=1)
+steptoe.morex.pheno %>% 
+  ggplot(aes(x=hddate)) + 
+  geom_histogram(binwidth=1)
 
 # Problem 2
-
-ggplot(steptoe.morex.pheno,aes(x=reorder(gen,hddate,FUN=median),y=hddate))+geom_boxplot()+coord_flip()
+steptoe.morex.pheno %>% 
+  ggplot(aes(x = reorder(gen,hddate,FUN=median),
+             y = hddate)) + 
+  geom_boxplot() +
+  coord_flip()
 
 # Problem 3
-
-ggplot(steptoe.morex.pheno,aes(x=hddate))+geom_freqpoly(aes(color=env))
+steptoe.morex.pheno %>% 
+  ggplot(aes(x=hddate)) + 
+  geom_freqpoly(aes(color=env))
 
 # Problem 4
-
-ggplot(steptoe.morex.pheno,aes(x=reorder(env,hddate,FUN=median),y=hddate))+geom_boxplot()+coord_flip()
+steptoe.morex.pheno %>% 
+  ggplot(aes(x = reorder(env, hddate, FUN=median),
+             y = hddate)) +
+  geom_boxplot()+
+  coord_flip()
 
 # Problem 5
 
@@ -148,6 +175,10 @@ mod <- lm(hddate~env,data=steptoe.morex.pheno)
 steptoe.morex.pheno.resid <- steptoe.morex.pheno %>%
   add_residuals(mod)
 
-ggplot(data=steptoe.morex.pheno.resid,aes(x=reorder(gen,resid,FUN=median),y=resid))+geom_boxplot()+coord_flip(ylim=c(-15,15))
+steptoe.morex.pheno.resid %>% 
+  ggplot(aes(x = reorder(gen, resid, FUN=median),
+             y = resid)) +
+  geom_boxplot() +
+  coord_flip(ylim=c(-15,15))
 ```
 

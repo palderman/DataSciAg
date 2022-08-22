@@ -12,6 +12,7 @@ margin: 1in
 fontsize: 12pt
 geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
 header-includes:
+- \usepackage{titling}
 - \usepackage{lastpage}
 - \usepackage{fancyhdr}
 - \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
@@ -22,28 +23,43 @@ header-includes:
 - \fancyfoot[C]{\small \thetitle \\ Data Science for Agriculture and Natural Resources\\PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`\\ Page \thepage~of~\pageref{LastPage}}
 ---
 
-## Organizing Data in Spreadsheets (50 pts)
+## Organizing Data in Spreadsheets (58 pts)
 
-Using *Tidy Data* principles, design a spreadsheet (or set of spreadsheets) and associated Readme file(s) that you will use for your semester project. For the Readme file you may wish to adapt the [Cornell University’s Research Data Management Service Group template](https://cornell.app.box.com/v/ReadmeTemplate). Among other details, be sure to include:
+Using *Tidy Data* principles, design a set of files for data capture of the variables in the table below. Be sure to:
 
-- Space for tracking notes on the data capture/organization process
-- A data dictionary that defines variable names (including units)
-- Quality control procedures you will use
+- Create a `readme.txt` that includes a definition of all variable names used in the dataset including units (e.g. NDVI would need to be defined as Normalized Difference Vegetation Index)
+-  Avoid the "Common Spreadsheet Errors" discussed in [Formatting problems](https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html)
+- Avoid using problematic column/field names (described here [Formatting problems](https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html))
+- Use the `Data Validation` or `Validity` tool for quality assurance for variables with well-defined ranges (see [Quality control](https://datacarpentry.org/spreadsheet-ecology-lesson/04-quality-control/index.html))
+- Handle dates using one of the recommended strategies described in [Dates as data](https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html).
+- Partially fill in your spreadsheet(s) with example data (including some missing data) to demonstrate how you would use it
+- Export the spreadsheet(s) as a comma separated (csv) or tab separated file (tsv)
 
-For the spreadsheet, be sure to:
+Submit the original spreadsheet(s) as well as the exported version(s).
 
-- Put variables in columns and observations in rows
-- Avoid placing multiple pieces of information in a single cell
-- Avoid the "Common Spreadsheet Errors" discussed in the *Data Organization in Spreadsheets* reading
-- Use the `Data Validation` or `Validity` tool for quality assurance
-- Partially fill in your spreadsheet with example data to demonstrate how you will use it
+```{r message=FALSE,echo=FALSE}
+library(tidyverse)
 
-## Writing a Data Management Plan (50 pts)
+variables <- tribble(~Variable,  ~`Type/Possible Units`,                ~`Expected range`,
+                   'Site Code',    'character', 'Lahoma, Chickasha, Goodwell, Altus',
+                   'Plot Code',      'integer',                                 '1 -- 40',
+                 'Sample Date',         'date',   'after Nov 1, 2020; before Jul 1, 2022',
+                 'Wheat yield',        'kg/ha or bu/ac',            '0 -- 7000 or 0 -- 100', 'NDVI',         'none',                          '0 -- 1',
+                'Ground cover',     '% or fraction',                   '0 -- 100 or 0 -- 1')
 
-Using the [OSU Libraries Data Management Plan Template](http://bit.ly/27TWU3F), create a 1-2 page Data Management Plan for your semester project. You may also wish to refer to the [Rubric for assessment of NSF data management plans](https://mfr.osf.io/render?url=https://osf.io/jj7dm/?action=download%26mode=render). Be sure to include:
+knitr::kable(variables,align = 'rrr')
 
-- A brief introduction to the project
-- Types and quantities of data that will be produced (including method of collection/capture)
-- Standards that you will use for data and metadata
-- Policies for data access and sharing/re-use
-- Plans for data archiving and preservation
+```
+
+\newpage
+
+## Data Management Plan (42 pts)
+
+Write a data management plan (DMP) for the semester project. Refer to the guidance provided by the National Agricultural Library ([https://www.nal.usda.gov/main/data/data-management-plan-guidance](https://www.nal.usda.gov/main/data/data-management-plan-guidance)) and this example data management plan: [https://www.nal.usda.gov/main/sites/default/files/page-files/Data_Management_Plan_Example_annotated.docx](https://www.nal.usda.gov/main/sites/default/files/page-files/Data_Management_Plan_Example_annotated.docx) for more details. Be sure to address all core DMP components:
+
+- Expected Data Types
+- Data Formats and Standards
+- Data Storage and Preservation of Access
+- Data Sharing and Public Access
+- Roles and Responsibilities
+- Monitoring and Reporting
