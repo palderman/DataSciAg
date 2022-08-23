@@ -79,10 +79,9 @@ schedule <- {as.POSIXct('2022-08-23') + weeks(0:15)} %>%
   mutate(`Assignment Due` = ifelse(Module == "*Introduction*",
                                    "",
                                    `Assignment Due`)) %>% 
-  select(Module,Dates,`Assignment Due`) %>% 
-  rename(`Due Date` = `Assignment Due`)
+  select(Module,Dates)
 
-knitr::kable(schedule,align=c('c','c','c'))
+knitr::kable(schedule,align=c('c','c'))
   ```
 
 ## Teaching Philosophy
