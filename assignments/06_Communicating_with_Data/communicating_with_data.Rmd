@@ -12,6 +12,7 @@ margin: 1in
 fontsize: 12pt
 geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
 header-includes:
+- \usepackage{titling}
 - \usepackage{lastpage}
 - \usepackage{fancyhdr}
 - \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
@@ -26,7 +27,7 @@ Suppose Dr. Raun has asked you to do some confirmatory analysis of some data fro
 
 To do so, open a new R Markdown file within R Studio.  Use "Efaw Foliar N Freeze Mitigation Report" for the title and your name for the author.  The new file will contain an example template for an R Markdown document. Click on the **Knit HTML** button to compile your R Markdown document.  Compare the resulting output with the R Markdown script.  Read through the template R Markdown file and the resulting output for an explanation of how R Markdown works.
 
-Next, create a subdirectory named data and download the data you will use ([Efaw_Freeze2014.xlsx](http://nue.okstate.edu/Experiment_Stations/Efaw_Freeze2014.xlsx)). Because the data are in an MS Excel spreadsheet, you will need to figure out how to read in the data. There are a number of tools for reading in want to use the handy `read_excel()` function to read in the data.  To do so, you will need to load the `readxl` R package first.
+Next, create a subdirectory named data and download the data file you will use from Canvas (Efaw_Freeze2014.xlsx). Because the data are in an MS Excel spreadsheet, you will need to figure out how to read in the data. There are a number of tools for reading in want to use the handy `read_excel()` function to read in the data.  To do so, you will need to load the `readxl` R package first.
 
 ## Reading Data
 
@@ -78,7 +79,7 @@ Use in-line R code chunks to write a sentence for each variable that states the 
 
 Now that you have completed your quantitative analysis, you want to visualize the analysis for more user-friendly presentation.  You decide to use the `ggplot()` to create some bar graphs that will display the data.
 
-* Add an R code chunk named "NDVI_plot" with the code needed to produce a barplot of the treatment means for the post-freeze NDVI decline. Be sure to label the axes appropriately.
+* Add an R code chunk named "NDVI-plot" with the code needed to produce a barplot of the treatment means for the post-freeze NDVI decline. Be sure to label the axes appropriately.
 
 * Use `geom_text()` to add labels to the bars to indicate significant differences between treatment means.  Use the `vjust`, `nudge_y`, and `size` arguments for `geom_text()` to size and position the labels appropriately.
 
@@ -86,7 +87,7 @@ Now that you have completed your quantitative analysis, you want to visualize th
 
 ![](R-markdown-figures-1.jpg)
 
-* Add a new R code chunk named "yield_plot" with R code to produce an equivalent figure for the yield data.  Be sure to include appropriate axis labels, bar labels for statistically significant differences, and a suitable figure caption.
+* Add a new R code chunk named "yield-plot" with R code to produce an equivalent figure for the yield data.  Be sure to include appropriate axis labels, bar labels for statistically significant differences, and a suitable figure caption.
 
 * Set the `echo` chunk option for both code chunks so that no R code is
 displayed in the final output.
@@ -100,7 +101,7 @@ and referencing them appropriately.
 
 Because you are unsure how Dr. Raun will prefer the data to be presented, you decide to include the data in a table, as well.
 
-* Within a new code chunk named "results_table", create a data frame that has columns with treatment means for post-freeze NDVI decline and yield.  Set the column names to "NDVI Decline" and "Yield". Set the row names to abbreviations for the corresponding treatments (i.e. not just treatment number).  (*Hint: I suggest you round the values appropriately and convert these to text using `format()`. You also will need to add a dash in your NDVI column for the missing treatment level*)
+* Within a new code chunk named "results-table", create a data frame that has columns with treatment means for post-freeze NDVI decline and yield.  Set the column names to "NDVI Decline" and "Yield". Set the row names to abbreviations for the corresponding treatments (i.e. not just treatment number).  (*Hint: I suggest you round the values appropriately and convert these to text using `format()`. You also will need to add a dash in your NDVI column for the missing treatment level*)
 
 * Add the statistical significance labels to your results table using the
 `str_c()` function.
