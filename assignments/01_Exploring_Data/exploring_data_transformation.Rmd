@@ -1,0 +1,72 @@
+---
+title: 'Exploring Data - Data Transformation'
+author: |
+  | Data Science for Agriculture and Natural Resources
+  | PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`
+output: pdf_document
+link-citations: true
+margin: 1in
+fontsize: 12pt
+geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
+header-includes:
+- \usepackage{titling}
+- \usepackage{lastpage}
+- \usepackage{fancyhdr}
+- \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
+- \renewcommand{\headrulewidth}{0pt}
+- \fancypagestyle{plain}{ \fancyhf{} \fancyfoot[C]{\aspace{2}Page \thepage~of~\pageref{LastPage}} }
+- \pagestyle{fancy}
+- \fancyhf{}
+- \fancyfoot[C]{\small \thetitle \\ Data Science for Agriculture and Natural Resources\\PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`\\ Page \thepage~of~\pageref{LastPage}}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(agridat)
+```
+
+Load the `agridat` package and, using the `engelstad.nitro` dataset, create 5 separate data transformation pipelines that provide:
+
+1. The yields for the 0 nitrogen treatment for each location and year.
+
+```{r prob1}
+engelstad.nitro %>%
+  filter(nitro==0) %>%
+  select(loc,year,yield)
+```
+
+2. The yields for the 335 nitrogen treatment for each location and year in order from lowest to highest yield.
+
+```{r prob2}
+engelstad.nitro %>%
+  filter(nitro==335) %>%
+  select(loc,year,yield) %>%
+  arrange(yield)
+```
+
+3. The mean yield for each combination of location and year.
+
+```{r prob3}
+engelstad.nitro %>%
+  group_by(loc,year) %>%
+  summarize(yield=mean(yield))
+```
+
+4. The mean yield for each level of nitrogen fertilizer.
+
+```{r prob4}
+engelstad.nitro %>%
+  group_by(nitro) %>%
+  summarize(yield=mean(yield))
+```
+
+5. The mean partial factor productivity (the yield divided by the nitrogen fertilizer applied) for each nitrogen fertilizer level.
+
+```{r prob5}
+engelstad.nitro %>%
+  filter(nitro>0) %>%
+  mutate(PFP=yield/nitro) %>%
+  group_by(nitro) %>%
+  summarize(PFP=mean(PFP))
+```
