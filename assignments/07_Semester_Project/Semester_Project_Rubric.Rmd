@@ -1,0 +1,122 @@
+---
+title: Semester Project Rubric
+subtitle: |
+    | Data Science for Agriculture and Natural Resources
+    | PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`
+output: pdf_document
+fontsize: 12pt
+geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
+header-includes:
+- \usepackage{titling}
+- \usepackage{graphicx}
+- \usepackage{enumitem}
+- \usepackage{textcomp}
+- \usepackage{fancyhdr}
+- \usepackage{lastpage}
+- \usepackage{multirow}
+- \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
+- \renewcommand{\headrulewidth}{0pt}
+- \fancypagestyle{plain}{ \fancyhf{} \fancyfoot[C]{\aspace{2}Page \thepage~of~\pageref{LastPage}} }
+- \pagestyle{fancy}
+- \fancyhf{}
+- \fancyfoot[C]{\small \thetitle \\ Data Science for Agriculture and Natural Resources\\PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`\\ Page \thepage~of~\pageref{LastPage}}
+---
+
+# Sememster Project - 100 points total
+
+## Project Content - 30 points
+
+### Evaluation Criteria
+
+1. The project integrates at least three different datasets (at least one of which must be related to agriculture or natural resources)
+2. The project uses skills/practices from at least four of the six course modules
+3. The project implements new analysis and generates novel results of some kind (i.e. it should do more than generate and discuss summary graphs/statistics)
+
+### Grading Scale
+
+\hspace{\leftmargin}
+\begin{tabular}{|r|p{5.5in}|}
+      \hline
+      30 & Adequately addresses all three criteria \\\hline
+      21-29 & Adequately addresses two of the three criteria, partially addresses the other\\\hline
+      11-20 & Adequately addresses one of the three criteria, partially addresses the others\\\hline
+      0-10 & Does not adequately address any of the three criteria\\
+      \hline
+\end{tabular}
+
+
+## Project Report - 42 points
+
+### Evaluation Criteria
+
+1. The report includes an abstract (<150 words) that summarizes the report including key findings and conclusions.
+
+2. The report thoroughly (about 500-750 words) introduces the topic and research question, explains their relevance and importance, and summarizes current knowledge on the topic. This should include at least 15 references to peer-reviewed sources.
+
+3. The report provides a detailed (about 750-1000 words) description of methods used for analysis including where you obtained the data from, a summary of the original methods used to collect the data, and the procedure you used to analyze them. This should be described in enough detail that a future student could exactly duplicate your analysis. Any software or hardware used in the study should be properly cited.
+
+4. The report thoroughly (about 750-1000 words) describes the results of the analysis and discusses them in terms of theoretical and practical significance. All figures and tables of results included in the report should be mentioned and discussed. The discussion of results should make reference to existing knowledge including content from the course and at least 10 peer-reviewed sources (besides those cited in the introduction).
+
+5. The report contains a final section which adequately (about 250-500 words) summarizes the main points of the report including:
+    - Highlights from the introduction, results and discussion
+    - Any conclusions that can be derived from them
+    - Possible future research directions
+
+6. The report is well-organized and free of grammatical and spelling errors. It includes:
+    - A title page (with an informative title)
+    - Appropriate headings (e.g. Introduction, Methods, Results, etc.)
+    - A complete, consistently formatted list of references cited
+
+### Grading Scale
+
+\hspace{\leftmargin}
+\begin{tabular}{|r|p{5.5in}|}
+      \hline
+      42 & Adequately addresses all six criteria \\\hline
+      36-41 & Adequately addresses five of the six criteria, partially addresses the other\\\hline
+      28-35 & Adequately addresses four of the six criteria, partially addresses the others\\\hline
+      22-28 & Adequately addresses three of the six criteria, partially addresses the others\\\hline
+      15-21 & Adequately addresses two of the six criteria, partially addresses the others\\\hline
+      8-14 & Adequately addresses one of the six criteria, partially addresses the others\\\hline
+      0-7 & Does not adequately address any of the six criteria\\
+      \hline
+\end{tabular}
+
+## Virtual Presentation - 28 points
+
+### Evaluation Criteria
+
+1. The student demonstrates professionalism throughout the presentation session including:
+    - Logging into the session on time
+    - Dressing professionally
+    - Using appropriate language
+
+2. The student provides a clear (10-12 min) presentation of his/her project that:
+    - Introduces the project topic and importance
+    - Briefly discusses data sources and general analytical approach
+    - Provides highlights from the results and discussion
+    - Mentions conclusions and possible future research directions
+    
+3. The student can speak authoritatively about the project including:
+    - Addressing detailed questions about the methods, results, and conclusions
+    - Explaining the theoretical and/or practical significance of the project
+    - Articulating how the project relates to relevant topics from the course
+
+4. The slideset provides a visually appealing summary of the project that supports his/her presentation. It is well-organized and free of grammatical and spelling errors. It includes:
+    - An informative title
+    - Appropriate headings (e.g. Introduction, Methods, Results, etc.)
+    - Figures and/or tables that summarize the main findings of the project
+    - Bullet points that summarize the main points of each section
+
+### Grading Scale
+
+\hspace{\leftmargin}
+\begin{tabular}{|r|p{5.5in}|}
+      \hline
+      28 & Adequately addresses all four criteria \\\hline
+      22-27 & Adequately addresses three of the four criteria, partially addresses the other\\\hline
+      15-21 & Adequately addresses two of the four criteria, partially addresses the others\\\hline
+      8-14 & Adequately addresses one of the four criteria, partially addresses the others\\\hline
+      0-7 & Does not adequately address any of the four criteria\\
+      \hline
+\end{tabular}
