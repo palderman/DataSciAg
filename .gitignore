@@ -8,3 +8,5 @@ grading_scripts/
 .Rproj.user
 DataSciAg.Rproj
 worked_assignments
+*.pdf
+*.html
