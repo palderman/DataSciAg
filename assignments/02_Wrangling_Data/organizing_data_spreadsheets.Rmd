@@ -1,5 +1,5 @@
 ---
-title: "Managing Data Assignment"
+title: "Wrangling Data - Organizing Data in Spreadsheets"
 author: |
   | Data Science for Agriculture and Natural Resources
   | PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`
@@ -22,8 +22,6 @@ header-includes:
 - \fancyhf{}
 - \fancyfoot[C]{\small \thetitle \\ Data Science for Agriculture and Natural Resources\\PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`\\ Page \thepage~of~\pageref{LastPage}}
 ---
-
-## Organizing Data in Spreadsheets (58 pts)
 
 Using *Tidy Data* principles, design a set of files for data capture of the variables in the table below. Be sure to:
 
@@ -50,16 +48,3 @@ variables <- tribble(~Variable,  ~`Type/Possible Units`,                ~`Expect
 knitr::kable(variables,align = 'rrr')
 
 ```
-
-\newpage
-
-## Data Management Plan (42 pts)
-
-Write a data management plan (DMP) for the semester project. Refer to the guidance provided by the National Agricultural Library ([https://www.nal.usda.gov/main/data/data-management-plan-guidance](https://www.nal.usda.gov/main/data/data-management-plan-guidance)) and this example data management plan: [https://www.nal.usda.gov/main/sites/default/files/page-files/Data_Management_Plan_Example_annotated.docx](https://www.nal.usda.gov/main/sites/default/files/page-files/Data_Management_Plan_Example_annotated.docx) for more details. Be sure to address all core DMP components:
-
-- Expected Data Types
-- Data Formats and Standards
-- Data Storage and Preservation of Access
-- Data Sharing and Public Access
-- Roles and Responsibilities
-- Monitoring and Reporting
