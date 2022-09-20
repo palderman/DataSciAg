@@ -1,3 +1,3 @@
-PlotID	LatDec	LongDec	Alt	CanoHt	CanoCov	Strata	Rain	DryMo	ForestType	Soil	StrucIntegr	FlorIntegr
-BSP100	13.54722	75.82	780	10	10	1	1147	6	ATT	S13	3	NA
-BSP97	13.43722	75.64889	710	20	50	2	1946	4	LTD	S4	2	NA
+PlotID	ForestDiv	LatDec	LongDec	Alt	CanoHt	CanoCov	Strata	Rain	DryMo	ForestType	Soil	StrucIntegr	FlorIntegr
+BSP100	Chikkamagalur	13.54722	75.82	780	10	10	1	1147	6	ATT	S13	3	NA
+BSP97	Chikkamagalur	13.43722	75.64889	710	20	50	2	1946	4	LTD	S4	2	NA

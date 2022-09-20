@@ -1,0 +1,123 @@
+---
+title: "Programming with Data - Vectorization"
+author: |
+  | Data Science for Agriculture and Natural Resources
+  | PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`
+output: pdf_document
+link-citations: true
+urlcolor: blue
+margin: 1in
+fontsize: 12pt
+geometry: "left=1in,right=1in,top=1in,bottom=1.25in"
+header-includes:
+  - \usepackage{titling}
+  - \usepackage{lastpage}
+  - \usepackage{fancyhdr}
+  - \newcommand{\aspace}[1]{\vspace{#1\baselineskip}}
+  - \renewcommand{\headrulewidth}{0pt}
+  - \fancypagestyle{plain}{ \fancyhf{} \fancyfoot[C]{\aspace{2}Page     \thepage~of~\pageref{LastPage}} }
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyfoot[C]{\small \thetitle \\ Data Science for Agriculture and Natural Resources\\PLNT 5413 - Fall `r format(Sys.Date(),'%Y')`\\ Page \thepage~of~\pageref{LastPage}}
+---
+
+```{r setup,echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE,include=TRUE)
+```
+
+```{r program_assignment_code, echo=FALSE, include=FALSE}
+library(tidyverse)
+
+# Problem 1
+list_forest_divisions <- function(path){
+
+  for_div_list <- list.files(path = path) %>% # list all files in the path directory
+    str_replace_all('(.*/)|(_.*)','') %>% # Strip off any leading directories and trailing file extenstions including _tree_data or _site_data labels
+    unique() # Remove duplicate entries in resulting list
+  
+  return(for_div_list)
+}
+
+read_forest_division <- function(directory,for_div){
+
+  tree_data <- paste0(directory,'/',for_div,'_tree_data.txt') %>% # Combine directory path and forest division to create tree data file name
+    read_tsv(na = "0",                                  # Read tree data setting "0" observations to NA
+             col_types = cols(PlotID = col_character(), # Specifying column types
+                              SpCode = col_character(),
+                              TreeGirth1 = col_double(),
+                              TreeGirth2 = col_double(),
+                              TreeGirth3 = col_double(),
+                              TreeGirth4 = col_double(),
+                              TreeGirth5 = col_double()))
+  
+  site_data <- paste0(directory,'/',for_div,'_site_data.txt') %>% # Combine directory path and forest division to create site data file name
+    read_tsv(col_types = cols_only(PlotID = col_character(),      # Read site data selecting columns and specifying column types
+                                   LatDec = col_double(),
+                                   LongDec = col_double(),
+                                   Alt = col_double(),
+                                   Rain = col_double()))
+
+  combined_data <- right_join(site_data, tree_data, by='PlotID') # Join site data and tree data
+
+  return(combined_data)   # Return combined data
+}
+
+read_all_divisions <- function(path){
+
+  all_data <- list_forest_divisions(path) %>% # Generate list of forest divisions
+    map(read_forest_division,   # Iterate reading data over each forest division
+        directory = path) %>% 
+    bind_rows() %>%             # Combine all forest division data into single tibble
+    pivot_longer(TreeGirth1:TreeGirth5,
+                 names_to = 'tree',
+                 values_to = 'girth') %>% # Gather tree girth data into a single column
+    drop_na()  # Drop missing observations
+
+  return(all_data) # Return 
+}
+
+```
+
+This assigment builds on the `Programming with Data - Iteration` assignment.
+
+1. Based on [Brown (1997)](http://www.fao.org/docrep/W4095E/w4095e06.htm#3.2.1%20biomass%20regression%20equations) there are separate equations that should be used to estimate forest biomass depending on location rainfall and size of tree diameter. Simplifying somewhat, for rainfall < 1600mm use the equation $$Biomass = 0.136Diameter^{2.32}$$ for rainfall $\ge$ 1600 mm and diameter < 160 cm use the equation  $$Biomass = 0.118Diameter^{2.53}$$ and for rainfall $\ge$ 1600 mm and diameter $\ge$ 160 cm $$Biomass = 42.69-12.8Diameter+1.242Diameter^2$$ Write a function called `estimate_biomass()` that:
+    * Takes rain and girth as arguments
+    * Calculates diameter
+    * Calculates biomass with the appropriate equation based on rain and diameter
+    * Returns the estimated biomass
+            * Hint: Check out both `?if` and `?ifelse`
+
+```{r problem_1_code}
+estimate_biomass <- function(rain, girth){
+  diameter <- girth/pi
+  biomass <- ifelse(rain < 1600,
+                    0.136*diameter^2.32,
+                    #exp(-1.996+2.32*log(diameter)),
+                    ifelse(diameter < 160,
+                           0.118*diameter^2.53,
+                           #exp(-2.134+2.53*log(diameter)),
+                           42.69 - 12.8*diameter + 1.242*diameter^2)
+  )
+  return(biomass)
+}
+```
+
+```{r problem_1_output, echo=FALSE, include=TRUE}
+rain = c(1100, 1800, 1800)
+girth = round(c(75*pi, 125*pi, 200*pi), 0)
+for(i in 1:3){
+  cat(paste0('Example output for rain = ', rain[i], ' and girth = ', girth[i], ':\n'))
+  print(estimate_biomass(rain[i], girth[i]))
+}
+```
+
+2. Use the `read_all_divisions()` function to import the full dataset. Then use the `estimate_biomass()` function to estimate tree biomass and store it in a new column of the original tibble.
+
+```{r problem_2_code}
+all_data <- read_all_divisions('data') %>% 
+  mutate(biomass=estimate_biomass(Rain, girth))
+```
+
+```{r problem_2_output, echo=FALSE, include=TRUE}
+all_data
+```

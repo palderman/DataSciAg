@@ -1,741 +1,741 @@
-PlotID	SpCode	TreeGirth1	TreeGirth2	TreeGirth3	TreeGirth4	TreeGirth5
-BSP100	Acaccate	12	0	0	0	0
-BSP100	Acaccate	13	0	0	0	0
-BSP100	Acaccate	14	0	0	0	0
-BSP100	Acaccate	15	0	0	0	0
-BSP100	Acaccate	16	0	0	0	0
-BSP100	Acaccate	16	0	0	0	0
-BSP100	Acaccate	16	0	0	0	0
-BSP100	Acaccate	17	0	0	0	0
-BSP100	Acaccate	17	0	0	0	0
-BSP100	Acaccate	17	0	0	0	0
-BSP100	Acaccate	17	0	0	0	0
-BSP100	Acaccate	19	0	0	0	0
-BSP100	Acaccate	20	0	0	0	0
-BSP100	Acaccate	20	0	0	0	0
-BSP100	Acaccate	20	0	0	0	0
-BSP100	Acaccate	22	0	0	0	0
-BSP100	Acaccate	23	0	0	0	0
-BSP100	Acaccate	23	0	0	0	0
-BSP100	Acaccate	23	0	0	0	0
-BSP100	Acaccate	24	0	0	0	0
-BSP100	Acaccate	24	0	0	0	0
-BSP100	Acaccate	25	0	0	0	0
-BSP100	Acaccate	25	0	0	0	0
-BSP100	Acaccate	25	0	0	0	0
-BSP100	Acaccate	25	0	0	0	0
-BSP100	Acaccate	26	0	0	0	0
-BSP100	Acaccate	26	0	0	0	0
-BSP100	Acaccate	27	0	0	0	0
-BSP100	Acaccate	27	0	0	0	0
-BSP100	Acaccate	27	0	0	0	0
-BSP100	Acaccate	28	0	0	0	0
-BSP100	Acaccate	29	24	0	0	0
-BSP100	Acaccate	29	14	0	0	0
-BSP100	Acaccate	29	0	0	0	0
-BSP100	Acaccate	31	0	0	0	0
-BSP100	Acaccate	31	0	0	0	0
-BSP100	Acaccate	31	0	0	0	0
-BSP100	Acaccate	31	0	0	0	0
-BSP100	Acaccate	31	0	0	0	0
-BSP100	Acaccate	33	0	0	0	0
-BSP100	Acaccate	39	0	0	0	0
-BSP100	Acaccate	40	0	0	0	0
-BSP100	Acaccate	40	0	0	0	0
-BSP100	Acaccate	45	0	0	0	0
-BSP100	Acaccate	50	0	0	0	0
-BSP100	Acaccate	54	0	0	0	0
-BSP100	Acaccate	61	0	0	0	0
-BSP100	Acacleuc	16	0	0	0	0
-BSP100	Acacleuc	17	0	0	0	0
-BSP100	Acacleuc	25	0	0	0	0
-BSP100	Acacleuc	49	0	0	0	0
-BSP100	Acacleuc	66	37	0	0	0
-BSP100	Acacsinu	12	0	0	0	0
-BSP97	Acacsinu	22	0	0	0	0
-BSP97	Acacsinu	65	0	0	0	0
-BSP100	Albiamar	24	0	0	0	0
-BSP100	Albiamar	24	0	0	0	0
-BSP100	Albiamar	30	0	0	0	0
-BSP100	Albiamar	53	51	0	0	0
-BSP100	Albiamar	59	0	0	0	0
-BSP100	Albiamar	77	0	0	0	0
-BSP100	Albiamar	81	0	0	0	0
-BSP100	Albiamar	86	0	0	0	0
-BSP100	Albiodor	18	0	0	0	0
-BSP100	Albiodor	38	0	0	0	0
-BSP97	Albiodor	186	0	0	0	0
-BSP97	Albiodor	274	0	0	0	0
-BSP97	Alseseme	147	0	0	0	0
-BSP97	Annoreti	14	0	0	0	0
-BSP100	Anoglati	10	0	0	0	0
-BSP100	Anoglati	11	0	0	0	0
-BSP100	Anoglati	11	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	12	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	13	0	0	0	0
-BSP100	Anoglati	14	13	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	14	0	0	0	0
-BSP100	Anoglati	15	15	0	0	0
-BSP100	Anoglati	15	14	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	15	0	0	0	0
-BSP100	Anoglati	16	14	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	16	0	0	0	0
-BSP100	Anoglati	17	16	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	17	0	0	0	0
-BSP100	Anoglati	18	16	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	18	0	0	0	0
-BSP100	Anoglati	19	15	0	0	0
-BSP100	Anoglati	19	15	0	0	0
-BSP100	Anoglati	19	14	0	0	0
-BSP100	Anoglati	19	14	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	19	0	0	0	0
-BSP100	Anoglati	20	18	16	0	0
-BSP100	Anoglati	20	18	0	0	0
-BSP100	Anoglati	20	15	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	20	0	0	0	0
-BSP100	Anoglati	21	21	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	21	0	0	0	0
-BSP100	Anoglati	22	21	0	0	0
-BSP100	Anoglati	22	0	0	0	0
-BSP100	Anoglati	22	0	0	0	0
-BSP100	Anoglati	22	0	0	0	0
-BSP100	Anoglati	22	0	0	0	0
-BSP100	Anoglati	22	0	0	0	0
-BSP100	Anoglati	23	16	15	0	0
-BSP100	Anoglati	23	0	0	0	0
-BSP100	Anoglati	23	0	0	0	0
-BSP100	Anoglati	23	0	0	0	0
-BSP100	Anoglati	23	0	0	0	0
-BSP100	Anoglati	23	0	0	0	0
-BSP100	Anoglati	24	0	0	0	0
-BSP100	Anoglati	25	0	0	0	0
-BSP100	Anoglati	25	0	0	0	0
-BSP100	Anoglati	25	0	0	0	0
-BSP100	Anoglati	26	0	0	0	0
-BSP100	Anoglati	27	0	0	0	0
-BSP100	Anoglati	28	0	0	0	0
-BSP100	Anoglati	28	0	0	0	0
-BSP100	Anoglati	30	0	0	0	0
-BSP100	Anoglati	31	0	0	0	0
-BSP100	Anoglati	32	0	0	0	0
-BSP100	Anoglati	37	28	0	0	0
-BSP100	Anoglati	41	0	0	0	0
-BSP100	Anoglati	47	0	0	0	0
-BSP100	Anoglati	50	0	0	0	0
-BSP100	Anoglati	52	0	0	0	0
-BSP100	Anoglati	55	0	0	0	0
-BSP100	Anoglati	55	0	0	0	0
-BSP100	Anoglati	58	0	0	0	0
-BSP100	Anoglati	63	0	0	0	0
-BSP100	Anoglati	66	0	0	0	0
-BSP100	Anoglati	76	0	0	0	0
-BSP100	Anoglati	104	0	0	0	0
-BSP97	Anoglati	16	0	0	0	0
-BSP97	Anoglati	25	0	0	0	0
-BSP97	Anoglati	26	0	0	0	0
-BSP97	Anoglati	34	0	0	0	0
-BSP97	Anoglati	42	0	0	0	0
-BSP97	Anoglati	53	0	0	0	0
-BSP97	Anoglati	55	0	0	0	0
-BSP97	Anoglati	61	33	0	0	0
-BSP97	Anoglati	64	0	0	0	0
-BSP97	Anoglati	66	0	0	0	0
-BSP97	Anoglati	67	0	0	0	0
-BSP97	Anoglati	68	0	0	0	0
-BSP97	Anoglati	70	0	0	0	0
-BSP97	Anoglati	70	0	0	0	0
-BSP97	Anoglati	71	0	0	0	0
-BSP97	Anoglati	75	0	0	0	0
-BSP97	Anoglati	75	0	0	0	0
-BSP97	Anoglati	76	0	0	0	0
-BSP97	Anoglati	78	0	0	0	0
-BSP97	Anoglati	78	0	0	0	0
-BSP97	Anoglati	79	0	0	0	0
-BSP97	Anoglati	82	0	0	0	0
-BSP97	Anoglati	87	0	0	0	0
-BSP97	Anoglati	90	0	0	0	0
-BSP97	Anoglati	90	0	0	0	0
-BSP97	Anoglati	90	0	0	0	0
-BSP97	Anoglati	94	0	0	0	0
-BSP97	Anoglati	97	0	0	0	0
-BSP97	Anoglati	100	0	0	0	0
-BSP97	Anoglati	101	0	0	0	0
-BSP97	Anoglati	104	0	0	0	0
-BSP97	Anoglati	175	0	0	0	0
-BSP97	Anoglati	177	0	0	0	0
-BSP97	Bambarun	18	0	0	0	0
-BSP97	Bambarun	22	0	0	0	0
-BSP97	Bambarun	25	0	0	0	0
-BSP97	Bambarun	26	0	0	0	0
-BSP97	Bambarun	35	0	0	0	0
-BSP97	Bambarun	42	0	0	0	0
-BSP100	Bauhrace	16	0	0	0	0
-BSP100	Bauhrace	18	0	0	0	0
-BSP97	Bauhrace	125	0	0	0	0
-BSP97	Bauhrace	182	0	0	0	0
-BSP100	Boswserr	16	0	0	0	0
-BSP100	Boswserr	31	0	0	0	0
-BSP100	Boswserr	31	0	0	0	0
-BSP100	Boswserr	32	0	0	0	0
-BSP100	Boswserr	33	0	0	0	0
-BSP100	Boswserr	35	0	0	0	0
-BSP100	Boswserr	39	0	0	0	0
-BSP100	Boswserr	41	0	0	0	0
-BSP100	Boswserr	43	0	0	0	0
-BSP100	Boswserr	47	0	0	0	0
-BSP100	Boswserr	51	0	0	0	0
-BSP100	Boswserr	54	0	0	0	0
-BSP100	Boswserr	64	0	0	0	0
-BSP100	Boswserr	66	0	0	0	0
-BSP100	Boswserr	67	0	0	0	0
-BSP100	Boswserr	69	0	0	0	0
-BSP100	Boswserr	72	0	0	0	0
-BSP100	Boswserr	75	0	0	0	0
-BSP100	Boswserr	79	0	0	0	0
-BSP100	Boswserr	83	0	0	0	0
-BSP100	Boswserr	86	0	0	0	0
-BSP100	Boswserr	91	0	0	0	0
-BSP100	Boswserr	93	0	0	0	0
-BSP100	Boswserr	102	0	0	0	0
-BSP100	Boswserr	105	0	0	0	0
-BSP100	Boswserr	121	0	0	0	0
-BSP100	Boswserr	121	0	0	0	0
-BSP100	Boswserr	125	0	0	0	0
-BSP100	Boswserr	170	0	0	0	0
-BSP100	Bridcren	63	0	0	0	0
-BSP97	Bridcren	108	71	0	0	0
-BSP97	Bridcren	136	0	0	0	0
-BSP100	Buchlanz	79	0	0	0	0
-BSP97	Buchlanz	92	0	0	0	0
-BSP97	Buchlanz	113	0	0	0	0
-BSP97	Calltome	14	14	0	0	0
-BSP97	Calltome	36	0	0	0	0
-BSP97	Casetome	22	0	0	0	0
-BSP100	Cassfist	14	0	0	0	0
-BSP100	Cassfist	17	0	0	0	0
-BSP100	Cassfist	18	0	0	0	0
-BSP100	Cassfist	19	0	0	0	0
-BSP100	Cassfist	19	0	0	0	0
-BSP100	Cassfist	19	0	0	0	0
-BSP100	Cassfist	19	0	0	0	0
-BSP100	Cassfist	20	0	0	0	0
-BSP100	Cassfist	23	17	0	0	0
-BSP100	Cassfist	26	0	0	0	0
-BSP100	Cassfist	32	0	0	0	0
-BSP97	Cassfist	12	0	0	0	0
-BSP97	Cassfist	15	0	0	0	0
-BSP97	Cassfist	15	0	0	0	0
-BSP97	Cassfist	16	0	0	0	0
-BSP97	Cassfist	17	0	0	0	0
-BSP97	Cassfist	17	0	0	0	0
-BSP97	Cassfist	19	0	0	0	0
-BSP97	Cassfist	19	0	0	0	0
-BSP97	Cassfist	19	0	0	0	0
-BSP97	Cassfist	19	0	0	0	0
-BSP97	Cassfist	19	0	0	0	0
-BSP97	Cassfist	21	0	0	0	0
-BSP97	Cassfist	21	0	0	0	0
-BSP97	Cassfist	22	0	0	0	0
-BSP97	Cassfist	24	0	0	0	0
-BSP97	Cassfist	26	0	0	0	0
-BSP97	Cassfist	28	0	0	0	0
-BSP97	Cassfist	28	0	0	0	0
-BSP97	Cassfist	29	0	0	0	0
-BSP97	Cassfist	29	0	0	0	0
-BSP97	Cassfist	30	0	0	0	0
-BSP97	Cassfist	32	0	0	0	0
-BSP97	Cassfist	33	0	0	0	0
-BSP97	Cassfist	39	0	0	0	0
-BSP97	Cassfist	42	25	0	0	0
-BSP97	Cassfist	43	0	0	0	0
-BSP97	Cassfist	55	0	0	0	0
-BSP97	Cassfist	74	0	0	0	0
-BSP100	Cassglau	12	0	0	0	0
-BSP100	Cassglau	15	0	0	0	0
-BSP100	Casssiam	26	0	0	0	0
-BSP100	Casssiam	43	0	0	0	0
-BSP100	Casssiam	60	0	0	0	0
-BSP100	Casssiam	81	56	0	0	0
-BSP100	Casssiam	84	0	0	0	0
-BSP100	Casssiam	87	27	0	0	0
-BSP100	Casssiam	89	0	0	0	0
-BSP100	Casssiam	94	0	0	0	0
-BSP100	Casssiam	111	61	0	0	0
-BSP100	Catudume	13	0	0	0	0
-BSP100	Catudume	15	0	0	0	0
-BSP100	Catudume	20	0	0	0	0
-BSP100	Catudume	28	0	0	0	0
-BSP97	Catudume	16	0	0	0	0
-BSP97	Catudume	18	0	0	0	0
-BSP97	Catudume	18	0	0	0	0
-BSP97	Catudume	22	0	0	0	0
-BSP97	Catudume	22	0	0	0	0
-BSP97	Catudume	43	0	0	0	0
-BSP97	Catudume	81	0	0	0	0
-BSP100	Celapani	18	0	0	0	0
-BSP100	Celapani	25	0	0	0	0
-BSP100	Chloswie	11	0	0	0	0
-BSP100	Chloswie	12	0	0	0	0
-BSP100	Chloswie	13	0	0	0	0
-BSP100	Chloswie	14	0	0	0	0
-BSP100	Chloswie	14	0	0	0	0
-BSP100	Chloswie	15	0	0	0	0
-BSP100	Chloswie	16	0	0	0	0
-BSP100	Chloswie	16	0	0	0	0
-BSP100	Chloswie	16	0	0	0	0
-BSP100	Chloswie	16	0	0	0	0
-BSP100	Chloswie	16	0	0	0	0
-BSP100	Chloswie	17	0	0	0	0
-BSP100	Chloswie	17	0	0	0	0
-BSP100	Chloswie	18	14	0	0	0
-BSP100	Chloswie	18	0	0	0	0
-BSP100	Chloswie	18	0	0	0	0
-BSP100	Chloswie	18	0	0	0	0
-BSP100	Chloswie	19	0	0	0	0
-BSP100	Chloswie	20	17	0	0	0
-BSP100	Chloswie	20	0	0	0	0
-BSP100	Chloswie	20	0	0	0	0
-BSP100	Chloswie	21	14	0	0	0
-BSP100	Chloswie	21	0	0	0	0
-BSP100	Chloswie	21	0	0	0	0
-BSP100	Chloswie	22	18	0	0	0
-BSP100	Chloswie	23	0	0	0	0
-BSP100	Chloswie	23	0	0	0	0
-BSP100	Chloswie	23	0	0	0	0
-BSP100	Chloswie	24	20	17	0	0
-BSP100	Chloswie	24	0	0	0	0
-BSP100	Chloswie	27	0	0	0	0
-BSP100	Chloswie	28	0	0	0	0
-BSP100	Chloswie	29	0	0	0	0
-BSP100	Chloswie	29	0	0	0	0
-BSP100	Chloswie	30	0	0	0	0
-BSP100	Chloswie	31	31	0	0	0
-BSP100	Chloswie	32	0	0	0	0
-BSP100	Chloswie	32	0	0	0	0
-BSP100	Chloswie	34	0	0	0	0
-BSP100	Chloswie	34	0	0	0	0
-BSP100	Chloswie	35	33	0	0	0
-BSP100	Chloswie	36	0	0	0	0
-BSP100	Chloswie	38	0	0	0	0
-BSP100	Chloswie	40	0	0	0	0
-BSP100	Chloswie	43	18	0	0	0
-BSP100	Chloswie	44	0	0	0	0
-BSP100	Chloswie	44	0	0	0	0
-BSP100	Chloswie	45	0	0	0	0
-BSP100	Chloswie	48	0	0	0	0
-BSP100	Chloswie	94	0	0	0	0
-BSP97	Dalbhorr	32	0	0	0	0
-BSP97	Dalbhorr	42	0	0	0	0
-BSP97	Dalbhorr	56	0	0	0	0
-BSP100	Dalblati	45	0	0	0	0
-BSP97	Dalblati	30	0	0	0	0
-BSP97	Dalblati	72	54	0	0	0
-BSP97	Dalblati	115	112	0	0	0
-BSP97	Dalblati	223	0	0	0	0
-BSP97	Dalbpani	55	0	0	0	0
-BSP97	Dillpent	39	31	0	0	0
-BSP97	Dillpent	217	0	0	0	0
-BSP100	Diosmela	11	0	0	0	0
-BSP100	Diosmela	14	0	0	0	0
-BSP100	Diosmela	15	0	0	0	0
-BSP100	Diosmela	16	0	0	0	0
-BSP100	Diosmela	17	0	0	0	0
-BSP100	Diosmela	18	0	0	0	0
-BSP100	Diosmela	23	0	0	0	0
-BSP100	Diosmela	26	0	0	0	0
-BSP100	Diosmela	26	0	0	0	0
-BSP100	Diosmela	34	0	0	0	0
-BSP100	Diosmela	43	32	0	0	0
-BSP100	Diosmela	43	30	0	0	0
-BSP100	Diosmela	49	0	0	0	0
-BSP100	Diosmela	54	40	0	0	0
-BSP100	Diosmela	72	57	0	0	0
-BSP100	Diosmont	11	0	0	0	0
-BSP100	Diosmont	14	0	0	0	0
-BSP100	Diosmont	18	0	0	0	0
-BSP100	Diosmont	19	0	0	0	0
-BSP100	Diosmont	33	0	0	0	0
-BSP97	Diosmont	14	0	0	0	0
-BSP100	Doliatro	23	0	0	0	0
-BSP100	Doliatro	30	0	0	0	0
-BSP100	Embloffi	11	0	0	0	0
-BSP100	Embloffi	13	0	0	0	0
-BSP100	Embloffi	15	0	0	0	0
-BSP100	Embloffi	17	0	0	0	0
-BSP100	Embloffi	17	0	0	0	0
-BSP100	Embloffi	17	0	0	0	0
-BSP100	Embloffi	18	0	0	0	0
-BSP100	Embloffi	21	0	0	0	0
-BSP100	Embloffi	22	0	0	0	0
-BSP100	Embloffi	25	0	0	0	0
-BSP100	Embloffi	27	0	0	0	0
-BSP100	Embloffi	43	0	0	0	0
-BSP97	Embloffi	47	0	0	0	0
-BSP97	Embloffi	52	0	0	0	0
-BSP97	Embloffi	58	0	0	0	0
-BSP97	Embloffi	65	0	0	0	0
-BSP97	Embloffi	75	0	0	0	0
-BSP97	Embloffi	80	0	0	0	0
-BSP97	Embloffi	122	0	0	0	0
-BSP97	Embloffi	138	0	0	0	0
-BSP100	Ficubeng	63	0	0	0	0
-BSP100	Ficubeng	185	0	0	0	0
-BSP97	Ficureli	342	0	0	0	0
-BSP100	Flacindi	12	0	0	0	0
-BSP100	Flacindi	14	0	0	0	0
-BSP100	Flacindi	14	0	0	0	0
-BSP100	Flacindi	15	0	0	0	0
-BSP100	Flacindi	18	0	0	0	0
-BSP100	Flacindi	20	0	0	0	0
-BSP100	Flacindi	21	0	0	0	0
-BSP100	Gardlati	16	0	0	0	0
-BSP100	Gardlati	17	0	0	0	0
-BSP100	Gardlati	27	27	0	0	0
-BSP100	Grewtili	16	0	0	0	0
-BSP97	Grewtili	24	0	0	0	0
-BSP97	Grewtili	101	0	0	0	0
-BSP97	Grewtili	101	0	0	0	0
-BSP97	Grewtili	102	0	0	0	0
-BSP97	Grewtili	107	0	0	0	0
-BSP97	Grewtili	109	0	0	0	0
-BSP97	Grewtili	117	0	0	0	0
-BSP97	Grewtili	117	0	0	0	0
-BSP97	Grewtili	121	0	0	0	0
-BSP97	Grewtili	123	0	0	0	0
-BSP97	Grewtili	127	0	0	0	0
-BSP97	Grewtili	137	0	0	0	0
-BSP97	Grewtili	139	0	0	0	0
-BSP97	Grewtili	140	0	0	0	0
-BSP97	Grewtili	142	0	0	0	0
-BSP97	Grewtili	142	0	0	0	0
-BSP97	Grewtili	146	0	0	0	0
-BSP97	Grewtili	149	0	0	0	0
-BSP97	Grewtili	150	0	0	0	0
-BSP97	Grewtili	150	0	0	0	0
-BSP97	Grewtili	155	0	0	0	0
-BSP97	Grewtili	163	0	0	0	0
-BSP97	Grewtili	163	0	0	0	0
-BSP97	Grewtili	169	0	0	0	0
-BSP97	Grewtili	177	0	0	0	0
-BSP97	Grewtili	183	0	0	0	0
-BSP100	Haldcord	89	63	0	0	0
-BSP97	Holaanti	16	0	0	0	0
-BSP97	Holaanti	17	0	0	0	0
-BSP97	Holaanti	17	0	0	0	0
-BSP97	Holaanti	26	0	0	0	0
-BSP97	Holaanti	27	0	0	0	0
-BSP97	Holaanti	29	0	0	0	0
-BSP97	Holaanti	43	0	0	0	0
-BSP97	Hymeorix	25	0	0	0	0
-BSP97	Hymeorix	178	0	0	0	0
-BSP100	Ixorarbo	17	0	0	0	0
-BSP100	Ixorarbo	43	0	0	0	0
-BSP100	Ixorarbo	69	0	0	0	0
-BSP100	Ixorarbo	93	0	0	0	0
-BSP97	Kydicaly	162	0	0	0	0
-BSP97	Kydicaly	184	0	0	0	0
-BSP97	Kydicaly	199	0	0	0	0
-BSP97	Kydicaly	230	0	0	0	0
-BSP97	Lagemicr	19	0	0	0	0
-BSP97	Lagemicr	27	0	0	0	0
-BSP97	Lagemicr	31	0	0	0	0
-BSP97	Lagemicr	33	0	0	0	0
-BSP97	Lagemicr	58	0	0	0	0
-BSP97	Lagemicr	91	0	0	0	0
-BSP97	Lagemicr	122	0	0	0	0
-BSP97	Lagemicr	127	0	0	0	0
-BSP97	Lagemicr	130	0	0	0	0
-BSP97	Lagemicr	135	0	0	0	0
-BSP97	Lagemicr	150	0	0	0	0
-BSP97	Lagemicr	168	0	0	0	0
-BSP97	Lagemicr	170	0	0	0	0
-BSP97	Lagemicr	196	0	0	0	0
-BSP100	Lageparv	13	0	0	0	0
-BSP100	Lageparv	14	0	0	0	0
-BSP100	Lageparv	14	0	0	0	0
-BSP100	Lageparv	14	0	0	0	0
-BSP100	Lageparv	16	0	0	0	0
-BSP100	Lageparv	17	15	0	0	0
-BSP100	Lageparv	20	18	0	0	0
-BSP100	Lageparv	22	17	0	0	0
-BSP100	Madhlong	10	0	0	0	0
-BSP100	Madhlong	14	0	0	0	0
-BSP100	Madhlong	19	0	0	0	0
-BSP100	Madhlong	19	0	0	0	0
-BSP97	Madhlong	139	0	0	0	0
-BSP97	Madhlong	176	0	0	0	0
-BSP100	Maytemar	12	0	0	0	0
-BSP100	Maytemar	12	0	0	0	0
-BSP100	Maytemar	14	0	0	0	0
-BSP100	Maytemar	14	0	0	0	0
-BSP100	Maytemar	15	14	0	0	0
-BSP100	Maytemar	15	0	0	0	0
-BSP100	Maytemar	15	0	0	0	0
-BSP100	Maytemar	20	0	0	0	0
-BSP100	Mitrgran	97	0	0	0	0
-BSP97	Mitrparv	10	0	0	0	0
-BSP100	Naricren	14	0	0	0	0
-BSP100	Naricren	15	0	0	0	0
-BSP100	Naricren	16	0	0	0	0
-BSP100	Naricren	21	0	0	0	0
-BSP100	Polycera	12	0	0	0	0
-BSP100	Polycera	12	0	0	0	0
-BSP100	Polycera	13	0	0	0	0
-BSP100	Polycera	13	0	0	0	0
-BSP100	Polycera	16	0	0	0	0
-BSP100	Polycera	19	0	0	0	0
-BSP100	Polycera	20	0	0	0	0
-BSP100	Polycera	22	0	0	0	0
-BSP100	Polycera	23	0	0	0	0
-BSP100	Pterdive	26	0	0	0	0
-BSP97	Pterdive	14	0	0	0	0
-BSP97	Pterdive	37	0	0	0	0
-BSP97	Pterdive	61	0	0	0	0
-BSP97	Pterdive	63	0	0	0	0
-BSP97	Radexylo	19	0	0	0	0
-BSP97	Radexylo	50	26	0	0	0
-BSP100	Soymfebr	16	15	0	0	0
-BSP100	Soymfebr	19	0	0	0	0
-BSP100	Soymfebr	25	0	0	0	0
-BSP100	Stercola	12	0	0	0	0
-BSP100	Stercola	22	0	0	0	0
-BSP100	Stercola	32	0	0	0	0
-BSP100	Stercola	37	0	0	0	0
-BSP100	Stercola	64	0	0	0	0
-BSP100	Stercola	68	0	0	0	0
-BSP100	Tectgran	12	0	0	0	0
-BSP100	Tectgran	12	0	0	0	0
-BSP100	Tectgran	12	0	0	0	0
-BSP100	Tectgran	12	0	0	0	0
-BSP100	Tectgran	13	0	0	0	0
-BSP100	Tectgran	13	0	0	0	0
-BSP100	Tectgran	14	0	0	0	0
-BSP100	Tectgran	14	0	0	0	0
-BSP100	Tectgran	14	0	0	0	0
-BSP100	Tectgran	15	0	0	0	0
-BSP100	Tectgran	15	0	0	0	0
-BSP100	Tectgran	16	0	0	0	0
-BSP100	Tectgran	16	0	0	0	0
-BSP100	Tectgran	17	0	0	0	0
-BSP100	Tectgran	19	0	0	0	0
-BSP100	Tectgran	19	0	0	0	0
-BSP100	Tectgran	21	14	0	0	0
-BSP100	Tectgran	22	0	0	0	0
-BSP100	Tectgran	23	17	0	0	0
-BSP100	Tectgran	24	13	0	0	0
-BSP100	Tectgran	24	0	0	0	0
-BSP100	Tectgran	24	0	0	0	0
-BSP100	Tectgran	25	0	0	0	0
-BSP100	Tectgran	27	0	0	0	0
-BSP100	Tectgran	27	0	0	0	0
-BSP100	Tectgran	28	0	0	0	0
-BSP100	Tectgran	31	0	0	0	0
-BSP100	Tectgran	32	17	0	0	0
-BSP100	Tectgran	32	0	0	0	0
-BSP100	Tectgran	34	0	0	0	0
-BSP100	Tectgran	36	0	0	0	0
-BSP100	Tectgran	44	0	0	0	0
-BSP100	Tectgran	44	0	0	0	0
-BSP100	Tectgran	49	0	0	0	0
-BSP100	Tectgran	58	0	0	0	0
-BSP100	Tectgran	70	17	0	0	0
-BSP97	Termbell	142	0	0	0	0
-BSP97	Termbell	148	0	0	0	0
-BSP100	Termcheb	47	0	0	0	0
-BSP97	Termpani	14	0	0	0	0
-BSP97	Termpani	14	0	0	0	0
-BSP97	Termpani	14	0	0	0	0
-BSP97	Termpani	24	0	0	0	0
-BSP97	Termpani	24	0	0	0	0
-BSP97	Termpani	26	0	0	0	0
-BSP97	Termpani	28	0	0	0	0
-BSP97	Termpani	31	0	0	0	0
-BSP97	Termpani	33	0	0	0	0
-BSP97	Termpani	33	0	0	0	0
-BSP97	Termpani	41	23	0	0	0
-BSP97	Termpani	45	0	0	0	0
-BSP97	Termpani	45	0	0	0	0
-BSP97	Termpani	52	0	0	0	0
-BSP97	Termpani	60	0	0	0	0
-BSP97	Termpani	61	0	0	0	0
-BSP97	Termpani	63	0	0	0	0
-BSP97	Termpani	102	0	0	0	0
-BSP97	Termpani	118	0	0	0	0
-BSP97	Termpani	119	0	0	0	0
-BSP97	Termpani	124	0	0	0	0
-BSP97	Termpani	129	0	0	0	0
-BSP97	Termpani	135	0	0	0	0
-BSP97	Termpani	138	0	0	0	0
-BSP97	Termpani	145	0	0	0	0
-BSP97	Termpani	149	0	0	0	0
-BSP97	Termpani	188	42	35	27	0
-BSP97	Termpani	207	0	0	0	0
-BSP97	Termpani	209	0	0	0	0
-BSP97	Termpani	242	0	0	0	0
-BSP97	Termpani	260	0	0	0	0
-BSP100	Termalat	13	0	0	0	0
-BSP100	Termalat	13	0	0	0	0
-BSP100	Termalat	13	0	0	0	0
-BSP100	Termalat	14	0	0	0	0
-BSP100	Termalat	14	0	0	0	0
-BSP100	Termalat	15	0	0	0	0
-BSP100	Termalat	16	0	0	0	0
-BSP100	Termalat	16	0	0	0	0
-BSP100	Termalat	18	0	0	0	0
-BSP100	Termalat	18	0	0	0	0
-BSP100	Termalat	19	0	0	0	0
-BSP100	Termalat	22	0	0	0	0
-BSP100	Termalat	35	0	0	0	0
-BSP100	Termalat	63	0	0	0	0
-BSP100	Termalat	68	0	0	0	0
-BSP100	Termalat	104	0	0	0	0
-BSP97	Termalat	20	0	0	0	0
-BSP97	Termalat	31	0	0	0	0
-BSP97	Termalat	31	0	0	0	0
-BSP97	Termalat	33	0	0	0	0
-BSP97	Termalat	37	0	0	0	0
-BSP97	Termalat	42	0	0	0	0
-BSP97	Termalat	58	0	0	0	0
-BSP97	Termalat	71	66	0	0	0
-BSP97	Termalat	87	0	0	0	0
-BSP97	Termalat	90	0	0	0	0
-BSP97	Termalat	103	0	0	0	0
-BSP97	Termalat	106	0	0	0	0
-BSP97	Termalat	118	0	0	0	0
-BSP97	Termalat	137	0	0	0	0
-BSP97	Termalat	142	0	0	0	0
-BSP97	Termalat	142	0	0	0	0
-BSP97	Termalat	146	0	0	0	0
-BSP97	Termalat	155	0	0	0	0
-BSP97	Termalat	156	0	0	0	0
-BSP97	Termalat	161	0	0	0	0
-BSP97	Termalat	184	0	0	0	0
-BSP97	Termalat	184	0	0	0	0
-BSP97	Termalat	202	0	0	0	0
-BSP97	Termalat	215	0	0	0	0
-BSP97	Termalat	251	0	0	0	0
-BSP100	Zizirugo	19	0	0	0	0
-BSP97	Zizirugo	14	0	0	0	0
-BSP97	Zizirugo	61	0	0	0	0
-BSP97	Zizirugo	61	0	0	0	0
+PlotID	ForestDiv	SpCode	TreeGirth1	TreeGirth2	TreeGirth3	TreeGirth4	TreeGirth5
+BSP100	Chikkamagalur	Acaccate	12	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	13	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	14	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	15	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	16	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	16	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	16	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	17	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	17	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	17	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	17	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	19	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	20	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	20	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	20	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	22	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	23	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	23	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	23	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	24	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	24	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	25	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	25	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	25	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	25	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	26	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	26	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	27	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	27	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	27	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	28	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	29	24	0	0	0
+BSP100	Chikkamagalur	Acaccate	29	14	0	0	0
+BSP100	Chikkamagalur	Acaccate	29	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	31	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	31	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	31	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	31	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	31	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	33	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	39	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	40	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	40	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	45	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	50	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	54	0	0	0	0
+BSP100	Chikkamagalur	Acaccate	61	0	0	0	0
+BSP100	Chikkamagalur	Acacleuc	16	0	0	0	0
+BSP100	Chikkamagalur	Acacleuc	17	0	0	0	0
+BSP100	Chikkamagalur	Acacleuc	25	0	0	0	0
+BSP100	Chikkamagalur	Acacleuc	49	0	0	0	0
+BSP100	Chikkamagalur	Acacleuc	66	37	0	0	0
+BSP100	Chikkamagalur	Acacsinu	12	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	24	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	24	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	30	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	53	51	0	0	0
+BSP100	Chikkamagalur	Albiamar	59	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	77	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	81	0	0	0	0
+BSP100	Chikkamagalur	Albiamar	86	0	0	0	0
+BSP100	Chikkamagalur	Albiodor	18	0	0	0	0
+BSP100	Chikkamagalur	Albiodor	38	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	10	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	11	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	11	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	12	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	13	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	13	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	14	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	15	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	14	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	15	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	14	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	16	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	17	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	16	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	18	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	15	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	15	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	14	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	14	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	19	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	18	16	0	0
+BSP100	Chikkamagalur	Anoglati	20	18	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	15	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	20	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	21	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	21	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	22	21	0	0	0
+BSP100	Chikkamagalur	Anoglati	22	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	22	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	22	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	22	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	22	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	23	16	15	0	0
+BSP100	Chikkamagalur	Anoglati	23	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	23	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	23	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	23	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	23	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	24	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	25	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	25	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	25	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	26	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	27	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	28	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	28	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	30	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	31	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	32	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	37	28	0	0	0
+BSP100	Chikkamagalur	Anoglati	41	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	47	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	50	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	52	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	55	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	55	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	58	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	63	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	66	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	76	0	0	0	0
+BSP100	Chikkamagalur	Anoglati	104	0	0	0	0
+BSP100	Chikkamagalur	Bauhrace	16	0	0	0	0
+BSP100	Chikkamagalur	Bauhrace	18	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	16	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	31	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	31	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	32	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	33	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	35	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	39	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	41	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	43	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	47	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	51	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	54	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	64	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	66	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	67	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	69	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	72	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	75	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	79	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	83	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	86	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	91	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	93	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	102	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	105	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	121	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	121	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	125	0	0	0	0
+BSP100	Chikkamagalur	Boswserr	170	0	0	0	0
+BSP100	Chikkamagalur	Bridcren	63	0	0	0	0
+BSP100	Chikkamagalur	Buchlanz	79	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	14	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	17	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	18	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	20	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	23	17	0	0	0
+BSP100	Chikkamagalur	Cassfist	26	0	0	0	0
+BSP100	Chikkamagalur	Cassfist	32	0	0	0	0
+BSP100	Chikkamagalur	Cassglau	12	0	0	0	0
+BSP100	Chikkamagalur	Cassglau	15	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	26	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	43	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	60	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	81	56	0	0	0
+BSP100	Chikkamagalur	Casssiam	84	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	87	27	0	0	0
+BSP100	Chikkamagalur	Casssiam	89	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	94	0	0	0	0
+BSP100	Chikkamagalur	Casssiam	111	61	0	0	0
+BSP100	Chikkamagalur	Catudume	13	0	0	0	0
+BSP100	Chikkamagalur	Catudume	15	0	0	0	0
+BSP100	Chikkamagalur	Catudume	20	0	0	0	0
+BSP100	Chikkamagalur	Catudume	28	0	0	0	0
+BSP100	Chikkamagalur	Celapani	18	0	0	0	0
+BSP100	Chikkamagalur	Celapani	25	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	11	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	12	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	13	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	14	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	14	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	15	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	16	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	16	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	16	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	16	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	16	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	17	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	17	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	18	14	0	0	0
+BSP100	Chikkamagalur	Chloswie	18	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	18	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	18	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	19	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	20	17	0	0	0
+BSP100	Chikkamagalur	Chloswie	20	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	20	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	21	14	0	0	0
+BSP100	Chikkamagalur	Chloswie	21	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	21	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	22	18	0	0	0
+BSP100	Chikkamagalur	Chloswie	23	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	23	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	23	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	24	20	17	0	0
+BSP100	Chikkamagalur	Chloswie	24	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	27	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	28	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	29	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	29	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	30	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	31	31	0	0	0
+BSP100	Chikkamagalur	Chloswie	32	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	32	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	34	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	34	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	35	33	0	0	0
+BSP100	Chikkamagalur	Chloswie	36	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	38	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	40	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	43	18	0	0	0
+BSP100	Chikkamagalur	Chloswie	44	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	44	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	45	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	48	0	0	0	0
+BSP100	Chikkamagalur	Chloswie	94	0	0	0	0
+BSP100	Chikkamagalur	Dalblati	45	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	11	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	14	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	15	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	16	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	17	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	18	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	23	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	26	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	26	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	34	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	43	32	0	0	0
+BSP100	Chikkamagalur	Diosmela	43	30	0	0	0
+BSP100	Chikkamagalur	Diosmela	49	0	0	0	0
+BSP100	Chikkamagalur	Diosmela	54	40	0	0	0
+BSP100	Chikkamagalur	Diosmela	72	57	0	0	0
+BSP100	Chikkamagalur	Diosmont	11	0	0	0	0
+BSP100	Chikkamagalur	Diosmont	14	0	0	0	0
+BSP100	Chikkamagalur	Diosmont	18	0	0	0	0
+BSP100	Chikkamagalur	Diosmont	19	0	0	0	0
+BSP100	Chikkamagalur	Diosmont	33	0	0	0	0
+BSP100	Chikkamagalur	Doliatro	23	0	0	0	0
+BSP100	Chikkamagalur	Doliatro	30	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	11	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	13	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	15	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	17	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	17	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	17	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	18	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	21	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	22	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	25	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	27	0	0	0	0
+BSP100	Chikkamagalur	Embloffi	43	0	0	0	0
+BSP100	Chikkamagalur	Ficubeng	63	0	0	0	0
+BSP100	Chikkamagalur	Ficubeng	185	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	12	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	14	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	14	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	15	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	18	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	20	0	0	0	0
+BSP100	Chikkamagalur	Flacindi	21	0	0	0	0
+BSP100	Chikkamagalur	Gardlati	16	0	0	0	0
+BSP100	Chikkamagalur	Gardlati	17	0	0	0	0
+BSP100	Chikkamagalur	Gardlati	27	27	0	0	0
+BSP100	Chikkamagalur	Grewtili	16	0	0	0	0
+BSP100	Chikkamagalur	Haldcord	89	63	0	0	0
+BSP100	Chikkamagalur	Ixorarbo	17	0	0	0	0
+BSP100	Chikkamagalur	Ixorarbo	43	0	0	0	0
+BSP100	Chikkamagalur	Ixorarbo	69	0	0	0	0
+BSP100	Chikkamagalur	Ixorarbo	93	0	0	0	0
+BSP100	Chikkamagalur	Lageparv	13	0	0	0	0
+BSP100	Chikkamagalur	Lageparv	14	0	0	0	0
+BSP100	Chikkamagalur	Lageparv	14	0	0	0	0
+BSP100	Chikkamagalur	Lageparv	14	0	0	0	0
+BSP100	Chikkamagalur	Lageparv	16	0	0	0	0
+BSP100	Chikkamagalur	Lageparv	17	15	0	0	0
+BSP100	Chikkamagalur	Lageparv	20	18	0	0	0
+BSP100	Chikkamagalur	Lageparv	22	17	0	0	0
+BSP100	Chikkamagalur	Madhlong	10	0	0	0	0
+BSP100	Chikkamagalur	Madhlong	14	0	0	0	0
+BSP100	Chikkamagalur	Madhlong	19	0	0	0	0
+BSP100	Chikkamagalur	Madhlong	19	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	12	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	12	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	14	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	14	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	15	14	0	0	0
+BSP100	Chikkamagalur	Maytemar	15	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	15	0	0	0	0
+BSP100	Chikkamagalur	Maytemar	20	0	0	0	0
+BSP100	Chikkamagalur	Mitrgran	97	0	0	0	0
+BSP100	Chikkamagalur	Naricren	14	0	0	0	0
+BSP100	Chikkamagalur	Naricren	15	0	0	0	0
+BSP100	Chikkamagalur	Naricren	16	0	0	0	0
+BSP100	Chikkamagalur	Naricren	21	0	0	0	0
+BSP100	Chikkamagalur	Polycera	12	0	0	0	0
+BSP100	Chikkamagalur	Polycera	12	0	0	0	0
+BSP100	Chikkamagalur	Polycera	13	0	0	0	0
+BSP100	Chikkamagalur	Polycera	13	0	0	0	0
+BSP100	Chikkamagalur	Polycera	16	0	0	0	0
+BSP100	Chikkamagalur	Polycera	19	0	0	0	0
+BSP100	Chikkamagalur	Polycera	20	0	0	0	0
+BSP100	Chikkamagalur	Polycera	22	0	0	0	0
+BSP100	Chikkamagalur	Polycera	23	0	0	0	0
+BSP100	Chikkamagalur	Pterdive	26	0	0	0	0
+BSP100	Chikkamagalur	Soymfebr	16	15	0	0	0
+BSP100	Chikkamagalur	Soymfebr	19	0	0	0	0
+BSP100	Chikkamagalur	Soymfebr	25	0	0	0	0
+BSP100	Chikkamagalur	Stercola	12	0	0	0	0
+BSP100	Chikkamagalur	Stercola	22	0	0	0	0
+BSP100	Chikkamagalur	Stercola	32	0	0	0	0
+BSP100	Chikkamagalur	Stercola	37	0	0	0	0
+BSP100	Chikkamagalur	Stercola	64	0	0	0	0
+BSP100	Chikkamagalur	Stercola	68	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	12	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	12	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	12	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	12	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	13	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	13	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	14	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	14	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	14	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	15	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	15	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	16	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	16	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	17	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	19	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	19	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	21	14	0	0	0
+BSP100	Chikkamagalur	Tectgran	22	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	23	17	0	0	0
+BSP100	Chikkamagalur	Tectgran	24	13	0	0	0
+BSP100	Chikkamagalur	Tectgran	24	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	24	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	25	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	27	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	27	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	28	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	31	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	32	17	0	0	0
+BSP100	Chikkamagalur	Tectgran	32	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	34	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	36	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	44	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	44	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	49	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	58	0	0	0	0
+BSP100	Chikkamagalur	Tectgran	70	17	0	0	0
+BSP100	Chikkamagalur	Termcheb	47	0	0	0	0
+BSP100	Chikkamagalur	Termalat	13	0	0	0	0
+BSP100	Chikkamagalur	Termalat	13	0	0	0	0
+BSP100	Chikkamagalur	Termalat	13	0	0	0	0
+BSP100	Chikkamagalur	Termalat	14	0	0	0	0
+BSP100	Chikkamagalur	Termalat	14	0	0	0	0
+BSP100	Chikkamagalur	Termalat	15	0	0	0	0
+BSP100	Chikkamagalur	Termalat	16	0	0	0	0
+BSP100	Chikkamagalur	Termalat	16	0	0	0	0
+BSP100	Chikkamagalur	Termalat	18	0	0	0	0
+BSP100	Chikkamagalur	Termalat	18	0	0	0	0
+BSP100	Chikkamagalur	Termalat	19	0	0	0	0
+BSP100	Chikkamagalur	Termalat	22	0	0	0	0
+BSP100	Chikkamagalur	Termalat	35	0	0	0	0
+BSP100	Chikkamagalur	Termalat	63	0	0	0	0
+BSP100	Chikkamagalur	Termalat	68	0	0	0	0
+BSP100	Chikkamagalur	Termalat	104	0	0	0	0
+BSP100	Chikkamagalur	Zizirugo	19	0	0	0	0
+BSP97	Chikkamagalur	Acacsinu	22	0	0	0	0
+BSP97	Chikkamagalur	Acacsinu	65	0	0	0	0
+BSP97	Chikkamagalur	Albiodor	186	0	0	0	0
+BSP97	Chikkamagalur	Albiodor	274	0	0	0	0
+BSP97	Chikkamagalur	Alseseme	147	0	0	0	0
+BSP97	Chikkamagalur	Annoreti	14	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	16	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	25	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	26	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	34	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	42	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	53	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	55	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	61	33	0	0	0
+BSP97	Chikkamagalur	Anoglati	64	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	66	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	67	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	68	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	70	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	70	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	71	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	75	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	75	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	76	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	78	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	78	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	79	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	82	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	87	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	90	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	90	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	90	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	94	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	97	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	100	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	101	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	104	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	175	0	0	0	0
+BSP97	Chikkamagalur	Anoglati	177	0	0	0	0
+BSP97	Chikkamagalur	Bambarun	18	0	0	0	0
+BSP97	Chikkamagalur	Bambarun	22	0	0	0	0
+BSP97	Chikkamagalur	Bambarun	25	0	0	0	0
+BSP97	Chikkamagalur	Bambarun	26	0	0	0	0
+BSP97	Chikkamagalur	Bambarun	35	0	0	0	0
+BSP97	Chikkamagalur	Bambarun	42	0	0	0	0
+BSP97	Chikkamagalur	Bauhrace	125	0	0	0	0
+BSP97	Chikkamagalur	Bauhrace	182	0	0	0	0
+BSP97	Chikkamagalur	Bridcren	108	71	0	0	0
+BSP97	Chikkamagalur	Bridcren	136	0	0	0	0
+BSP97	Chikkamagalur	Buchlanz	92	0	0	0	0
+BSP97	Chikkamagalur	Buchlanz	113	0	0	0	0
+BSP97	Chikkamagalur	Calltome	14	14	0	0	0
+BSP97	Chikkamagalur	Calltome	36	0	0	0	0
+BSP97	Chikkamagalur	Casetome	22	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	12	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	15	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	15	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	16	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	17	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	17	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	19	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	21	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	21	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	22	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	24	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	26	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	28	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	28	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	29	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	29	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	30	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	32	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	33	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	39	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	42	25	0	0	0
+BSP97	Chikkamagalur	Cassfist	43	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	55	0	0	0	0
+BSP97	Chikkamagalur	Cassfist	74	0	0	0	0
+BSP97	Chikkamagalur	Catudume	16	0	0	0	0
+BSP97	Chikkamagalur	Catudume	18	0	0	0	0
+BSP97	Chikkamagalur	Catudume	18	0	0	0	0
+BSP97	Chikkamagalur	Catudume	22	0	0	0	0
+BSP97	Chikkamagalur	Catudume	22	0	0	0	0
+BSP97	Chikkamagalur	Catudume	43	0	0	0	0
+BSP97	Chikkamagalur	Catudume	81	0	0	0	0
+BSP97	Chikkamagalur	Dalbhorr	32	0	0	0	0
+BSP97	Chikkamagalur	Dalbhorr	42	0	0	0	0
+BSP97	Chikkamagalur	Dalbhorr	56	0	0	0	0
+BSP97	Chikkamagalur	Dalblati	30	0	0	0	0
+BSP97	Chikkamagalur	Dalblati	72	54	0	0	0
+BSP97	Chikkamagalur	Dalblati	115	112	0	0	0
+BSP97	Chikkamagalur	Dalblati	223	0	0	0	0
+BSP97	Chikkamagalur	Dalbpani	55	0	0	0	0
+BSP97	Chikkamagalur	Dillpent	39	31	0	0	0
+BSP97	Chikkamagalur	Dillpent	217	0	0	0	0
+BSP97	Chikkamagalur	Diosmont	14	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	47	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	52	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	58	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	65	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	75	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	80	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	122	0	0	0	0
+BSP97	Chikkamagalur	Embloffi	138	0	0	0	0
+BSP97	Chikkamagalur	Ficureli	342	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	24	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	101	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	101	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	102	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	107	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	109	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	117	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	117	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	121	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	123	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	127	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	137	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	139	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	140	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	142	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	142	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	146	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	149	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	150	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	150	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	155	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	163	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	163	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	169	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	177	0	0	0	0
+BSP97	Chikkamagalur	Grewtili	183	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	16	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	17	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	17	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	26	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	27	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	29	0	0	0	0
+BSP97	Chikkamagalur	Holaanti	43	0	0	0	0
+BSP97	Chikkamagalur	Hymeorix	25	0	0	0	0
+BSP97	Chikkamagalur	Hymeorix	178	0	0	0	0
+BSP97	Chikkamagalur	Kydicaly	162	0	0	0	0
+BSP97	Chikkamagalur	Kydicaly	184	0	0	0	0
+BSP97	Chikkamagalur	Kydicaly	199	0	0	0	0
+BSP97	Chikkamagalur	Kydicaly	230	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	19	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	27	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	31	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	33	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	58	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	91	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	122	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	127	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	130	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	135	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	150	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	168	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	170	0	0	0	0
+BSP97	Chikkamagalur	Lagemicr	196	0	0	0	0
+BSP97	Chikkamagalur	Madhlong	139	0	0	0	0
+BSP97	Chikkamagalur	Madhlong	176	0	0	0	0
+BSP97	Chikkamagalur	Mitrparv	10	0	0	0	0
+BSP97	Chikkamagalur	Pterdive	14	0	0	0	0
+BSP97	Chikkamagalur	Pterdive	37	0	0	0	0
+BSP97	Chikkamagalur	Pterdive	61	0	0	0	0
+BSP97	Chikkamagalur	Pterdive	63	0	0	0	0
+BSP97	Chikkamagalur	Radexylo	19	0	0	0	0
+BSP97	Chikkamagalur	Radexylo	50	26	0	0	0
+BSP97	Chikkamagalur	Termbell	142	0	0	0	0
+BSP97	Chikkamagalur	Termbell	148	0	0	0	0
+BSP97	Chikkamagalur	Termpani	14	0	0	0	0
+BSP97	Chikkamagalur	Termpani	14	0	0	0	0
+BSP97	Chikkamagalur	Termpani	14	0	0	0	0
+BSP97	Chikkamagalur	Termpani	24	0	0	0	0
+BSP97	Chikkamagalur	Termpani	24	0	0	0	0
+BSP97	Chikkamagalur	Termpani	26	0	0	0	0
+BSP97	Chikkamagalur	Termpani	28	0	0	0	0
+BSP97	Chikkamagalur	Termpani	31	0	0	0	0
+BSP97	Chikkamagalur	Termpani	33	0	0	0	0
+BSP97	Chikkamagalur	Termpani	33	0	0	0	0
+BSP97	Chikkamagalur	Termpani	41	23	0	0	0
+BSP97	Chikkamagalur	Termpani	45	0	0	0	0
+BSP97	Chikkamagalur	Termpani	45	0	0	0	0
+BSP97	Chikkamagalur	Termpani	52	0	0	0	0
+BSP97	Chikkamagalur	Termpani	60	0	0	0	0
+BSP97	Chikkamagalur	Termpani	61	0	0	0	0
+BSP97	Chikkamagalur	Termpani	63	0	0	0	0
+BSP97	Chikkamagalur	Termpani	102	0	0	0	0
+BSP97	Chikkamagalur	Termpani	118	0	0	0	0
+BSP97	Chikkamagalur	Termpani	119	0	0	0	0
+BSP97	Chikkamagalur	Termpani	124	0	0	0	0
+BSP97	Chikkamagalur	Termpani	129	0	0	0	0
+BSP97	Chikkamagalur	Termpani	135	0	0	0	0
+BSP97	Chikkamagalur	Termpani	138	0	0	0	0
+BSP97	Chikkamagalur	Termpani	145	0	0	0	0
+BSP97	Chikkamagalur	Termpani	149	0	0	0	0
+BSP97	Chikkamagalur	Termpani	188	42	35	27	0
+BSP97	Chikkamagalur	Termpani	207	0	0	0	0
+BSP97	Chikkamagalur	Termpani	209	0	0	0	0
+BSP97	Chikkamagalur	Termpani	242	0	0	0	0
+BSP97	Chikkamagalur	Termpani	260	0	0	0	0
+BSP97	Chikkamagalur	Termalat	20	0	0	0	0
+BSP97	Chikkamagalur	Termalat	31	0	0	0	0
+BSP97	Chikkamagalur	Termalat	31	0	0	0	0
+BSP97	Chikkamagalur	Termalat	33	0	0	0	0
+BSP97	Chikkamagalur	Termalat	37	0	0	0	0
+BSP97	Chikkamagalur	Termalat	42	0	0	0	0
+BSP97	Chikkamagalur	Termalat	58	0	0	0	0
+BSP97	Chikkamagalur	Termalat	71	66	0	0	0
+BSP97	Chikkamagalur	Termalat	87	0	0	0	0
+BSP97	Chikkamagalur	Termalat	90	0	0	0	0
+BSP97	Chikkamagalur	Termalat	103	0	0	0	0
+BSP97	Chikkamagalur	Termalat	106	0	0	0	0
+BSP97	Chikkamagalur	Termalat	118	0	0	0	0
+BSP97	Chikkamagalur	Termalat	137	0	0	0	0
+BSP97	Chikkamagalur	Termalat	142	0	0	0	0
+BSP97	Chikkamagalur	Termalat	142	0	0	0	0
+BSP97	Chikkamagalur	Termalat	146	0	0	0	0
+BSP97	Chikkamagalur	Termalat	155	0	0	0	0
+BSP97	Chikkamagalur	Termalat	156	0	0	0	0
+BSP97	Chikkamagalur	Termalat	161	0	0	0	0
+BSP97	Chikkamagalur	Termalat	184	0	0	0	0
+BSP97	Chikkamagalur	Termalat	184	0	0	0	0
+BSP97	Chikkamagalur	Termalat	202	0	0	0	0
+BSP97	Chikkamagalur	Termalat	215	0	0	0	0
+BSP97	Chikkamagalur	Termalat	251	0	0	0	0
+BSP97	Chikkamagalur	Zizirugo	14	0	0	0	0
+BSP97	Chikkamagalur	Zizirugo	61	0	0	0	0
+BSP97	Chikkamagalur	Zizirugo	61	0	0	0	0
