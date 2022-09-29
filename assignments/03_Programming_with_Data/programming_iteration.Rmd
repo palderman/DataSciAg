@@ -72,6 +72,13 @@ This assignment builds on the `Programming with Data - Defining Functions` assig
     * Joins the tree and site data tibbles into a single tibble
     * Returns the resulting tibble
 
+```{r problem_2_output,echo=FALSE,include=TRUE}
+for_divs <- list_forest_divisions('data')
+cat(paste0('Example output for ',for_divs[1],'\n'))
+for_div_1 <- read_forest_division('data',for_divs[1])
+for_div_1
+```
+
 2. Write a new function called `read_all_divisions()` that:
     * Takes a data directory path as an argument
     * Calls the `list_forest_divisions()` function to generate a list of forest divisions
