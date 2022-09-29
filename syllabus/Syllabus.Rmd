@@ -1,7 +1,7 @@
 ---
 title: |
     | \Large \textbf{Data Science for Agriculture and Natural Resources}
-    | \textbf{PLNT 5413 -- Fall 2022}
+    | \textbf{PLNT 5413 -- Fall 2023}
 fontsize: 12pt
 output: pdf_document
 link-citations: true
@@ -9,6 +9,10 @@ urlcolor: blue
 margin: 1in
 header-includes:
 - \usepackage{pdfpages}
+bibliography: textbooks.bib
+biblio-style: unsrt
+nocite: |
+  @RforDS, @TidyModeling, @RforDSsolutions
 ---
 
 ```{r setup, include=FALSE}
@@ -41,11 +45,8 @@ This course will be delivered in-person. At times, students may be permitted to 
 
 ## Textbook
 
-H. Wickham and G. Grolemund. _R for Data Science: Import,
-Tidy, Transform, Visualize, and Model Data_. O'Reilly Media, Inc.,
-2017. URL: http://r4ds.had.co.nz.
-
-J.B. Arnold. _R for Data Science: Exercise Solutions_. 2020. URL: https://jrnold.github.io/r4ds-exercise-solutions.
+::: {#refs}
+:::
 
 <!-- \newpage -->
 
@@ -120,4 +121,4 @@ I encourage you to help each other and I have created a *Help Forum* discussion 
 
 Each students is required to gain access to their own computer and to install free and open source software on that computer. Support will be provided by the instructor in the installation of required software.
 
-\includepdf[pages=-]{syllabus_material/Fall-2022-Syllabus-Attachment-Final-8.1.22.pdf}
+\includepdf[pages=-]{Fall-2022-Syllabus-Attachment-Final-8.1.22.pdf}
