@@ -33,7 +33,7 @@ You are a person of great worth and much potential. If you feel that you need to
 
 Tuesday, Thursday 9:00-10:15am; 463 Agricultural Hall
 
-This course will be delivered in-person. At times, students may be permitted to participate remotely when unable meet in person for valid reasons (e.g. if sick or in quarantine). In such cases, the student should contact the instructor in advance (when possible) to make appropriate arrangements.
+This course will be delivered in-person. At times, students may be permitted to participate remotely when unable meet in person for valid reasons (e.g. if sick or traveling). In such cases, the student should contact the instructor in advance (when possible) to make appropriate arrangements.
 
 ## Instructor
 
@@ -41,9 +41,9 @@ This course will be delivered in-person. At times, students may be permitted to 
 >  Office: 274 Agricultural Hall \
 >  Email: [phillip.alderman@okstate.edu](mailto:phillip.alderman@okstate.edu) \
 >  Phone: (405)744-9604 \
->  Office Hours:  Tue, Thu 10:30am-1:30pm or by appointment
+>  Office Hours:  Tue, Thu 10:30am-12:30pm or by appointment
 
-## Textbook
+## Textbooks
 
 ::: {#refs}
 :::
@@ -62,7 +62,7 @@ modules <- tribble(         ~Module, ~mod_index,
                '*Semester Project*',          6) %>% 
   mutate(Module = factor(Module,levels=Module))
 
-schedule <- {as.POSIXct('2022-08-23') + weeks(0:15)} %>% 
+schedule <- {as.POSIXct('2023-08-21') + weeks(0:15)} %>% 
   tibble(tuesdays = .) %>% 
   mutate(thursdays = tuesdays + days(2)) %>% 
   pivot_longer(c(tuesdays, thursdays), values_to = "dates") %>% 

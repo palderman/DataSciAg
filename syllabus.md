@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Syllabus
-catalog: PLNT 5110
+catalog: PLNT 5413
 credits: 3
-semester: Fall 2017
+semester: Fall 2018
 professor: Phillip D. Alderman
 office: 274 Agricultural Hall
 email: phillip.alderman@okstate.edu
 phone: 405-744-9604
 schedule: ['TR, 9-10:15, 401 Agricultural Hall']
-office_hours: Tuesday 10:30 am - 12 pm, Wednesday 9:30 - 11 am, , or by appointment
+office_hours: Tuesday 10:30 am - 12 pm, Wednesday 9:30 - 11 am, or by appointment
 ---
 
 ## {{ site.title }} 
@@ -210,4 +210,4 @@ changes will be communicated clearly and promptly to all students.
 
 ## Oklahoma State University Policies
 
-Please review the [Fall 2017 Syllabus Attachement](http://academicaffairs.okstate.edu/sites/default/files/Fall%202017%20Syllabus%20Attachment.pdf) for an overview of university-wide policies and academic resources.
+Please review the [Fall 2018 Syllabus Attachement](http://academicaffairs.okstate.edu/sites/default/files/Fall%202017%20Syllabus%20Attachment.pdf) for an overview of university-wide policies and academic resources.

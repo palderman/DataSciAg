@@ -9,7 +9,7 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Science for Agriculture
+title:            Data Science for Agriculture & Natural Resources
 description:      'How to manage and manipulate data for agricultural research'
 url:              http://palderman.github.io/DataSciAg
 baseurl:          /DataSciAg

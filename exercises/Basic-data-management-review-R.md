@@ -19,8 +19,8 @@ you to [download]({{ site.baseurl }}/data/houseelf_earlength_dna_data.csv).
 Write an R script that:
 
 *  Imports the data
-*  For each row in the dataset checks to see if the ear length is `"large"` (>10
-   cm) or `"small"` (<=10 cm) and determines the GC-content of the DNA sequence
+*  For each row in the dataset checks to see if the ear length is `"large"` (>10 cm) or
+   `"small"` (<=10 cm) and determines the GC-content of the DNA sequence
    (i.e., the percentage of bases that are either G or C)
 *  Stores this information in a table where the first column has the ID for the
    individual, the second column contains the string `"large"` or the string

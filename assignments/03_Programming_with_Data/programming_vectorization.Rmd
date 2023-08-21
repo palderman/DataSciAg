@@ -111,7 +111,7 @@ for(i in 1:3){
 }
 ```
 
-2. Use the `read_all_divisions()` function to import the full dataset. Then use the `estimate_biomass()` function to estimate tree biomass and store it in a new column of the original tibble.
+2. Call the `read_all_divisions()` function that you created in a previous assignment to import the full dataset. Then call the `estimate_biomass()` function within `mutate()` to estimate tree biomass and store it in a new column of the original tibble.
 
 ```{r problem_2_code}
 all_data <- read_all_divisions('data') %>% 
