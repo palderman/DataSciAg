@@ -3,16 +3,18 @@ title: |
     | \Large \textbf{Data Science for Agriculture and Natural Resources}
     | \textbf{PLNT 5413 -- Fall 2023}
 fontsize: 12pt
-output: pdf_document
-link-citations: true
-urlcolor: blue
-margin: 1in
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+margin: 1
 header-includes:
 - \usepackage{pdfpages}
 bibliography: textbooks.bib
-biblio-style: unsrt
+biblio-style: unsrtd
 nocite: |
-  @RforDS, @TidyModeling, @RforDSsolutions
+  @RforDS, @TidyModeling
 ---
 
 ```{r setup, include=FALSE}
@@ -121,4 +123,9 @@ I encourage you to help each other and I have created a *Help Forum* discussion 
 
 Each students is required to gain access to their own computer and to install free and open source software on that computer. Support will be provided by the instructor in the installation of required software.
 
-\includepdf[pages=-]{Fall-2022-Syllabus-Attachment-Final-8.1.22.pdf}
+
+### Generative AI Statement
+
+Students may use generative AI tools such as ChatGPT, Bing AI, or Bard, to help them learn course content, complete course assignments, or do other course-related tasks. Students are expected to provide attribution for any text created using generative AI tools as appropriate. **Failure to disclose the use of generative AI tools will be considered an academic integrity violation.**
+
+\includepdf[pages=-]{fall-2023-syllabus-attachment-final-7-27-2023.pdf}
