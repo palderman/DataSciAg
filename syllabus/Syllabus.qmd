@@ -12,7 +12,7 @@ margin: 1
 header-includes:
 - \usepackage{pdfpages}
 bibliography: textbooks.bib
-biblio-style: unsrtd
+csl: apa.csl
 nocite: |
   @RforDS, @TidyModeling
 ---
@@ -23,13 +23,26 @@ library(lubridate)
 library(tidyverse)
 ```
 
+## Wellness Statement
+
+You are a person of great worth and much potential. If you feel that you need to talk or that there is something you are unable to handle about this class, please contact me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time at OSU.
+
 ## Description
 
 Data science principles and skills in the context of agricultural and natural resources research. Topics include data capture, quality control, data manipulation, visualization, reproducible analysis, and communication of results. Emphasis on workflows and analytical techniques tailored for agricultural and natural resource management research.
 
-## Wellness Statement
+## Learning objectives
 
-You are a person of great worth and much potential. If you feel that you need to talk or that there is something you are unable to handle about this class, please contact me. We can discuss what you are struggling with, and if you need additional help I can refer you to the appropriate service. Please do not let your physical or mental health suffer because of this class or anything else you might encounter during your time at OSU.
+By the end of this course students will be able to efficiently:
+
+-   Create and document tidy spreadsheets for data capture
+-   Import tabular data into R
+-   Wrangle data into tidy form
+-   Transform and combine datasets for subsequent analysis
+-   Visualize data for exploratory analysis and scientific communication
+-   Create and evaluate models to support scientific inference
+-   Write basic scripts in the R statistical programming language
+-   Develop reproducible, semi-automated, analytical workflows
 
 ## Location and Meeting Times
 
@@ -39,11 +52,11 @@ This course will be delivered in-person. At times, students may be permitted to 
 
 ## Instructor
 
->  Phillip D. Alderman \
->  Office: 274 Agricultural Hall \
->  Email: [phillip.alderman@okstate.edu](mailto:phillip.alderman@okstate.edu) \
->  Phone: (405)744-9604 \
->  Office Hours:  Tue, Thu 10:30am-12:30pm or by appointment
+> Phillip D. Alderman\
+> Office: 274 Agricultural Hall\
+> Email: [phillip.alderman\@okstate.edu](mailto:phillip.alderman@okstate.edu)\
+> Phone: (405)744-9604\
+> Office Hours: Tue, Thu 10:30am-12:30pm or by appointment
 
 ## Textbooks
 
@@ -54,24 +67,41 @@ This course will be delivered in-person. At times, students may be permitted to 
 
 ## Schedule
 
-```{r schedule}
-modules <- tribble(         ~Module, ~mod_index,
-  '*Introduction & Exploring Data*',          1,
-                 '*Wrangling Data*',          2,
-          '*Programming with Data*',          3,
-             '*Modeling with Data*',          4,
-        '*Communicating with Data*',          5,
-               '*Semester Project*',          6) %>% 
-  mutate(Module = factor(Module,levels=Module))
+```{r}
+#| label: schedule
 
-schedule <- {as.POSIXct('2023-08-21') + weeks(0:15)} %>% 
+modules <-
+  tribble(                  ~Module,
+                   '*Introduction*',
+                 '*Capturing Data*',
+                 '*Wrangling Data*',
+              '*Transforming Data*',
+                    '*Programming*',
+                '*Building Models*',
+              '*Evaluating Models*',
+        '*Communicating with Data*',
+               '*Semester Project*') %>% 
+  mutate(Module = factor(Module,levels=Module),
+         mod_index = 1:n(),
+         n_sessions = if_else(str_detect(Module, "Models|Project"),
+                              list(rep(1, 4)),
+                              if_else(str_detect(Module, "Intro"),
+                                      list(rep(1, 2)),
+                                      list(rep(1, 3))
+                                      )
+                              )
+         ) %>% 
+  unnest(n_sessions)
+
+schedule <- {as.POSIXct('2023-08-22') + weeks(0:15)} %>% 
   tibble(tuesdays = .) %>% 
   mutate(thursdays = tuesdays + days(2)) %>% 
   pivot_longer(c(tuesdays, thursdays), values_to = "dates") %>% 
-  mutate(mod_index = c(rep(1:5, each = 5),
-                       rep(6,7))) %>% 
-  full_join(modules) %>% 
-  group_by(Module) %>% 
+  filter((dates < as.POSIXct("2023-11-19") |
+          dates > as.POSIXct("2023-11-25")) & 
+         dates != as.POSIXct("2023-10-31")) %>% 
+  bind_cols(modules) %>% 
+  group_by(Module) %>%
   summarize(begin = head(dates,1) %>% 
               format(format='%b %d'),
             end = tail(dates,1) %>% 
@@ -85,7 +115,7 @@ schedule <- {as.POSIXct('2023-08-21') + weeks(0:15)} %>%
   select(Module,Dates)
 
 knitr::kable(schedule,align=c('c','c'))
-  ```
+```
 
 ## Teaching Philosophy
 
@@ -93,7 +123,7 @@ Students learn more when they are actively engaged in the learning process. This
 
 ## Communications
 
-Notifications and updates to course content will be communicated via Canvas or by email. For questions or concerns you have about the course, email is the best way to contact me. Under normal circumstances you can expect to receive a response from me within one business day (I typically do not respond to email after 5pm weekdays or on the weekend). If for some reason you do not receive a response within this period, please email again. 
+Notifications and updates to course content will be communicated via Canvas or by email. For questions or concerns you have about the course, email is the best way to contact me. Under normal circumstances you can expect to receive a response from me within one business day (I typically do not respond to email after 5pm weekdays or on the weekend). If for some reason you do not receive a response within this period, please email again.
 
 ## Course Policies
 
@@ -101,28 +131,27 @@ Notifications and updates to course content will be communicated via Canvas or b
 
 Grading for this course will be split between assignments (50%) and a semester project (50%).
 
-Due dates for the assignments and semester project are given in the [Schedule] section above.
+Due dates for the assignments and semester project will be communicated through Canvas.
 
 **Grading Scale**
-  
-- **A 90-100**
-- **B 80-90**
-- **C 70-80**
-- **D 60-70**
-- **F < 60**
+
+-   **A 90-100**
+-   **B 80-90**
+-   **C 70-80**
+-   **D 60-70**
+-   **F \< 60**
 
 ### Late Submission Policy
 
-Assignments will be docked 1% for every hour past the time they are due (i.e. -1% up to 1 hour late, -2% for 1-2 hrs late, etc.) and will not be accepted more than 48 hours late. Exceptions to this general policy may be made in cases of genuine emergencies that can be documented by the student or in cases where this has been discussed and approved in advance.
+Assignments will be docked 1% for every hour past the time they are due (i.e. -1% for 1 hour late, -2% 2 hrs late, etc.) and will not be accepted more than 48 hours late. Exceptions to this general policy may be made in cases of genuine emergencies that can be documented by the student or in cases where this has been discussed and approved in advance.
 
 ### Peer Help on Assignments
 
-I encourage you to help each other and I have created a *Help Forum* discussion in Canvas to facilitate this. However, as you help each other, make sure to communicate the concept and then allow each person to write his/her own code. This is critical for each of you to develop the level of understanding needed to learn and retain the material. **Do not directly post or otherwise share your code for an assignment with anyone else. Code that is submitted with evidence of copying/pasting will be considered an academic integrity violation.** You are encouraged to post example code that illustrates a concept for others or direct someone to a particular section in the reading that addresses the point of confusion. 
+I encourage you to help each other. However, as you help each other, make sure to communicate in terms of concepts while allowing each person to write his/her own code. This is critical for each of you to develop the level of understanding needed to learn and retain the material. **Do not directly post or otherwise share your code for an assignment with anyone else. Code that is submitted with evidence of copying/pasting will be considered an academic integrity violation.** You are encouraged to post example code that illustrates a concept for others or direct someone to a particular section in the reading that addresses the point of confusion.
 
 ### Course Technology
 
 Each students is required to gain access to their own computer and to install free and open source software on that computer. Support will be provided by the instructor in the installation of required software.
-
 
 ### Generative AI Statement
 
