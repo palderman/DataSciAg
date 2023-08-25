@@ -1,8 +1,0 @@
-class       : SpatialPointsDataFrame 
-features    : 15 
-extent      : -98.7087, -98.4371, 35.2294, 35.4551  (xmin, xmax, ymin, ymax)
-coord. ref. : +proj=longlat +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0 
-variables   : 13
-names       : STNM, STID,           NAME,    CITY, RANG, CDIR,    CNTY, ELEV, CDIV, CLAS, SUBC,       DATC,       DATD 
-min values  :  701, F101, FCARS Site 101,  Albert, 10.7,    E,   Caddo,  430,    4,    5,    0, 2005-05-25, 2099-12-31 
-max values  :  715, F115, FCARS Site 115, Lookeba,  8.7,  WSW, Washita,  524,    7,    5,    0, 2005-07-13, 2099-12-31 

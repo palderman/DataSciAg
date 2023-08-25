@@ -1,6 +1,0 @@
-# Oklahoma climate divisions
-class       : Extent 
-xmin        : -103.0026 
-xmax        : -94.43133 
-ymin        : 33.61577 
-ymax        : 37.00233 
