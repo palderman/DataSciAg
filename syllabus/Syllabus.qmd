@@ -12,7 +12,7 @@ margin: 1
 header-includes:
 - \usepackage{pdfpages}
 bibliography: textbooks.bib
-csl: apa.csl
+csl: apa_unsorted.csl
 nocite: |
   @RforDS, @TidyModeling
 ---
