@@ -1,9 +1,11 @@
 ---
 title: "Capturing Data - Creating README Metadata"
-subtitle: |
-  Data Science for Agriculture and Natural Resources \linebreak PLNT 5413 - Fall 2023
 format:
   pdf:
+    template-partials: 
+      - ../title.tex
+    geometry:
+      - margin=1in
     include-in-header:
       text: |
         \usepackage{titling}
@@ -20,11 +22,14 @@ engine: knitr
 
 A critical part of accurately capturing and curating a dataset is collecting and documenting appropriate metadata. In this assignment you will practice this process using Experiment 502, one of the long-term soil fertility trials at Oklahoma State University. Refer to the information about Experiment 502 available at <https://nue.okstate.edu/Long_Term_Experiments/E502.htm> for details about the experiment.
 
-## Specific instructions
+- Download `README_template.qmd` from Canvas and use it as a template for your own document
+- Change the name of the file to `README.qmd`
+- Fill in the template using the specific instructions provided below
+- Add markdown formatting to enhance legibility of the document
+- Render the resulting document as a Markdown file (.md)
+- Upload both the README.qmd and README.md files to Canvas
 
--   Download `README_template.qmd` from Canvas and use it as a template for your own document
--   Change the name of the file to `README.qmd`
--   Fill in the template using the guidelines provided below:
+## Specific instructions
 
 ### General Information
 
@@ -37,7 +42,8 @@ A critical part of accurately capturing and curating a dataset is collecting and
 
 ### Data and file overview
 
-- Assume a separate comma separate value (csv) file for each season
+- Assume a separate comma separate value (csv) file for each wheat growing season
+- Assume the name of each file follows the pattern expmt502_YYYY.csv where YYYY is replaced by the four-digit year of harvest
 - Assume the data files are contained inside a subdirectory entitled `data`
 
 ### Sharing and access information
