@@ -1,22 +1,12 @@
 ---
 title: "Capturing Data - Creating README Metadata"
+semester: Fall 2023
 format:
   pdf:
-    template-partials: 
-      - ../title.tex
-    geometry:
-      - margin=1in
-    include-in-header:
-      text: |
-        \usepackage{titling}
-        \usepackage{lastpage}
-        \usepackage{scrlayer-scrpage}
-        \cfoot{\small \thetitle \linebreak Data Science for Agriculture and Natural Resources \linebreak PLNT 5413 - \semester \linebreak Page \thepage~of~\pageref{LastPage}}
+    template: ../assignment-template.tex
 editor: source
 engine: knitr
 ---
-
-\newcommand{\semester}{Fall `r format(Sys.Date(), "%Y")`}
 
 ## General instructions
 
