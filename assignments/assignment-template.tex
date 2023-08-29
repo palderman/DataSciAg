@@ -431,9 +431,7 @@ $endif$
 $endif$
   pdfcreator={LaTeX via pandoc}}
 
-$if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
-$endif$
+\title{}
 $if(beamer)$
 $else$
 \usepackage{etoolbox}
@@ -443,8 +441,7 @@ $else$
 }
 \makeatother
 $endif$
-\subtitle{Data Science for Agriculture and Natural Resources\\
-PLNT 5413 - $semester$}
+\subtitle{}
 \author{}
 \date{}
 $if(beamer)$
@@ -466,6 +463,7 @@ $endif$
 \cfoot{\small $title$ \\ Data Science for Agriculture and Natural Resources \\ PLNT 5413 - $semester$ \\ Page \thepage~of~\pageref{LastPage}}
 
 \begin{document}
+
 $if(has-frontmatter)$
 \frontmatter
 $endif$
@@ -481,6 +479,14 @@ $abstract$
 \end{abstract}
 $endif$
 $endif$
+
+\vspace{-15\baselineskip}
+
+\begin{center}
+{\LARGE $title$\\[0.25\baselineskip]}
+{\large Data Science for Agriculture and Natural Resources\\
+PLNT 5413 - $semester$}
+\end{center}
 
 $for(include-before)$
 $include-before$
