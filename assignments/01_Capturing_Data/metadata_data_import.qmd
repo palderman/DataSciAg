@@ -1,0 +1,75 @@
+---
+title: "Capturing Data - Metadata and Data Import"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+editor: source
+engine: knitr
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+## Tree Biomass
+
+To practice data import we will use a publicly available dataset collected in a 96 hectare area of the Western Ghats in India and published on [Ecological Archives](https://esapubs.org/Archive/). The raw data file is available on Canvas: [https://canvas.okstate.edu/courses/161759/files/17667234?wrap=1](https://canvas.okstate.edu/courses/161759/files/17667234?wrap=1) or see links in the Canvas assignment. You will need to refer to the metadata ([https://esapubs.org/archive/ecol/E091/216/metadata.htm](https://esapubs.org/archive/ecol/E091/216/metadata.htm)) to get familiar with the structure of the dataset. Pay particular attention to section *CLASS IV. DATA STRUCTURAL DESCRIPTORS*
+
+1. After reading through the metadata, comment (2-3 sentences) on the completeness of the documentation. Compare this to your own documentation of metadata in your `README.md` file from the `Organizing Data in Spreadsheets` assignment.
+
+2. Describe at least 2 ways this dataset violates some of the best practices (e.g. tidy data, [Format Data](https://datacarpentry.org/spreadsheet-ecology-lesson/01-format-data/index.html), [Common Mistakes](https://datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/index.html)) for organizing data in spreadsheets.
+
+3. Import the raw data into R. Example output:
+
+```{r}
+#| message: false
+
+# Problem 3
+tree_raw <- read_tsv('data/Macroplot_data_Rev.txt')
+
+```
+
+```{r}
+tree_raw
+```
+
+## Long-term Soil Fertility Experiment 502
+
+Excel spreadsheets are also a common format in which scientists store and share data. To practice importing from this format, we will use data from Experiment 502, the long-term soil fertility trial at Oklahoma State University that we used for the previous assignment. Refer to the information about Experiment 502 available at [https://nue.okstate.edu/Long_Term_Experiments/E502.htm](https://nue.okstate.edu/Long_Term_Experiments/E502.htm) for details about the experiment.
+
+4. Download the Excel spreadsheet and import the data from the `co502_2018` sheet using the `read_excel()` from the `readxl` R package (You may need to install it if you haven't already). *Note: For now, don't worry if you see lots of warnings when you do this step. Please suppress the warnings in your submitted rendered assignment by adding `#| warning: false` to your R code chunk.*
+
+Example output:
+
+```{r}
+#| echo: false
+#| warning: false
+readxl::read_excel("data/E502_18.xlsx",
+                   sheet = "co502_2018",
+                   range = "A4:AE2636",
+                   na = c(".","na"),
+                   guess_max = 5000)
+```
+
+5. Use the `read_html()` and `html_table()` from the `rvest` package to import Table 3 from [https://nue.okstate.edu/Long_Term_Experiments/E502.htm](https://nue.okstate.edu/Long_Term_Experiments/E502.htm). *Note: you will also need to use `getElement()` to select the correct table*
+
+
+```{r}
+#| echo: false
+#| include: false
+library(rvest)
+```
+
+```{r}
+#| echo: false
+webpage_url <- "https://nue.okstate.edu/Long_Term_Experiments/E502.htm"
+
+read_html(webpage_url) |> 
+  html_table() |> 
+  getElement(5)
+```
+
+
