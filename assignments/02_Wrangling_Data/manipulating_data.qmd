@@ -1,0 +1,133 @@
+---
+title: "Wrangling Data - Manipulating Data"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+editor: source
+engine: knitr
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+# Raw data import
+tree_raw <- read_tsv('data/Macroplot_data_Rev.txt')
+```
+
+## Engelstad Nitrogen dataset
+
+Using the `engelstad.nitro` dataset from the `agridat` package (use `agridat::engelstad.nitro` to access it), create 4 separate pipelines that provide:
+
+1. The yields for the 0 nitrogen treatment for each location and year.
+
+```{r}
+agridat::engelstad.nitro  |> 
+  filter(nitro==0)
+```
+
+2. The yields for the 335 nitrogen treatment for each location and year in order from lowest to highest yield.
+
+```{r}
+agridat::engelstad.nitro |> 
+  filter(nitro==335)  |> 
+  arrange(yield)
+```
+
+3. The mean yield for each combination of location and year.
+
+```{r}
+agridat::engelstad.nitro |> 
+  group_by(loc, year) |> 
+  summarize(yield = mean(yield))
+```
+
+4. The mean yield for each level of nitrogen fertilizer.
+
+```{r}
+agridat::engelstad.nitro |> 
+  group_by(nitro)  |> 
+  summarize(yield = mean(yield))
+```
+
+## Tree Biomass
+
+You have previously worked on reading metadata and importing raw data in the `Metadata and Data Import` assignment and cleaning messy data in the `Cleaning Messy Data` assignment. In this assignment we will build on that work to clean and manipulate some [raw data](https://canvas.okstate.edu/courses/161759/files/17667234) and calculate tree biomass estimates.
+
+There are lots of equations for estimating the mass of a tree from its diameter, but one good option is the equation: $$ Mass = 0.124 * Diameter^{2.53}$$ where $Mass$ is measured in kg of dry above-ground biomass and $Diameter$ is in cm [DBH](https://en.wikipedia.org/wiki/Diameter_at_breast_height) ([Brown 1997](http://www.fao.org/docrep/W4095E/W4095E00.htm)).
+
+1. Begin by importing the raw data by adapting the following code template:
+
+```{r}
+#| eval: false
+#| echo: true
+tree_raw <- read_tsv('<path to data file>')
+```
+
+
+2. Then use `pivot_longer()` to convert the raw data into rows for each measured stem with the original column names in a new column called `stem` and the values in a new column called `girth`
+
+```{r}
+tree_long <- 
+  tree_raw |> 
+  pivot_longer(TreeGirth1:TreeGirth5,
+               names_to='stem',
+               values_to='girth')
+tree_long
+```
+
+3. In the metadata for TreeGirth2 to TreeGirth5 it states "value of 0 indicates that the stem doesn't exist" so filter out these rows from the data.
+
+```{r}
+
+tree_gathered <-
+  tree_long |>
+  filter(girth > 0)
+
+tree_gathered
+
+```
+
+4. Create a new column by converting girth (i.e. circumference) to stem diameter (recall that circumference = pi * diameter).
+
+```{r}
+tree_diameter <-
+  tree_gathered |>
+  mutate(diameter = girth/pi)
+
+tree_diameter
+```
+
+5. Create a new column that contains estimates of the tree mass by using the diameter and the equation above.
+
+```{r}
+tree_biomass <-
+  tree_diameter |>
+  mutate(tree_mass = 0.124*diameter^2.53)
+
+tree_biomass
+```
+
+6. Use `mutate()` and the expression `str_sub(SpCode, 1, 4)` to extract the first four letters from the `SpCode` column into a new column called `GenusCode`. Also, drop the `SpCode` column. *Strictly speaking the four letter code doesn't uniquely identify all of the genera in the dataset, but we'll assume it does for the purpose of this exercise.*
+
+```{r}
+tree_genus <- 
+  tree_biomass |>
+  mutate(
+    GenusCode = str_sub(SpCode, 1, 4),
+    SpCode = NULL
+  )
+
+tree_genus
+```
+
+
+7. Calculate the mean biomass for each genus.
+
+```{r}
+tree_genus  |> 
+  group_by(GenusCode) |> 
+  summarize(avg_mass = mean(tree_mass, na.rm=TRUE))
+```
+

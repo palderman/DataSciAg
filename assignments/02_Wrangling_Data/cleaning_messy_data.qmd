@@ -1,0 +1,150 @@
+---
+title: "Wrangling Data - Cleaning Messy Data"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+editor: source
+engine: knitr
+---
+
+```{r}
+#| echo: false
+#| include: false
+library(tidyverse)
+```
+
+1. Use the following template code to import the raw data from the Excel spreadsheet for Experiment 502 ([https://nue.okstate.edu/Long_Term_Experiments/E502.htm](https://nue.okstate.edu/Long_Term_Experiments/E502.htm)). *Note: you will need to replace <path to Experiment 502 data file> with the actual path and file name on your computer.*
+
+```{r}
+#| echo: true
+#| eval: false
+e502_raw <- readxl::read_excel("<path to Experiment 502 data file>",
+                   sheet = "co502_2018",
+                   range = "A4:AE2636",
+                   na = c(".","na"),
+                   guess_max = 5000)
+
+colnames(e502)
+```
+
+```{r}
+#| echo: false
+#| include: false
+e502_raw <- readxl::read_excel("data/E502_18.xlsx",
+                   sheet = "co502_2018",
+                   range = "A4:AE2636",
+                   na = c(".","na"),
+                   guess_max = 5000)
+```
+
+
+2. Using the pipe (`%>%` or `|>`) and `rename()`, add to your existing code (the code with `read_excel()` to create a pipeline that:
+- imports the data from the Excel file and
+- changes the name of each column given in the table below so that it matches its new name:
+
+```{r}
+#| echo: false
+orig_names <- colnames(e502_raw)
+
+e502_raw <- e502_raw |> 
+  rename(exp = 1,
+         variety = 2,
+         plant_date = 3,
+         harvest_date = 4,
+         year = yr,
+         yield_buac = buac,
+         grain_n = gn,
+         grain_p = gp,
+         grain_k = gk,
+         soil_ph = sph,
+         soil_n = sn,
+         soil_p = sp,
+         soil_k = sk,
+         soil_total_n = tn,
+         soil_oc = oc,
+         straw_yield = syield,
+         soil_buffer_index = bi)
+
+tibble::tibble(orig_names = orig_names, new_names = colnames(e502_raw)) |> 
+  filter(orig_names != new_names) |> 
+  knitr::kable(col.names = c("Original Name", "New Name"))
+```
+
+3. Next we want to separate out the all data that are measured at the plot level once per season (that is once per plot per season). Use `select()` to select only the columns that fit this criterion and assign the resulting data frame to an object named `plot_data`. The final result should have the following columns:
+
+```{r}
+#| echo: false
+#| results: "asis"
+plot_data <- e502_raw |> 
+  select(-variety, -matches("(_date)|(ndvi)|(df)"))
+
+cat("> ", paste(colnames(plot_data), collapse = ", "))
+```
+
+
+4. We now want to separate out the all NDVI-related data because they are measured at the plot level for multiple growth stages each season. Use `select()` to select only the columns that fit this criterion and assign the resulting data frame to an object named `ndvi_data`. The result should have the following columns:
+
+```{r}
+#| echo: false
+#| results: "asis"
+ndvi_data <- e502_raw |> 
+  select(exp, year, rep, trt, matches("(ndvi)|(df)"))
+
+cat("> ", paste(colnames(ndvi_data), collapse = ", "))
+```
+
+5. Adding to your code for selecting the NDVI-related columns, create a pipeline that uses `pivot_longer()` to stack all the `ndvi` and `df` columns. The result should look something like this:
+
+```{r}
+#| echo: false
+e502_raw |> 
+  select(exp, year, rep, trt, matches("(ndvi)|(df)")) |> 
+  pivot_longer(matches("(ndvi)|(df)"))
+
+```
+
+6. Continuing your pipline for NDVI-related data, use `mutate()` to create two new columns from the `name` column:
+
+- The first new column should be called `feekes` and should contain the feekes stage extracted using this expression: `str_extract(name, "[0-9]+$")`
+- The second new column should be called `variable` and should contain the variable name extracted using this expression: `str_extract(name, "^[a-z]+")`
+
+
+```{r}
+#| echo: false
+e502_raw |> 
+  select(exp, year, rep, trt, matches("(ndvi)|(df)")) |> 
+  pivot_longer(matches("(ndvi)|(df)")) |> 
+  mutate(feekes = str_extract(name, "[0-9]+$"),
+         variable = str_extract(name, "^[a-z]+"))
+
+```
+
+7. Continuing your pipline for NDVI-related data, drop the `name` column:
+
+```{r}
+#| echo: false
+e502_raw |> 
+  select(exp, year, rep, trt, matches("(ndvi)|(df)")) |> 
+  pivot_longer(matches("(ndvi)|(df)")) |> 
+  mutate(feekes = str_extract(name, "[0-9]+$"),
+         variable = str_extract(name, "^[a-z]+")) |> 
+  select(-name)
+
+```
+
+
+8. Continuing your pipline for NDVI-related data, use `pivot_wider()` to spread the data using the arguments `names_from="variable"` and `values_from="value"`:
+
+```{r}
+#| echo: false
+e502_raw |> 
+  select(exp, year, rep, trt, matches("(ndvi)|(df)")) |> 
+  pivot_longer(matches("(ndvi)|(df)")) |> 
+  mutate(feekes = str_extract(name, "[0-9]+$"),
+         variable = str_extract(name, "^[a-z]+")) |> 
+  select(-name) |> 
+  pivot_wider(names_from = "variable",
+              values_from = "value")
+
+```
