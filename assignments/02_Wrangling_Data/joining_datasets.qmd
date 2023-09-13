@@ -1,0 +1,181 @@
+---
+title: "Wrangling Data - Joining Datasets"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+editor: source
+engine: knitr
+---
+
+```{r}
+#| include: false
+#| message: false
+#| warning: false
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(rvest)
+```
+
+## Experiment 502
+
+1. Use the following code template to import the yield data from long-term soil fertility Experiment 502:
+
+```{r}
+#| echo: true
+#| eval: false
+e502_yield <- readxl::read_excel("<path to Experiment 502 data file>",
+                   sheet = "co502_2018",
+                   range = "A4:AE2636",
+                   na = c(".","na"),
+                   guess_max = 5000) |> 
+    rename(exp = 1,
+           treatment = trt,
+           year = yr,
+           yield_buac = buac) |> 
+    select(exp, rep, treatment, year, yield_buac)
+
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| cache: true
+e502_yield <- readxl::read_excel("data/E502_18.xlsx",
+                   sheet = "co502_2018",
+                   range = "A4:AE2636",
+                   na = c(".","na"),
+                   guess_max = 5000) |> 
+    rename(exp = 1,
+           treatment = trt,
+           year = yr,
+           yield_buac = buac) |> 
+    select(exp, rep, treatment, year, yield_buac)
+
+e502_yield
+```
+
+2. Use the following code to import and extract treatment information from Table 3 from the Experiment 502 webpage ([https://nue.okstate.edu/Long_Term_Experiments/E502.htm](https://nue.okstate.edu/Long_Term_Experiments/E502.htm). *Note: Don't forget to load the `rvest` package.*
+
+```{r}
+#| echo: true
+#| cache: true
+webpage_url <- "https://nue.okstate.edu/Long_Term_Experiments/E502.htm"
+
+trt_table <- read_html(webpage_url) |> 
+  html_table(header = TRUE) |> 
+  getElement(5) |> 
+  rename(treatment = Trt.) |> 
+  select(treatment, N, P2O5, K2O) |> 
+  filter(treatment %in% 1:14) |> 
+  mutate(sul_po_mag = str_detect(K2O, "\\*"),
+         K2O = str_remove(K2O, "\\*"),
+         across(!sul_po_mag, as.numeric))
+
+```
+
+```{r}
+trt_table
+```
+
+3. Join the treatment information data frame (`trt_table`) with the yield data frame (`e502_yield`).
+
+```{r}
+e502_yield <- e502_yield |> 
+  full_join(trt_table)
+e502_yield
+```
+
+4. Use the joined data frame from the previous step to calculate the long-term average and standard deviation for each nitrogen (N) level.
+
+```{r}
+e502_yield |> 
+  group_by(N) |> 
+  summarize(yld_avg = mean(yield_buac, na.rm = TRUE),
+            yld_sd = sd(yield_buac, na.rm = TRUE))
+```
+
+5. Use the joined data frame to calculate the long-term average and standard deviation for each combination of N and phosphorus (P~2~O~5~) level ordered by phosphorus then by N level.
+
+
+```{r}
+#| message: false
+e502_yield |> 
+  group_by(N, P2O5) |> 
+  summarize(yld_avg = mean(yield_buac, na.rm = TRUE),
+            yld_sd = sd(yield_buac, na.rm = TRUE)) |> 
+  arrange(P2O5, N)
+```
+
+```{r}
+#| include: false
+#| message: false
+#| warning: false
+#| cache: true
+tree_raw <- read_tsv('data/Macroplot_data_Rev.txt')
+
+tree_genus <- tree_raw |> 
+  pivot_longer(TreeGirth1:TreeGirth5,
+               names_to='stem',
+               values_to='girth') |> 
+  filter(girth > 0) |> 
+  mutate(diameter = girth/pi,
+         tree_mass = 0.124*diameter^2.53,
+         GenusCode = str_sub(SpCode, 1, 4),
+         SpCode = NULL)
+```
+
+## Tree Biomass
+
+6. Use the following code template to import and tidy the [raw data](https://canvas.okstate.edu/courses/109158/files/12019188) for the 96 hectare area of the Western Ghats in India.
+
+```{r}
+#| eval: false
+#| echo: true
+#| cache: true
+tree_genus <- 
+  read_tsv('<path to data file>') |>
+  pivot_longer(TreeGirth1:TreeGirth5,
+               names_to='stem',
+               values_to='girth') |> 
+  filter(girth>0) |> 
+  mutate(diameter = girth/pi,
+         tree_mass = 0.124*diameter^2.53,
+         GenusCode = str_sub(SpCode, 1, 4),
+         SpCode = NULL)
+```
+
+
+7. We are also interested in the impact of location on tree girth. Import the [Site Variables table](https://canvas.okstate.edu/courses/109158/files/12019189) and join it with the cleaned dataset from the previous step.
+
+```{r}
+#| cache: true
+joined <- read_tsv('data/Site_variables.txt') |>  
+  right_join(tree_genus,
+             by='PlotID')
+joined
+```
+
+8. Generate a boxplot of girth vs forest division. The number of extreme points makes it difficult to see the shape of the boxes so limit the y-axis from 0 to 200. Also, some of the forest division names overlap so use `theme()` to change the x-axis labels (`axis.text.x`) so that the angle (`angle`) is 45 degrees and the horizontal justification (`hjust`) is 1 so that all labels are legible.
+
+```{r prob2}
+#| cache: true
+joined %>% 
+ggplot(aes(x=ForestDiv,y=girth))+
+  geom_boxplot()+
+  coord_cartesian(ylim=c(0, 200))+
+  theme(axis.text.x = element_text(hjust = 1, angle = 45))
+```
+
+9. Regenerate the previous boxplot with the forest divisions ordered by latitude. This will involve converting the forest division to a factor and reordering the factor levels based on the average latitude for each division.
+
+```{r}
+#| cache: true
+joined |> 
+mutate(ForestDiv = factor(ForestDiv)) |> 
+  mutate(ForestDiv = fct_reorder(ForestDiv, LatDec, mean)) |> 
+  ggplot(aes(x = ForestDiv, y = girth)) +
+  geom_boxplot() +
+  coord_cartesian(ylim = c(0, 200)) +
+  theme(axis.text.x = element_text(hjust = 1, angle = 45))
+```
