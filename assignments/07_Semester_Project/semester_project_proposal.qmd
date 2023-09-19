@@ -1,0 +1,21 @@
+---
+title: "Semester Project Proposal"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+editor: source
+engine: knitr
+---
+
+Use a Quarto document to write a brief semester project proposal (250-500 words; no citations necessary) that meets the *Project Content* criteria outlined in the *Semester Project Rubric* document on Canvas. Be sure to include:
+
+- A description of the main topic or research question for the project
+
+- A list of all datasets to be cleaned/curated/combined for the project
+
+- Location information for each dataset (e.g. url, contact information for data custodian, etc.)
+
+- A list of skills/practices from the course that you will use
+
+- Examples of expected novel outputs of the analysis
