@@ -1,0 +1,61 @@
+---
+title: "Programming with Data - Defining Functions"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+editor: source
+engine: knitr
+---
+
+When creating functions, it's often useful to keep the function definitions in a separate R script file (with file extension *.R) to avoid cluttering your Quarto document. For this assignment, create a separate R script file named `my_functions.R` and store all your function definitions in that file. Near the beginning of your Quarto document, include a code chunk like the following:
+
+````{verbatim}
+```{r}
+#| include: false
+source("my_functions.R")
+```
+````
+
+This code chunk will load all of the functions defined in the file `my_functions.R` and you will be able to use these functions in any code chunks that come later in the document.
+
+To demonstrate that your functions work, insert code chunks within your Quarto document that call your functions with the example values provided in the assignment below.
+
+## Bushels per acre to kilograms per hectare
+
+
+```{r}
+#| include: false
+source("my_functions.R")
+```
+
+In this assignment, we will create a set of functions for converting wheat yield from units in bushels per acre to kilograms per hectare.
+
+1. Create a function named `bu_to_lbs` that has one argument for a value in units of bushels (bu) and converts it to units of pounds (lbs) using the following conversion factor: 1 bu wheat = 60 lbs wheat
+
+```{r}
+bu_to_lbs(1)
+bu_to_lbs(30)
+```
+
+2. Create a function called `lbs_to_kg` that has one argument in pounds (lbs) and converts lbs to kilograms (kg) using a conversion factor of: 1 lbs = 0.453592 kg
+
+```{r}
+lbs_to_kg(2.2)
+lbs_to_kg(60)
+```
+
+3. Create a function named `per_ac_to_per_ha` that has one argument and converts units on a per acre (ac) basis to units on a per hectare (ha) basis using the following conversion factor: 1 ac = 0.404686 ha *Note: Remember to divide by the conversion factor in this case because both are expressed on a per ac or ha basis i.e.* $\dfrac{1}{1 ac} = \dfrac{1}{0.404686 ha}$
+
+```{r}
+per_ac_to_per_ha(1)
+per_ac_to_per_ha(1800)
+```
+
+4. Create a function named `bu_ac_to_kg_ha` that has one argument in bushels per acre and uses the previous three functions within a pipeline to perform the units conversion of wheat yield from bushels per acre to kilograms per hectare.
+
+```{r}
+bu_ac_to_kg_ha(30)
+bu_ac_to_kg_ha(90)
+```
+
