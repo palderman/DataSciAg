@@ -1,0 +1,216 @@
+---
+title: "Modeling with Data: Evaluating Many Models"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+echo: false
+editor: source
+engine: knitr
+---
+
+```{r}
+#| label: model_assignment_code
+#| echo: false
+#| include: false
+library(agridat)
+library(tidyverse)
+```
+
+1. Begin by loading the `tidymodels` package and calling `tidymodels_prefer()`
+
+```{r}
+#| echo: false
+library(tidymodels)
+tidymodels_prefer()
+```
+
+2. Load the `agridat` package and join the `vargas.wheat1.traits` and `vargas.wheat1.covs` data frames into one and convert the combined data frame to a tibble called `vargas`.
+
+```{r}
+vargas <- full_join(vargas.wheat1.traits,
+                    vargas.wheat1.covs) |> 
+  mutate(year = factor(year)) |> 
+  as_tibble()
+
+vargas
+```
+3. Create a linear regression model specification with the computational engine set to "lm" and store it as `lm_mod`.
+
+```{r}
+lm_mod <- 
+  linear_reg() |> 
+  set_engine("lm")
+
+lm_mod
+```
+
+4. Create a recipe that
+
+- includes `yield` as the outcome
+- `gen` and `year` as the predictors
+- includes a step to create dummy variables
+- is stored as an object called `gen_year_recipe`
+
+```{r}
+gen_year_recipe <-
+  recipe(yield ~ gen + year, data = vargas) |> 
+  step_dummy(all_nominal_predictors())
+
+gen_year_recipe
+```
+
+5. Create a recipe that
+
+- includes `yield` as the outcome
+- `gen` and all weather covariates (MTD, MTJ, MTF, MTM, mTD, mTJ, mTF, mTM, PRD, PRJ, PRF, PRM, SHD, SHJ, SHF, SHM) as the predictors
+- includes a step to create dummy variables
+- includes a step to center all numerical predictors
+- is stored as an object called `gen_MmPS_recipe`
+
+```{r}
+gen_MmPS_recipe <-
+  recipe(vargas |> select(yield, gen,
+                          starts_with("MT"),
+                          starts_with("mT"),
+                          starts_with("PR"),
+                          starts_with("SH"))) |> 
+  update_role(yield, new_role = "outcome") |> 
+  update_role(!yield, new_role = "predictor") |> 
+  step_dummy(all_nominal_predictors()) |> 
+  step_center(all_numeric_predictors())
+
+gen_MmPS_recipe
+```
+
+6. Use map to create a list of recipes each of which
+
+- each of which include `yield` as the outcome
+- `gen` and only one subset of weather variables as the predictors (i.e. one recipe would have monthly average  maximum temperature, one would have minimum temperature, one precipitation, and one sunshine hours)
+- includes a step to create dummy variables
+- includes a step to center all numerical predictors
+
+Store the list as gen_`wth_recipes`.
+
+```{r}
+gen_MmPS_recipe <-
+  map(c("MT", "mT", "PR", "SH"))
+  recipe(vargas |> select(yield, gen,
+                          starts_with("MT"),
+                          starts_with("mT"),
+                          starts_with("PR"),
+                          starts_with("SH"))) |> 
+  update_role(yield, new_role = "outcome") |> 
+  update_role(!yield, new_role = "predictor") |> 
+  step_dummy(all_nominal_predictors()) |> 
+  step_center(all_numeric_predictors())
+
+gen_MmPS_recipe
+```
+
+```{r}
+lm_wflow <- 
+  workflow() |> 
+  add_model(lm_mod)
+
+gen_year_fit <- 
+  lm_wflow |> 
+  add_recipe(gen_year_recipe) |> 
+  fit(data = vargas)
+
+
+gen_year_fit <- 
+  workflow() |> 
+  add_recipe(gen_year_recipe) |> 
+  add_model(lm_mod) |> 
+  fit(data = vargas)
+
+glmnet_fit <- 
+  workflow() |> 
+  add_recipe(gen_year_recipe) |> 
+  add_model(glmnet_mod) |> 
+  fit(data = vargas)
+
+vargas_lm_res <- 
+  lm_fit |> 
+  predict(new_data = vargas |> select(-yield)) |> 
+  bind_cols(vargas |> select(yield)) |> 
+  mutate(engine = "lm")
+
+vargas_glmnet_res <- 
+  glmnet_fit |> 
+  predict(new_data = vargas |> select(-yield)) |> 
+  bind_cols(vargas |> select(yield)) |> 
+  mutate(engine = "glmnet")
+
+vargas_lm_res |> 
+  full_join(vargas_glmnet_res) |> 
+  ggplot(aes(x = .pred, y = yield, color = engine))+
+  geom_abline(lty = 2)+
+  geom_point(alpha = 0.5)+
+  coord_obs_pred()
+
+```
+
+
+3. Use the `recipe()` function and the `vargas` dataset to start a preprocessing pipeline for yield as the outcome and genotype (`gen`) and year (`year`) as the predictors.
+
+```{r}
+recipe(yield ~ gen + year, data = vargas)
+```
+
+4. Add a step to the recipe to generate the required dummy variables for `gen` and `year`.
+
+```{r}
+recipe(yield ~ gen + year,
+       data = vargas) |> 
+  step_dummy(gen, year)
+```
+
+5. Change the code from the previous problem to use the `all_nominal_predictors()` selector instead of specifying the variables by name.
+
+```{r}
+recipe(yield ~ gen + year,
+       data = vargas) |> 
+  step_dummy(all_nominal_predictors())
+```
+
+6. Create a new recipe that includes `yield` as the outcome and `gen`, `mTD`, `mTJ`, `mTF`, and `mTM` as predictors.
+
+```{r}
+recipe(yield ~ gen + mTD + mTJ + mTF + mTM,
+       data = vargas)
+```
+
+7. Use the selectors `all_nominal_predictors()` and `all_numeric_predictors()` to add steps to the recipe that create dummy variables for `gen` and center and rescale the `mTD`, `mTJ`, `mTF`, and `mTM` columns. Store the resulting recipe as an object named `recipe_gen_tmin`.
+
+```{r}
+recipe_gen_tmin <- 
+  recipe(yield ~ gen + mTD + mTJ + mTF + mTM,
+         data = vargas) |> 
+  step_dummy(all_nominal_predictors()) |> 
+  step_center(all_numeric_predictors()) |> 
+  step_scale(all_numeric_predictors())
+
+recipe_gen_tmin
+```
+
+8. Create a model specification for performing linear regression with `lm()` as the computational engine and store it as `lm_mod`.
+
+```{r}
+
+lm_mod <- 
+  linear_reg() |> 
+  set_engine("lm")
+
+lm_mod
+```
+
+9. Use `lm_mod`, `recipe_gen_tmin` and `vargas` to build and fit a model workflow.
+
+```{r}
+workflow() |> 
+  add_model(lm_mod) |> 
+  add_recipe(recipe_gen_tmin) |> 
+  fit(data = vargas)
+```

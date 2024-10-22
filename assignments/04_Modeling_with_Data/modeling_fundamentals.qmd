@@ -1,0 +1,144 @@
+---
+title: "Modeling with Data: Modeling Fundamentals"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+echo: false
+editor: source
+engine: knitr
+---
+
+```{r}
+#| label: model_assignment_code
+#| echo: false
+#| include: false
+library(agridat)
+library(tidyverse)
+library(modelr)
+```
+
+```{r}
+#| label: answer_key_header
+#| echo: false
+#| include: false
+cat('Total possible points should equal 30\n')
+cat('  - Check for loading dependencies (1 pt)\n')
+cat('  - Check for comment header for each problem (1 pt)\n')
+cat('  - Check for comments explaining workflow (1 pt)\n')
+```
+
+For this assignment we will be working with the `vargas.wheat1` dataset from the `agridat` package, which has two data frames associated with it. One (`vargas.wheat1.traits`) contains plant traits measured on wheat grown at Ciudad Obregon, Mexico for the years 1990-1995. The other data frame (`vargas.wheat1.covs`) contains environment data measured during the growing season for the same years. You can refer to the help menu `?vargas.wheat1` for more information about the data set and variables.
+
+1. Load the `agridat` package and join the `vargas.wheat1.traits` and `vargas.wheat1.covs` data frames into one and convert the combined data frame to a tibble.
+
+    *Hint: Be sure to check column types and convert any that need to be changed*
+
+```{r}
+# Problem 1
+
+library(agridat)
+
+vargas <- full_join(vargas.wheat1.traits,vargas.wheat1.covs) |> 
+  mutate(year=factor(year)) |> 
+  as_tibble()
+
+```
+
+```{r}
+#| label: problem_1_output
+#| include: true
+vargas
+```
+
+2. Use `ggplot()` to plot yield over time with a separate color for each genotype (`gen`).
+
+```{r}
+#| label: problem_2_code
+# Problem 2
+
+yld_over_time <- vargas |> 
+  ggplot(aes(x = year, y = yield , color = gen)) + 
+  geom_point()
+
+```
+
+```{r}
+#| label: problem_2_output
+#| include: true
+print(yld_over_time)
+```
+
+3. We can see from this plot that there are clear effects of genotype and year on yield. However, we can also see that there is a noticeable interaction between genotype and year. We would like to explain this interaction in terms of physiological relationships and/or their interactions with seasonal weather variables. Let's begin by fitting a model with the main effects of genotype and year and a term for the interaction between genotype and year. Once you have fit your model, you can use the following code to extract the fitted model coefficients and compare your values to the ones below to confirm you have fit the model correctly. *Hint: make sure both variables are treated as discrete factors.* 
+
+```{r}
+#| label: problem_3_code
+#| include: false
+
+fit_gen_year <- lm(yield~gen*year, data=vargas)
+
+```
+
+```{r}
+#| echo: true
+coef(fit_gen_year)
+```
+
+4. Ideally, we'd like to identify which weather variables best explain our year to year variation. Start by fitting a model that replaces year with mean daily max temperature in March (`MTM`). Don't forget to include the interaction term.
+
+
+```{r}
+#| include: false
+
+fit_gen_mtm <- lm(yield~gen*MTM, data=vargas)
+
+```
+
+```{r}
+#| echo: true
+coef(fit_gen_mtm)
+```
+
+5. We'd also like to explain genetic variation on the basis of continuous traits. Fit a model that replaces `gen` with days from planting to anthesis (`ANT`).  Don't forget to include the interaction term.
+
+```{r}
+#| include: false
+
+fit_ant_mtm <- lm(yield~ANT*MTM, data=vargas)
+
+```
+
+```{r}
+#| echo: true
+coef(fit_ant_mtm)
+```
+
+6. Use the following code template to compare the model statistics for the different models using `map()` the `glance()` function from the `broom` package. Which model do you think performs best?
+
+```{r}
+#| echo: true
+#| eval: false
+tribble(
+  ~name,      ~fit_model,
+  "gen_year", fit_gen_year,
+  "gen_mtm",  fit_gen_mtm,
+  "ant_mtm",  fit_ant_mtm
+) |> 
+  mutate(stats = <code to iterate over fit_model with broom::glance()>) |> 
+  unnest(stats) |> 
+  select(-fit_model)
+```
+
+
+```{r}
+tribble(
+  ~name,      ~fit_model,
+  "gen_year", fit_gen_year,
+  "gen_mtm",  fit_gen_mtm,
+  "ant_mtm",  fit_ant_mtm
+) |> 
+  mutate(stats = map(fit_model, broom::glance)) |> 
+  unnest(stats) |> 
+  select(-fit_model)
+```
+

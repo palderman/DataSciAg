@@ -1,0 +1,99 @@
+---
+title: "Modeling with Data: Feature Engineering"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+echo: false
+editor: source
+engine: knitr
+---
+
+```{r}
+#| label: model_assignment_code
+#| echo: false
+#| include: false
+library(agridat)
+library(tidyverse)
+```
+
+1. Begin by loading the `tidymodels` package and calling `tidymodels_prefer()`
+
+```{r}
+#| echo: false
+library(tidymodels)
+tidymodels_prefer()
+```
+
+2. Load the `agridat` package and join the `vargas.wheat1.traits` and `vargas.wheat1.covs` data frames into one and convert the combined data frame to a tibble called `vargas`.
+
+```{r}
+vargas <- full_join(vargas.wheat1.traits,
+                    vargas.wheat1.covs) |> 
+  mutate(year = factor(year)) |> 
+  as_tibble()
+
+vargas
+```
+
+3. Use the `recipe()` function and the `vargas` dataset to start a preprocessing pipeline for yield as the outcome and genotype (`gen`) and year (`year`) as the predictors.
+
+```{r}
+recipe(yield ~ gen + year, data = vargas)
+```
+
+4. Add a step to the recipe to generate the required dummy variables for `gen` and `year`.
+
+```{r}
+recipe(yield ~ gen + year,
+       data = vargas) |> 
+  step_dummy(gen, year)
+```
+
+5. Change the code from the previous problem to use the `all_nominal_predictors()` selector instead of specifying the variables by name.
+
+```{r}
+recipe(yield ~ gen + year,
+       data = vargas) |> 
+  step_dummy(all_nominal_predictors())
+```
+
+6. Create a new recipe that includes `yield` as the outcome and `gen`, `mTD`, `mTJ`, `mTF`, and `mTM` as predictors.
+
+```{r}
+recipe(yield ~ gen + mTD + mTJ + mTF + mTM,
+       data = vargas)
+```
+
+7. Use the selectors `all_nominal_predictors()` and `all_numeric_predictors()` to add steps to the recipe that create dummy variables for `gen` and center and rescale the `mTD`, `mTJ`, `mTF`, and `mTM` columns. Store the resulting recipe as an object named `recipe_gen_tmin`.
+
+```{r}
+recipe_gen_tmin <- 
+  recipe(yield ~ gen + mTD + mTJ + mTF + mTM,
+         data = vargas) |> 
+  step_dummy(all_nominal_predictors()) |> 
+  step_center(all_numeric_predictors()) |> 
+  step_scale(all_numeric_predictors())
+
+recipe_gen_tmin
+```
+
+8. Create a model specification for performing linear regression with `lm()` as the computational engine and store it as `lm_mod`.
+
+```{r}
+
+lm_mod <- 
+  linear_reg() |> 
+  set_engine("lm")
+
+lm_mod
+```
+
+9. Use `lm_mod`, `recipe_gen_tmin` and `vargas` to build and fit a model workflow.
+
+```{r}
+workflow() |> 
+  add_model(lm_mod) |> 
+  add_recipe(recipe_gen_tmin) |> 
+  fit(data = vargas)
+```

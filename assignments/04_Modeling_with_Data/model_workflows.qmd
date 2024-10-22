@@ -1,0 +1,131 @@
+---
+title: "Modeling with Data: Model Workflows"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+echo: false
+editor: source
+engine: knitr
+---
+
+```{r}
+#| label: model_assignment_code
+#| echo: false
+#| include: false
+library(agridat)
+library(tidyverse)
+library(multilevelmod)
+```
+
+1. Begin by loading the `tidymodels` package and calling `tidymodels_prefer()`
+
+```{r}
+#| echo: false
+library(tidymodels)
+tidymodels_prefer()
+```
+
+2. Create a model specification for performing linear regression with `lm()` as the computational engine and store it as `lm_mod`.
+
+```{r}
+
+lm_mod <- 
+  linear_reg() |> 
+  set_engine("lm")
+
+lm_mod
+```
+
+3. Start building a model workflow using the `workflow()` function and adding the linear model object you created in the previous step (`lm_mod`).
+
+```{r}
+workflow() |> 
+  add_model(lm_mod)
+```
+
+4. Add to your workflow to by using `add_formula()` to specify a model with `yield` as the response variable and `gen` and `year` as main effects (i.e. no interaction term). Store your model workflow in an object named `lm_wflow`.
+
+```{r}
+lm_wflow <- 
+  workflow() |> 
+  add_model(lm_mod) |> 
+  add_formula(yield ~ gen + year)
+
+lm_wflow
+```
+
+5. Load the `agridat` package and join the `vargas.wheat1.traits` and `vargas.wheat1.covs` data frames into one and convert the combined data frame to a tibble called `vargas`.
+
+```{r}
+vargas <- full_join(vargas.wheat1.traits,
+                    vargas.wheat1.covs) |> 
+  mutate(year=factor(year)) |> 
+  as_tibble()
+
+vargas
+```
+
+6. Fit the linear model using the model workflow object you created earlier (`lm_wflow`), the `fit()` function and the `vargas` dataset. Store the fitted model in an object named `lm_fit`.
+
+```{r}
+lm_fit <- 
+  lm_wflow |> 
+  fit(data = vargas)
+
+lm_fit
+```
+
+7. Start a new pipeline with the `lm_fit` object, and update the model formula to include an interaction term using `update_formula()`.
+
+```{r}
+lm_fit |> 
+  update_formula(yield ~ gen*year)
+
+```
+
+8. Start a new model workflow that uses the `lm_mod` model object, but instead of specifying the outcome and predictors with a model formula use the `add_variables()` function to do it. Just as before, use `yield` as the outcome and `gen` and `year` as the predictors.
+
+```{r}
+  workflow() |> 
+  add_model(lm_mod) |> 
+  add_variables(outcome = yield,
+                predictors = c(gen, year))
+
+
+```
+
+In agricultural and natural resource management research, we frequently use experimental designs that allow us to capture known sources of variation into blocks of some kind. These are often referred to as "replications" (although that terminology is not strictly accurate). In the `vargas` dataset we have a column named `rep` that contains the block number for each observation. These experimental design variables are typically treated as "random" effects and the models that use them are called "multilevel", "mixed-effects" or simply "mixed" models.
+
+9. Install (if needed) and load the `multilevelmod` package. Then create a new linear regression model specification that uses "lmer" (i.e. linear mixed-effects regression) as the computational engine instead of "lm". Store this model specification as an object named `lmer_spec`.
+
+```{r}
+lmer_spec <- 
+  linear_reg() |> 
+  set_engine("lmer")
+
+lmer_spec
+```
+
+10. Create a workflow for the mixed-model analysis that:
+
+* Uses `add_variables()` to add:
+    * `yield` as an outcome and
+    * `rep`, `gen` and `year` as predictors
+* Uses `add_model()` to:
+    * Add `lmer_spec` to the workflow
+    * Add the formula `yield ~ gen * year + (1|rep)` to the workflow
+* Fits the model using `fit()` and `vargas` for the data
+
+```{r}
+lmer_fit <- 
+  workflow() |> 
+  add_variables(outcome = yield,
+                predictors = c(rep, gen, year)) |> 
+  add_model(lmer_spec,
+            formula = yield ~ gen * year + (1|rep)) |> 
+  fit(data = vargas)
+
+lmer_fit
+```
+

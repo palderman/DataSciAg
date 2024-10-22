@@ -1,0 +1,111 @@
+---
+title: "Modeling with Data: Fitting Models"
+semester: Fall 2023
+format:
+  pdf:
+    template: ../assignment-template.tex
+echo: false
+editor: source
+engine: knitr
+---
+
+```{r}
+#| label: model_assignment_code
+#| echo: false
+#| include: false
+library(agridat)
+library(tidyverse)
+```
+
+1. For this assignment we will begin working with the `parsnip` package from the `tidymodels` metapackage. Begin by loading the `tidymodels` package and calling `tidymodels_prefer()`
+
+```{r}
+#| echo: false
+library(tidymodels)
+tidymodels_prefer()
+library(broom.mixed)
+```
+
+2. Create a model specification for performing linear regression with `lm()` as the computational engine and store it as `lm_model`.
+
+```{r}
+
+lm_model <- 
+linear_reg() |> 
+  set_engine("lm")
+
+lm_model
+```
+
+3. Load the `agridat` package and join the `vargas.wheat1.traits` and `vargas.wheat1.covs` data frames into one and convert the combined data frame to a tibble called `vargas`. *Remember to check column types and convert any that need to be changed*
+
+```{r}
+library(agridat)
+
+vargas <- full_join(vargas.wheat1.traits,
+                    vargas.wheat1.covs) |> 
+  mutate(year=factor(year)) |> 
+  as_tibble()
+
+vargas
+
+```
+
+4. Use the `lm_model` object you created earlier along with the `fit()` function and the `vargas` dataset to fit a model with only the main effects of genotype and year (i.e. no interaction term). Specify the model using formula notation. Call the fitted model object `lm_form_fit`.
+
+```{r}
+lm_form_fit <- 
+  lm_model |> 
+  fit(yield ~ gen + year, data = vargas)
+
+lm_form_fit
+```
+
+5. Use the `tidy()` function to extract the coefficient estimates for the fitted model.
+
+```{r}
+tidy(lm_form_fit)
+```
+
+6. Refit the same model using the `fit_xy()` function and extract the coefficient estimates using the `tidy()` function. How do the coefficients compare?
+
+```{r}
+lm_xy_fit <- 
+  lm_model |> 
+  fit_xy(
+    x = vargas |> select(gen, year),
+    y = vargas |> select(yield)
+  )
+
+tidy(lm_xy_fit)
+```
+
+
+7. Use the `fit_xy()` to fit a new model of yield as the response variable (i.e. `y`) and genotype and all the temperature variables (MTD, mTD, etc.) as explanatory variables (i.e. `x`). Call the fitted model `lm_mMT_fit`. Use `tidy()` to extract the fitted coefficients.
+
+```{r}
+lm_mMT_fit <- 
+  lm_model |> 
+  fit_xy(
+    x = vargas |> select(gen, matches("^[mM]T")),
+    y = vargas |> select(yield)
+  )
+
+lm_mMT_fit
+```
+
+8. Note that `lm()` was unable to fit some of the terms in our model due to its complexity. Although we could simplify the model to reduce the number of terms, some regularization might allow us to fit the model. Repeat the same model fitting process, but within the pipeline change the computational engine to "stan". *Note: It may take a few minutes for the model to fit*. Name the fitted model `stan_mMT_fit`. Use the `tidy()` function to get summaries of the model fit. *Note: You will have to load the `broom.mixed` package before you will be able to use `tidy()` with `stan_mMT_fit`.*
+
+```{r}
+stan_mMT_fit <- 
+  lm_model |> 
+  set_engine("stan") |> 
+  fit_xy(
+    x = vargas |> select(gen, matches("^[mM]T")),
+    y = vargas |> select(yield)
+  )
+
+tidy(stan_mMT_fit)
+```
+
+
